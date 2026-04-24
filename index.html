@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chase Construction LLC — Custom log home builders in Sun Valley, Ketchum, and Hailey, Idaho. Luxury log home construction, restoration, and timber framing. Built to last generations.">
+  <title>Log Cabin Builders in Sun Valley, Idaho | Chase Construction</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            green:      '#2c573d',
+            'green-d':  '#1c3028',
+            blue:       '#1e3f71',
+            beige:      '#c3b49d',
+            brown:      '#a07d67',
+            linen:      '#f0ece4',
+            snow:       '#faf8f5',
+            ink:        '#1a1614',
+          },
+          fontFamily: {
+            display: ['"Hoefler Text"', 'Georgia', 'serif'],
+            sans:    ['Montserrat', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* ── Hoefler Text ── */
+    @font-face {
+      font-family: 'Hoefler Text';
+      src: url('brand-fonts/hoefler-text.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ── Design tokens ── */
+    :root {
+      /* Brand */
+      --green:      #2c573d;
+      --green-d:    #1c3028;
+      --blue:       #1e3f71;
+      --beige:      #c3b49d;
+      --brown:      #a07d67;
+      --brown-d:    #342319;
+
+      /* Backgrounds */
+      --linen:      #f0ece4;
+      --snow:       #faf8f5;
+      --ink:        #1a1614;
+
+      /* Text */
+      --text-dark:  #1a1614;
+      --text-mid:   #4a3f38;
+      --text-muted: #7a6e66;
+      --text-light: #f0ece4;
+
+      /* Lines */
+      --line-d: rgba(26,22,20,.12);
+      --line-l: rgba(195,180,157,.18);
+
+      /* Motion */
+      --ease: cubic-bezier(0.16,1,0.3,1);
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--snow);
+      color: var(--text-dark);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4 { font-family: 'Hoefler Text', Georgia, serif; font-weight: normal; }
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ── Film grain ── */
+    body::after {
+      content: '';
+      position: fixed; inset: 0;
+      pointer-events: none; z-index: 9999;
+      opacity: 0.025;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    }
+
+
+    /* ── Scroll reveal ── */
+    .reveal {
+      opacity: 0; transform: translateY(24px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+      will-change: transform, opacity;
+    }
+    .reveal.in { opacity: 1; transform: none; }
+    .d1 { transition-delay: .1s; } .d2 { transition-delay: .2s; }
+    .d3 { transition-delay: .3s; } .d4 { transition-delay: .4s; }
+    .d5 { transition-delay: .5s; } .d6 { transition-delay: .6s; }
+
+    /* ── Shared ── */
+    .eyebrow {
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; letter-spacing: .32em; text-transform: uppercase;
+      color: var(--brown); margin-bottom: 20px;
+    }
+    .eyebrow-light { color: rgba(195,180,157,.7); }
+    .section-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: clamp(28px, 4vw, 52px);
+      line-height: 1.1; letter-spacing: -.022em;
+    }
+    .section-title-light { color: var(--text-light); }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 0 52px; }
+    @media (max-width: 768px) { .wrap { padding: 0 24px; } }
+
+    .btn-p {
+      display: inline-block; padding: 15px 36px;
+      background: var(--green); color: #fff;
+      font-family: 'Montserrat', sans-serif; font-size: 10px;
+      letter-spacing: .22em; text-transform: uppercase; font-weight: 500;
+      transition: background .3s, transform .3s var(--ease);
+    }
+    .btn-p:hover { background: #356b4a; transform: translateY(-2px); }
+
+    .btn-g {
+      display: inline-block; padding: 14px 36px;
+      border: 1px solid rgba(195,180,157,.45); color: var(--beige);
+      font-family: 'Montserrat', sans-serif; font-size: 10px;
+      letter-spacing: .22em; text-transform: uppercase; font-weight: 400;
+      transition: border-color .3s, color .3s, transform .3s var(--ease);
+    }
+    .btn-g:hover { border-color: var(--beige); color: #fff; transform: translateY(-2px); }
+
+    .btn-dk {
+      display: inline-block; padding: 15px 36px;
+      border: 1px solid rgba(26,22,20,.25); color: var(--text-dark);
+      font-family: 'Montserrat', sans-serif; font-size: 10px;
+      letter-spacing: .22em; text-transform: uppercase; font-weight: 400;
+      transition: border-color .3s, background .3s, color .3s, transform .3s var(--ease);
+    }
+    .btn-dk:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
+
+    /* ── Decorative horizontal rule ── */
+    .h-rule { height: 1px; background: var(--brown); opacity: .45; width: 0;
+              transition: width 1s var(--ease); }
+    .h-rule.in { width: 56px; }
+    .h-rule-light { background: var(--beige); opacity: .5; }
+    .h-rule-full { width: 100%; opacity: .15; }
+    .h-rule-full.in { width: 100%; }
+
+
+    /* ══════════════════════════════════════════════
+       NAV
+    ══════════════════════════════════════════════ */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      padding: 28px 52px;
+      display: flex; align-items: center; justify-content: space-between;
+      transition: background .45s, padding .45s, backdrop-filter .45s, border-color .45s;
+      border-bottom: 1px solid transparent;
+    }
+    #nav.scrolled {
+      background: rgba(250,248,245,.97);
+      backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
+      padding: 16px 52px;
+      border-color: rgba(26,22,20,.1);
+    }
+    .nav-logo { height: 40px; transition: height .3s; }
+    #nav.scrolled .nav-logo { height: 32px; }
+    .nav-right { display: flex; align-items: center; gap: 28px; }
+    .nav-phone {
+      font-size: 12px; letter-spacing: .14em; color: rgba(240,236,228,.85);
+      transition: color .3s; font-weight: 400;
+    }
+    .nav-phone:hover { color: #fff; }
+    #nav.scrolled .nav-phone { color: var(--text-muted); }
+    #nav.scrolled .nav-phone:hover { color: var(--text-dark); }
+    .nav-cta {
+      padding: 10px 24px; background: var(--green); color: #fff;
+      font-size: 10px; letter-spacing: .2em; text-transform: uppercase; font-weight: 500;
+      transition: background .3s, transform .3s;
+    }
+    .nav-cta:hover { background: #356b4a; transform: translateY(-1px); }
+    @media (max-width: 768px) {
+      #nav { padding: 20px 24px; }
+      #nav.scrolled { padding: 14px 24px; }
+    }
+
+    /* ── Nav centre links ── */
+    .nav-links {
+      display: flex; align-items: center; gap: 2px; flex: 1; justify-content: center;
+    }
+    .nav-link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; letter-spacing: .18em; text-transform: uppercase; font-weight: 500;
+      color: rgba(240,236,228,.82); padding: 8px 14px;
+      transition: color .3s; background: none; border: none; cursor: pointer;
+      white-space: nowrap;
+    }
+    .nav-link:hover { color: #fff; }
+    #nav.scrolled .nav-link { color: var(--text-muted); }
+    #nav.scrolled .nav-link:hover { color: var(--ink); }
+
+    /* Dropdown chevron */
+    .drop-icon {
+      display: inline-block; width: 7px; height: 7px;
+      border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+      transform: rotate(45deg) translateY(-2px);
+      margin-left: 6px; vertical-align: middle;
+      transition: transform .25s cubic-bezier(0.16,1,0.3,1);
+    }
+    .nav-dropdown.open .drop-icon { transform: rotate(-135deg) translateY(2px); }
+
+    /* Dropdown menu */
+    .nav-dropdown { position: relative; }
+    .nav-dropdown-menu {
+      position: absolute; top: calc(100% + 14px); left: 50%;
+      transform: translateX(-50%) translateY(-6px);
+      background: rgba(250,248,245,.98);
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(26,22,20,.08);
+      box-shadow: 0 20px 56px rgba(0,0,0,.14);
+      min-width: 230px;
+      opacity: 0; pointer-events: none;
+      transition: opacity .25s cubic-bezier(0.16,1,0.3,1), transform .25s cubic-bezier(0.16,1,0.3,1);
+    }
+    .nav-dropdown.open .nav-dropdown-menu {
+      opacity: 1; pointer-events: auto;
+      transform: translateX(-50%) translateY(0);
+    }
+    .nav-dropdown-menu a {
+      display: block; padding: 13px 22px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; letter-spacing: .14em; text-transform: uppercase; font-weight: 500;
+      color: var(--text-mid);
+      border-bottom: 1px solid rgba(26,22,20,.06);
+      transition: background .2s, color .2s;
+    }
+    .nav-dropdown-menu a:last-child { border-bottom: none; }
+    .nav-dropdown-menu a:hover { background: rgba(44,87,61,.06); color: var(--green); }
+
+    /* Hamburger */
+    .nav-hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      background: none; border: none; cursor: pointer; padding: 4px;
+    }
+    .nav-hamburger span {
+      display: block; width: 22px; height: 1.5px;
+      background: rgba(240,236,228,.85); transition: background .3s;
+    }
+    #nav.scrolled .nav-hamburger span { background: var(--ink); }
+
+    /* Mobile overlay */
+    .nav-mobile {
+      position: fixed; inset: 0; z-index: 2000;
+      background: var(--brown-d);
+      display: flex; flex-direction: column;
+      padding: 32px 36px 48px;
+      opacity: 0; pointer-events: none; visibility: hidden;
+      transition: opacity .35s cubic-bezier(0.16,1,0.3,1), visibility .35s;
+      overflow-y: auto;
+    }
+    .nav-mobile.open { opacity: 1; pointer-events: auto; visibility: visible; }
+    .nav-mobile-head {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .nav-mobile-logo { height: 32px; opacity: .8; }
+    .nav-mobile-close {
+      background: none; border: none; cursor: pointer;
+      font-size: 28px; color: rgba(195,180,157,.55); line-height: 1;
+      transition: color .3s; font-family: 'Montserrat', sans-serif; font-weight: 300;
+    }
+    .nav-mobile-close:hover { color: #fff; }
+    .nav-mobile-links { display: flex; flex-direction: column; }
+    .nav-mobile-links a {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: clamp(22px, 5vw, 32px); color: rgba(240,236,228,.85);
+      padding: 16px 0; border-bottom: 1px solid rgba(195,180,157,.1);
+      transition: color .3s;
+    }
+    .nav-mobile-links a:hover { color: #fff; }
+    .nav-mobile-links a:last-child { border-bottom: none; }
+    .nav-mobile-label {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 9px; letter-spacing: .32em; text-transform: uppercase;
+      color: rgba(195,180,157,.4); padding: 28px 0 8px; display: block;
+    }
+    .nav-mobile-links .nav-mobile-sub {
+      font-size: clamp(15px, 3.5vw, 20px); color: rgba(195,180,157,.75);
+      padding: 12px 0 12px 16px;
+    }
+    .nav-mobile-links .nav-mobile-cta {
+      margin-top: 32px; color: var(--beige); font-size: clamp(15px,3.5vw,20px);
+      border-bottom: none; border-top: 1px solid rgba(195,180,157,.15); padding-top: 28px;
+    }
+
+    @media (max-width: 960px) {
+      .nav-links { display: none; }
+      .nav-hamburger { display: flex; }
+      .nav-phone { display: none; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       HERO — split layout
+       Left: video (Chase logo appears on left at end)
+       Right: content panel with gradient overlay
+    ══════════════════════════════════════════════ */
+    #hero {
+      position: relative;
+      width: 100%; height: 100vh; min-height: 680px;
+      overflow: hidden;
+      display: flex; align-items: center;
+    }
+
+    /* Fallback atmosphere before video */
+    .hero-atm {
+      position: absolute; inset: 0; z-index: 0;
+      background: linear-gradient(135deg, #1a2c20 0%, #0f1c14 55%, #111d26 100%);
+    }
+
+    /* Video — full bleed background */
+    #hero-video {
+      position: absolute; inset: 0; z-index: 1;
+      width: 100%; height: 100%;
+      object-fit: cover; object-position: center;
+      opacity: 0; transition: opacity 1.4s ease;
+    }
+    #hero-video.loaded { opacity: 1; }
+
+    /* Gradient overlay: transparent LEFT → dark RIGHT (for text readability)
+       Left clear = Chase logo is visible in video
+       Right dark = text panel readable */
+    .hero-overlay {
+      position: absolute; inset: 0; z-index: 2;
+      pointer-events: none; opacity: 0;
+      transition: opacity 1.8s cubic-bezier(0.16,1,0.3,1);
+      background:
+        linear-gradient(to right,
+          rgba(8,16,12,0)    0%,
+          rgba(8,16,12,0)    30%,
+          rgba(8,16,12,.6)   50%,
+          rgba(8,16,12,.92)  68%,
+          rgba(8,16,12,.97)  100%
+        ),
+        linear-gradient(to top,
+          rgba(8,16,12,.7)   0%,
+          rgba(8,16,12,0)    30%
+        );
+    }
+    .hero-overlay.overlay-in { opacity: 1; }
+
+    /* Content panel — right 52% */
+    .hero-content {
+      position: absolute;
+      right: 0; top: 0; bottom: 0;
+      width: 52%; z-index: 3;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      padding: 100px 80px 80px 56px;
+    }
+
+    /* Text animations: slide from right */
+    .hero-eyebrow {
+      font-size: 10px; letter-spacing: .35em; text-transform: uppercase;
+      color: var(--beige); margin-bottom: 0;
+      opacity: 0; transform: translateX(22px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+    .hero-h1 {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: clamp(38px, 5.5vw, 80px);
+      line-height: 1.03; letter-spacing: -.03em;
+      color: #fff; margin: 24px 0 0;
+      opacity: 0; transform: translateX(22px);
+      transition: opacity .85s var(--ease), transform .85s var(--ease);
+      transition-delay: .15s;
+    }
+    .hero-rule {
+      width: 0; height: 1px;
+      background: linear-gradient(to right, var(--beige), transparent);
+      margin: 32px 0;
+      transition: width 1s var(--ease); transition-delay: .42s;
+    }
+    .hero-sub {
+      font-size: clamp(14px, 1.5vw, 17px); line-height: 1.85; font-weight: 300;
+      color: rgba(240,236,228,.78); max-width: 440px;
+      opacity: 0; transform: translateX(22px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+      transition-delay: .58s;
+    }
+    .hero-ctas {
+      display: flex; gap: 14px; flex-wrap: wrap; margin-top: 44px;
+      opacity: 0; transform: translateX(22px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+      transition-delay: .75s;
+    }
+    /* Trigger class */
+    .bp-go .hero-eyebrow,
+    .bp-go .hero-h1,
+    .bp-go .hero-sub,
+    .bp-go .hero-ctas { opacity: 1; transform: translateX(0); }
+    .bp-go .hero-rule  { width: 52px; }
+
+    /* Vertical label — left side */
+    .hero-vert {
+      position: absolute; left: 44px; bottom: 52px; z-index: 4;
+      writing-mode: vertical-rl; text-orientation: mixed; transform: rotate(180deg);
+      font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+      color: rgba(195,180,157,.45); font-weight: 400;
+      opacity: 0; transition: opacity .6s; transition-delay: 1.2s;
+    }
+    .bp-go .hero-vert { opacity: 1; }
+
+    /* Scroll indicator */
+    .scroll-ind {
+      position: absolute; bottom: 40px; right: 80px; z-index: 4;
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      opacity: 0; transition: opacity .7s;
+    }
+    .scroll-ind.show { opacity: 1; }
+    .scroll-ind span {
+      font-size: 9px; letter-spacing: .3em; color: rgba(195,180,157,.5); text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px; height: 40px;
+      background: linear-gradient(to bottom, var(--beige), transparent);
+      animation: sline 2s ease infinite;
+    }
+    @keyframes sline {
+      0%   { opacity: 0; transform: scaleY(.3) translateY(-8px); }
+      55%  { opacity: .8; }
+      100% { opacity: 0; transform: scaleY(1) translateY(10px); }
+    }
+
+    /* Mobile hero */
+    @media (max-width: 900px) {
+      .hero-content {
+        width: 100%; padding: 100px 28px 80px;
+        align-items: center; text-align: center; justify-content: center;
+      }
+      .hero-overlay {
+        background:
+          linear-gradient(to top, rgba(8,16,12,.85) 0%, rgba(8,16,12,.4) 100%);
+      }
+      .hero-sub { max-width: 100%; }
+      .hero-ctas { justify-content: center; }
+      .hero-vert { display: none; }
+      .scroll-ind { right: 50%; transform: translateX(50%); }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       TRUST BAR
+    ══════════════════════════════════════════════ */
+    #trust {
+      background: var(--green);
+      padding: 0 52px;
+    }
+    .trust-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: stretch; justify-content: center;
+    }
+    .trust-item {
+      flex: 1;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 10px; letter-spacing: .16em; color: rgba(240,236,228,.85);
+      text-transform: uppercase; font-weight: 400;
+      padding: 20px 20px; white-space: nowrap;
+      border-right: 1px solid rgba(240,236,228,.15);
+    }
+    .trust-item:last-child { border-right: none; }
+    .trust-item strong { color: #fff; font-weight: 500; margin-right: 8px; font-family: 'Hoefler Text', Georgia, serif; font-size: 13px; letter-spacing: 0; }
+    @media (max-width: 900px) {
+      #trust { padding: 0 24px; }
+      .trust-inner { flex-wrap: wrap; }
+      .trust-item {
+        width: 50%; flex: none; padding: 16px 12px;
+        border-right: 1px solid rgba(240,236,228,.15);
+        border-bottom: 1px solid rgba(240,236,228,.15);
+        white-space: normal; text-align: center; font-size: 9px;
+      }
+      .trust-item:nth-child(2) { border-right: none; }
+      .trust-item:nth-child(3),
+      .trust-item:nth-child(4) { border-bottom: none; }
+      .trust-item:nth-child(4) { border-right: none; }
+    }
+    @media (max-width: 480px) {
+      .trust-item { width: 100%; border-right: none; }
+      .trust-item:last-child { border-bottom: none; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       WHO WE BUILD FOR — linen + window image
+    ══════════════════════════════════════════════ */
+    #problem {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--linen);
+    }
+    .problem-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .problem-text .section-title { color: var(--ink); margin-bottom: 28px; }
+    .problem-body {
+      font-size: 16px; line-height: 1.9; color: var(--text-mid); font-weight: 300;
+    }
+    .problem-body p + p { margin-top: 18px; }
+    .problem-body strong { color: var(--ink); font-weight: 500; }
+    .problem-cta { margin-top: 36px; }
+    .problem-img {
+      position: relative; height: 560px; overflow: hidden;
+    }
+    .problem-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .8s var(--ease);
+    }
+    .problem-img:hover img { transform: scale(1.03); }
+    /* Subtle vignette fade to linen on left */
+    .problem-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to left, transparent 60%, var(--linen) 100%);
+    }
+    @media (max-width: 1024px) {
+      .problem-grid { grid-template-columns: 1fr; gap: 48px; }
+      .problem-img { height: 380px; order: -1; }
+      .problem-img::after { background: linear-gradient(to top, var(--linen) 0%, transparent 40%); }
+    }
+    @media (max-width: 768px) { #problem { padding: 80px 24px; } }
+
+
+    /* ══════════════════════════════════════════════
+       STATS — animated counters
+    ══════════════════════════════════════════════ */
+    #stats {
+      background: var(--linen);
+      border-top: 1px solid var(--line-d);
+      padding: clamp(64px,7vw,96px) 52px;
+    }
+    .stats-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 0;
+    }
+    .stat-item {
+      text-align: center;
+      padding: 32px 40px;
+      border-right: 1px solid var(--line-d);
+    }
+    .stat-item:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: clamp(44px,6vw,80px);
+      line-height: 1; color: var(--green);
+      letter-spacing: -.03em;
+      display: block; margin-bottom: 12px;
+    }
+    .stat-label {
+      font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--text-muted); font-weight: 400;
+    }
+    @media (max-width: 768px) {
+      #stats { padding: 64px 24px; }
+      .stats-inner { grid-template-columns: 1fr; }
+      .stat-item { border-right: none; border-bottom: 1px solid var(--line-d); padding: 28px 20px; }
+      .stat-item:last-child { border-bottom: none; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       SERVICES — deep forest green, numbered grid
+    ══════════════════════════════════════════════ */
+    #services {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--green-d);
+      position: relative; overflow: hidden;
+    }
+    /* Subtle wood texture overlay */
+    #services::before {
+      content: ''; position: absolute; inset: 0; z-index: 0;
+      background-image: url('graphic-elements-other-images/wood-log-texture-horizontal.jpg');
+      background-size: cover; background-position: center;
+      opacity: 0.04; mix-blend-mode: overlay;
+    }
+    .services-hd {
+      max-width: 1200px; margin: 0 auto 68px;
+      position: relative; z-index: 1;
+    }
+    .services-hd .section-title { color: var(--text-light); margin-top: 16px; }
+    .services-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: rgba(195,180,157,.1);
+      border: 1px solid rgba(195,180,157,.1);
+      position: relative; z-index: 1;
+    }
+    .svc-card {
+      background: var(--green-d);
+      padding: 0; overflow: hidden;
+      transition: background .35s;
+      position: relative;
+    }
+    .svc-card:hover { background: rgba(44,87,61,.18); }
+    .svc-img {
+      height: 200px; overflow: hidden; position: relative;
+    }
+    .svc-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(.65) saturate(.85);
+      transition: transform .7s var(--ease), filter .5s;
+    }
+    .svc-card:hover .svc-img img { transform: scale(1.07); filter: brightness(.75) saturate(1); }
+    /* Green tint overlay on image */
+    .svc-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, var(--green-d) 0%, rgba(28,48,40,.5) 50%, rgba(28,48,40,.1) 100%);
+    }
+    .svc-num {
+      position: absolute; top: 16px; right: 18px;
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 13px; font-style: italic;
+      color: rgba(195,180,157,.5); z-index: 1; letter-spacing: .05em;
+    }
+    .svc-body { padding: 26px 26px 32px; }
+    .svc-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 20px; color: var(--text-light); margin-bottom: 10px;
+    }
+    .svc-desc {
+      font-size: 13px; line-height: 1.8; color: rgba(195,180,157,.6); font-weight: 300;
+    }
+    .svc-arrow {
+      display: inline-block; margin-top: 16px;
+      font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+      color: rgba(195,180,157,.45); font-weight: 400;
+      transition: color .3s, letter-spacing .3s;
+    }
+    .svc-card:hover .svc-arrow { color: var(--beige); letter-spacing: .28em; }
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 640px) {
+      #services { padding: 80px 0; }
+      .services-hd { padding: 0 24px; margin-bottom: 48px; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       WHY CHASE — full log slab floating on snow
+    ══════════════════════════════════════════════ */
+    #why {
+      padding: clamp(100px,12vw,160px) 52px;
+      background: var(--snow);
+      position: relative;
+      overflow: visible; /* let drop-shadow bleed outside section bounds */
+      margin-top: 80px;
+    }
+    #why::before { display: none; }
+    #why::after { display: none; }
+    /* Log slab image — contained so full shape is visible */
+    .why-log-slab {
+      position: absolute;
+      inset: 0;
+      width: 100%; height: 100%;
+      object-fit: contain;
+      z-index: 0;
+      /* brightness darkens for readability; drop-shadow follows the PNG transparency */
+      filter:
+        brightness(0.58)
+        drop-shadow(0 28px 80px rgba(14,6,2,.72))
+        drop-shadow(0 8px 24px rgba(14,6,2,.50))
+        drop-shadow(0 2px 6px rgba(14,6,2,.30));
+    }
+    /* Ring hidden — redundant texture on top of the wood grain photo */
+    .why-ring { display: none; }
+    .why-inner {
+      max-width: 1200px; margin: 0 auto;
+      position: relative; z-index: 3;
+    }
+    .why-header {
+      margin-bottom: 72px;
+      text-align: center;
+    }
+    .why-header .section-title {
+      color: #fff; margin-top: 16px;
+      text-shadow: 0 2px 24px rgba(8,3,1,.7), 0 1px 4px rgba(8,3,1,.5);
+    }
+    .why-header .eyebrow-light {
+      color: rgba(240,236,228,.95); letter-spacing: .28em;
+      text-shadow: 0 1px 12px rgba(8,3,1,.8);
+    }
+    .why-cols {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      border-top: 1px solid rgba(195,180,157,.55);
+    }
+    .why-col {
+      padding: 52px 44px;
+      border-right: 1px solid rgba(195,180,157,.35);
+      transition: background .35s ease;
+      cursor: default;
+    }
+    .why-col:last-child { border-right: none; padding-right: 0; }
+    .why-col:first-child { padding-left: 0; }
+    .why-col:hover { background: rgba(160,125,103,.15); }
+    .why-col:hover .why-col-num { color: var(--brown); }
+    .why-col:hover .why-col-title { color: var(--beige); }
+    .why-col-num {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 12px; font-style: italic;
+      color: rgba(220,200,175,.95); display: block; margin-bottom: 28px;
+      transition: color .35s ease;
+      text-shadow: 0 0 12px rgba(8,3,1,1), 0 1px 4px rgba(8,3,1,1), 0 0 32px rgba(8,3,1,.9);
+    }
+    .why-col-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: clamp(20px,2.2vw,26px); color: #fff; margin-bottom: 16px; line-height: 1.25;
+      font-weight: bold;
+      transition: color .35s ease;
+      text-shadow: 0 2px 20px rgba(8,3,1,1), 0 1px 6px rgba(8,3,1,1), 0 0 40px rgba(8,3,1,.8);
+    }
+    .why-col-body {
+      font-size: 14px; line-height: 1.9;
+      color: rgba(240,236,228,.98); font-weight: 400;
+      text-shadow: 0 1px 10px rgba(8,3,1,1), 0 0 24px rgba(8,3,1,.85);
+    }
+    @media (max-width: 900px) {
+      #why { padding: 100px 24px; margin-top: 48px; }
+      .why-cols { grid-template-columns: 1fr; }
+      .why-col {
+        border-right: none; border-bottom: 1px solid rgba(195,180,157,.2);
+        padding: 40px 0;
+      }
+      .why-col:last-child { border-bottom: none; }
+      .why-ring { display: none; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       PORTFOLIO — linen, editorial masonry
+    ══════════════════════════════════════════════ */
+    #portfolio {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--snow);
+    }
+    .port-hd {
+      max-width: 1200px; margin: 0 auto 52px;
+      display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px;
+    }
+    .port-hd .section-title { color: var(--ink); margin-top: 14px; }
+    .port-link {
+      font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+      color: var(--green); font-weight: 500;
+      border-bottom: 1px solid rgba(44,87,61,.35); padding-bottom: 4px;
+      transition: color .3s, border-color .3s;
+    }
+    .port-link:hover { color: var(--ink); border-color: var(--ink); }
+    .port-grid {
+      max-width: 1200px; margin: 0 auto;
+      columns: 3; column-gap: 12px;
+    }
+    .port-item {
+      break-inside: avoid; margin-bottom: 12px;
+      position: relative; overflow: hidden;
+    }
+    .port-item img {
+      width: 100%; display: block;
+      filter: brightness(.9) saturate(.9);
+      transition: transform .7s var(--ease), filter .5s;
+    }
+    .port-item:hover img { transform: scale(1.04); filter: brightness(.7) saturate(1); }
+    .port-ov {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(28,48,40,.55) 0%, transparent 55%);
+      opacity: 0; transition: opacity .4s;
+    }
+    .port-item:hover .port-ov { opacity: 1; }
+    @media (max-width: 1024px) { .port-grid { columns: 2; } }
+    @media (max-width: 768px) { #portfolio { padding: 80px 24px; } .port-grid { columns: 1; } }
+
+
+    /* ══════════════════════════════════════════════
+       PROCESS — white, editorial timeline
+    ══════════════════════════════════════════════ */
+    #process {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: #fff;
+    }
+    .process-wrap { max-width: 800px; margin: 0 auto; }
+    .process-hd { margin-bottom: 80px; }
+    .process-hd .section-title { color: var(--ink); margin-top: 16px; }
+    .proc-timeline { position: relative; padding-left: 104px; }
+    .proc-track {
+      position: absolute; left: 32px; top: 8px; bottom: 8px;
+      width: 1px; background: rgba(26,22,20,.1);
+    }
+    .proc-fill {
+      position: absolute; left: 32px; top: 8px;
+      width: 1px; height: 0; background: var(--green);
+      transition: height .5s var(--ease);
+    }
+    .proc-step {
+      position: relative; padding-bottom: 64px;
+    }
+    .proc-step:last-of-type { padding-bottom: 0; }
+    /* Wood ring step marker */
+    .proc-marker {
+      position: absolute;
+      left: -104px; top: -2px;
+      width: 68px; height: 68px;
+      display: flex; align-items: center; justify-content: center;
+      transform: scale(0);
+      transition: transform .5s var(--ease);
+      background: #fff;
+      border-radius: 50%;
+      box-shadow: 0 0 0 7px #fff;
+    }
+    .proc-step.in .proc-marker { transform: scale(1); }
+    .proc-ring {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      filter: sepia(0.55) saturate(1.2) brightness(0.72);
+      opacity: 0.95;
+      pointer-events: none;
+    }
+    /* Seal disc — small solid circle behind the number */
+    .proc-marker::after {
+      content: '';
+      position: absolute;
+      width: 32px; height: 32px;
+      background: var(--brown-d);
+      border-radius: 50%;
+      z-index: 1; pointer-events: none;
+    }
+    .proc-num {
+      position: relative; z-index: 2;
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 14px; font-style: italic; font-weight: normal;
+      color: var(--linen); letter-spacing: .04em;
+      line-height: 1;
+    }
+    .proc-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 22px; color: var(--ink); margin-bottom: 10px;
+    }
+    .proc-desc {
+      font-size: 14px; line-height: 1.85; color: var(--text-mid); font-weight: 300;
+      max-width: 560px;
+    }
+    .proc-cta { text-align: center; margin-top: 72px; }
+    .proc-cta p {
+      font-size: 14px; color: var(--text-muted); margin-bottom: 28px; line-height: 1.7;
+      font-style: italic; font-family: 'Hoefler Text', Georgia, serif;
+    }
+    @media (max-width: 768px) {
+      #process { padding: 80px 24px; }
+      .proc-timeline { padding-left: 72px; }
+      .proc-track, .proc-fill { left: 24px; }
+      .proc-marker { left: -72px; width: 52px; height: 52px; }
+      .proc-num { font-size: 14px; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       ABOUT MIKE — deep green, split
+    ══════════════════════════════════════════════ */
+    #about {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--brown-d);
+    }
+    .about-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+    }
+    .about-img { position: relative; height: 600px; overflow: hidden; }
+    .about-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(.78) saturate(.9);
+      transition: transform .8s var(--ease);
+    }
+    .about-img:hover img { transform: scale(1.03); }
+    .about-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to right, transparent 55%, var(--brown-d) 100%),
+                  linear-gradient(to top, var(--brown-d) 0%, transparent 25%);
+    }
+    .about-text .section-title { color: #fff; margin-bottom: 28px; }
+    .about-name-line {
+      display: inline-block; position: relative;
+    }
+    .about-name-line::after {
+      content: ''; position: absolute; bottom: -3px; left: 0; right: 0;
+      height: 1px; background: rgba(195,180,157,.4);
+    }
+    .about-body {
+      font-size: 16px; line-height: 1.95; color: rgba(195,180,157,.7); font-weight: 300;
+    }
+    .about-body p + p { margin-top: 18px; }
+    .about-sig {
+      margin-top: 32px;
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 15px; font-style: italic; color: var(--beige);
+    }
+    @media (max-width: 1024px) {
+      .about-grid { grid-template-columns: 1fr; gap: 52px; }
+      .about-img { height: 380px; }
+      .about-img::after { background: linear-gradient(to top, var(--brown-d) 0%, transparent 35%); }
+    }
+    @media (max-width: 768px) { #about { padding: 80px 24px; } }
+
+
+    /* ══════════════════════════════════════════════
+       TESTIMONIAL — linen, large single quote
+    ══════════════════════════════════════════════ */
+    #testimonials {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--linen);
+    }
+    .test-hd { max-width: 1200px; margin: 0 auto 60px; }
+    .test-hd .section-title { color: var(--ink); margin-top: 16px; }
+    .test-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
+    }
+    .test-card {
+      background: #fff;
+      border-top: 2px solid var(--green);
+      padding: 36px 30px 32px;
+    }
+    .test-mark {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 56px; line-height: .7; color: var(--green);
+      opacity: .25; display: block; margin-bottom: 16px;
+    }
+    .test-quote {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 17px; font-style: italic; line-height: 1.7;
+      color: var(--ink); margin-bottom: 24px;
+    }
+    .test-attr {
+      font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+      color: var(--text-muted); font-weight: 400;
+    }
+    @media (max-width: 900px) {
+      .test-grid { grid-template-columns: 1fr; gap: 18px; }
+    }
+    @media (max-width: 768px) { #testimonials { padding: 80px 24px; } }
+
+
+    /* ══════════════════════════════════════════════
+       FAQ — white, clean
+    ══════════════════════════════════════════════ */
+    #faq {
+      padding: clamp(64px,8vw,112px) 52px;
+      background: #fff;
+      border-top: 1px solid rgba(26,22,20,.08);
+    }
+    .faq-inner {
+      max-width: 800px; margin: 0 auto;
+    }
+    .faq-hd { margin-bottom: 56px; }
+    .faq-hd .section-title { color: var(--ink); margin-top: 14px; }
+    .faq-item {
+      border-bottom: 1px solid rgba(26,22,20,.1);
+      padding: 28px 0;
+    }
+    .faq-item:first-of-type { border-top: 1px solid rgba(26,22,20,.1); }
+    .faq-q {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 19px; color: var(--ink); cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center; gap: 20px;
+      list-style: none;
+    }
+    .faq-q::-webkit-details-marker { display: none; }
+    .faq-icon {
+      width: 28px; height: 28px; flex-shrink: 0;
+      border: 1px solid rgba(26,22,20,.2); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; color: var(--text-muted); font-family: sans-serif;
+      transition: background .3s, color .3s;
+    }
+    details[open] .faq-icon { background: var(--green); color: #fff; border-color: var(--green); }
+    .faq-a {
+      font-size: 15px; line-height: 1.85; color: var(--text-mid);
+      font-weight: 300; padding-top: 18px; max-width: 680px;
+    }
+    @media (max-width: 768px) { #faq { padding: 64px 24px; } }
+
+
+    /* ══════════════════════════════════════════════
+       CONTACT — dark brown, elevated form
+    ══════════════════════════════════════════════ */
+    #contact {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--brown-d);
+      position: relative; overflow: hidden;
+    }
+    #contact::before {
+      content: ''; position: absolute; inset: 0; z-index: 0;
+      background-image: url('graphic-elements-other-images/idaho-snow-woods-vertical.jpg');
+      background-size: cover; background-position: center;
+      opacity: 0.055; mix-blend-mode: overlay;
+    }
+    .contact-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 88px; align-items: start;
+      position: relative; z-index: 1;
+    }
+    .contact-left .section-title { color: #fff; margin-top: 16px; }
+    .contact-body {
+      font-size: 16px; line-height: 1.9;
+      color: rgba(195,180,157,.65); font-weight: 300;
+      margin-top: 24px;
+    }
+    .contact-phone {
+      display: block; margin-top: 40px;
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 28px; color: var(--beige); letter-spacing: .02em;
+      transition: color .3s;
+    }
+    .contact-phone:hover { color: #fff; }
+    .contact-divider {
+      display: flex; align-items: center; gap: 18px; margin-top: 32px;
+    }
+    .contact-divider hr { flex: 1; border: none; border-top: 1px solid rgba(195,180,157,.2); }
+    .contact-divider span {
+      font-size: 9px; letter-spacing: .25em; color: rgba(195,180,157,.4); text-transform: uppercase;
+    }
+    .contact-info {
+      margin-top: 32px;
+      font-size: 13px; line-height: 2; color: rgba(195,180,157,.55); font-weight: 300;
+    }
+    /* Form */
+    .c-form { display: flex; flex-direction: column; gap: 14px; }
+    .f-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .f-field { display: flex; flex-direction: column; gap: 7px; }
+    .f-label {
+      font-size: 9px; letter-spacing: .26em; text-transform: uppercase;
+      color: rgba(195,180,157,.5); font-weight: 400;
+    }
+    .f-input, .f-ta {
+      background: rgba(255,255,255,.09); border: 1px solid rgba(195,180,157,.3);
+      color: #fff; padding: 14px 16px;
+      font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300;
+      outline: none; width: 100%;
+      transition: border-color .3s, background .3s;
+    }
+    .f-input::placeholder, .f-ta::placeholder { color: rgba(195,180,157,.4); }
+    .f-input:focus, .f-ta:focus { border-color: var(--beige); background: rgba(255,255,255,.14); }
+    .f-ta { resize: vertical; min-height: 118px; }
+    .f-sub {
+      width: 100%; padding: 16px;
+      background: var(--green); color: #fff;
+      font-family: 'Montserrat', sans-serif; font-size: 10px;
+      letter-spacing: .25em; text-transform: uppercase; font-weight: 500;
+      border: none; cursor: pointer;
+      transition: background .3s, transform .3s;
+    }
+    .f-sub:hover { background: #356b4a; transform: translateY(-2px); }
+    @media (max-width: 1024px) {
+      .contact-inner { grid-template-columns: 1fr; gap: 56px; }
+      #contact { padding: 80px 24px; }
+    }
+    @media (max-width: 640px) {
+      .f-row { grid-template-columns: 1fr; }
+    }
+
+
+    /* ══════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════ */
+    footer {
+      padding: 48px 52px;
+      background: #0f1710;
+      border-top: 1px solid rgba(195,180,157,.07);
+    }
+    .foot-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 24px;
+    }
+    .foot-logo { height: 32px; opacity: .75; }
+    .foot-info {
+      font-size: 12px; font-weight: 300;
+      color: rgba(195,180,157,.45); line-height: 1.8; text-align: center;
+    }
+    .foot-info a { color: rgba(195,180,157,.55); transition: color .3s; }
+    .foot-info a:hover { color: var(--beige); }
+    .foot-copy {
+      font-size: 10px; color: rgba(195,180,157,.25); letter-spacing: .1em;
+    }
+    @media (max-width: 768px) {
+      footer { padding: 40px 24px; }
+      .foot-inner { flex-direction: column; align-items: center; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- ════ NAV ════ -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="/" aria-label="Chase Construction home">
+    <img src="brand-logo/logo-white.svg" alt="Chase Construction LLC" class="nav-logo" id="nav-logo">
+  </a>
+  <div class="nav-links">
+    <div class="nav-dropdown">
+      <button class="nav-link nav-link--drop" id="services-btn" aria-haspopup="true" aria-expanded="false">
+        Services <span class="drop-icon" aria-hidden="true"></span>
+      </button>
+      <div class="nav-dropdown-menu" id="services-menu">
+        <a href="custom-log-homes.html">Custom Log Homes</a>
+        <a href="big-timber-framing.html">Big Timber Framing</a>
+        <a href="traditional-framing.html">Traditional Framing</a>
+        <a href="log-home-restorations.html">Log Home Restorations</a>
+        <a href="custom-log-finishes-siding.html">Custom Log Finishes &amp; Siding</a>
+        <a href="milling-and-more.html">Milling &amp; More</a>
+      </div>
+    </div>
+    <a href="process.html" class="nav-link">Process</a>
+    <a href="about.html" class="nav-link">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:2088978100" class="nav-phone">208-897-8100</a>
+    <a href="#contact" class="nav-cta">Start Your Build</a>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-mobile" id="nav-mobile" aria-hidden="true">
+  <div class="nav-mobile-head">
+    <img src="brand-logo/logo-white.svg" class="nav-mobile-logo" alt="Chase Construction">
+    <button class="nav-mobile-close" id="nav-mobile-close" aria-label="Close menu">&#x2715;</button>
+  </div>
+  <nav class="nav-mobile-links">
+    <a href="/">Home</a>
+    <span class="nav-mobile-label">Services</span>
+    <a href="custom-log-homes.html" class="nav-mobile-sub">Custom Log Homes</a>
+    <a href="big-timber-framing.html" class="nav-mobile-sub">Big Timber Framing</a>
+    <a href="traditional-framing.html" class="nav-mobile-sub">Traditional Framing</a>
+    <a href="log-home-restorations.html" class="nav-mobile-sub">Log Home Restorations</a>
+    <a href="custom-log-finishes-siding.html" class="nav-mobile-sub">Custom Log Finishes &amp; Siding</a>
+    <a href="milling-and-more.html" class="nav-mobile-sub">Milling &amp; More</a>
+    <a href="process.html">Process</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="nav-mobile-cta">Start Your Build →</a>
+  </nav>
+</div>
+
+
+<!-- ════ HERO — video plays, pauses on last frame (Chase logo on left), text panel on right ════ -->
+<section id="hero" aria-label="Hero">
+
+  <div class="hero-atm"></div>
+
+  <video id="hero-video" autoplay muted playsinline preload="auto" poster="ai-generated-images/hero-poster.jpg">
+    <source src="ai-generated-images/hero-section-video-chase-construction-logo-on-the-left.mp4" type="video/mp4">
+  </video>
+
+  <!-- Gradient: transparent LEFT (logo visible) → dark RIGHT (text readable) -->
+  <div class="hero-overlay" id="hero-overlay"></div>
+
+  <!-- Right-side content panel -->
+  <div class="hero-content" id="hero-content">
+    <span class="hero-eyebrow">Chase Construction LLC &nbsp;/&nbsp; Sun Valley, Idaho</span>
+    <h1 class="hero-h1">Sun Valley's<br>Log Cabin<br>Builders</h1>
+    <div class="hero-rule" id="hero-rule"></div>
+    <p class="hero-sub">Some homes are designed to impress. A Chase home is built to endure — the land, the seasons, and every generation that follows.</p>
+    <div class="hero-ctas">
+      <a href="#contact" class="btn-p">Start Your Build</a>
+      <a href="tel:2088978100" class="btn-g">208-897-8100</a>
+    </div>
+  </div>
+
+  <!-- Subtle left-side label -->
+  <div class="hero-vert" id="hero-vert">Bellevue, Idaho &nbsp;·&nbsp; Wood River Valley</div>
+
+  <!-- Scroll indicator -->
+  <div class="scroll-ind" id="scroll-ind">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ════ TRUST BAR ════ -->
+<section id="trust" aria-label="Trust credentials">
+  <div class="trust-inner reveal">
+    <div class="trust-item"><strong>#1</strong> Log Home Builder in the Valley</div>
+    <div class="trust-item"><strong>30+</strong> Years of Experience</div>
+    <div class="trust-item"><strong>Sun Valley, Ketchum &amp; Hailey</strong></div>
+    <div class="trust-item"><strong>Full-Service</strong> Remote Management</div>
+  </div>
+</section>
+
+
+<!-- ════ WHO WE BUILD FOR ════ -->
+<section id="problem" aria-labelledby="prob-heading">
+  <div class="problem-grid">
+
+    <div class="problem-text">
+      <span class="eyebrow reveal">Who We Build For</span>
+      <h2 id="prob-heading" class="section-title reveal d1">Building from out of state<br>shouldn't feel like a second job.</h2>
+      <div class="h-rule reveal d2" style="margin: 24px 0;"></div>
+      <div class="problem-body reveal d2">
+        <p>Most of our clients live in California, Texas, or the Pacific Northwest. They fell in love with Sun Valley — the skiing, the landscape, the lifestyle — and decided it was time to build.</p>
+        <p>What they quickly discovered is that managing a construction project remotely, across time zones, with a team they've never met, is one of the most stressful things they've ever done.</p>
+        <p><strong>That's exactly why Chase Construction exists.</strong> We are your eyes, your voice, and your advocate on the ground — from the first log to the final walkthrough. You decide. We execute.</p>
+      </div>
+      <div class="problem-cta reveal d3">
+        <a href="#process" class="btn-dk">How It Works</a>
+      </div>
+    </div>
+
+    <!-- The window image: looking through a log cabin window at Idaho mountains -->
+    <div class="problem-img reveal d3">
+      <img src="ai-generated-images/openart-image_CXw71ZFV_1775134074971_raw.jpg"
+           alt="Looking through a log cabin window at the Idaho mountains — the Chase Construction experience"
+           loading="lazy">
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════ STATS ════ -->
+<section id="stats" aria-label="About Chase Construction">
+  <div class="stats-inner">
+    <div class="stat-item reveal">
+      <span class="stat-num" data-target="30" data-suffix="+">0</span>
+      <span class="stat-label">Years in Sun Valley</span>
+    </div>
+    <div class="stat-item reveal d2">
+      <span class="stat-num" data-target="80" data-suffix="%+">0</span>
+      <span class="stat-label">Log home projects in the area</span>
+    </div>
+    <div class="stat-item reveal d3">
+      <span class="stat-num" data-prefix="$" data-target="10" data-suffix="M+">0</span>
+      <span class="stat-label">Largest project range</span>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ SERVICES ════ -->
+<section id="services" aria-labelledby="svc-heading">
+  <div class="services-hd">
+    <span class="eyebrow eyebrow-light reveal">What We Build</span>
+    <h2 id="svc-heading" class="section-title reveal d1">Built for the Mountain Lifestyle</h2>
+  </div>
+  <div class="services-grid">
+
+    <article class="svc-card reveal d1">
+      <div class="svc-img">
+        <img src="company-photos/JNXX8169.JPG" alt="Custom log home construction" loading="lazy">
+        <span class="svc-num">01</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Custom Log Homes</h3>
+        <p class="svc-desc">Full-service luxury log home construction from first design conversation to final walkthrough. Built for the mountain lifestyle, made to last generations.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+    <article class="svc-card reveal d2">
+      <div class="svc-img">
+        <img src="company-photos/timber trusses.jpg" alt="Big timber framing" loading="lazy">
+        <span class="svc-num">02</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Big Timber Framing</h3>
+        <p class="svc-desc">Structural timber framing that gives a home its bones — and its character. The work that takes genuine expertise at the scale luxury builds demand.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+    <article class="svc-card reveal d3">
+      <div class="svc-img">
+        <img src="company-photos/trusses.jpg" alt="Traditional framing" loading="lazy">
+        <span class="svc-num">03</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Traditional Framing</h3>
+        <p class="svc-desc">High-quality residential framing for complex builds that require structural integrity and architectural precision. Serving the Sun Valley corridor toward Boise.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+    <article class="svc-card reveal d4">
+      <div class="svc-img">
+        <img src="company-photos/JKLM0820.JPG" alt="Log home restoration" loading="lazy">
+        <span class="svc-num">04</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Log Home Restorations</h3>
+        <p class="svc-desc">Structural repairs and full restorations of existing log cabins. We treat every historic home with the same discipline we bring to new construction.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+    <article class="svc-card reveal d5">
+      <div class="svc-img">
+        <img src="company-photos/JHYC2195.JPG" alt="Custom log finishes and siding" loading="lazy">
+        <span class="svc-num">05</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Custom Log Finishes &amp; Siding</h3>
+        <p class="svc-desc">Log siding, chinking, staining, and finish work. The exterior of a log home is its first statement and its most important protection. We treat it as both.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+    <article class="svc-card reveal d6">
+      <div class="svc-img">
+        <img src="company-photos/XBAJ2304.JPG" alt="Milling and custom lumber" loading="lazy">
+        <span class="svc-num">06</span>
+      </div>
+      <div class="svc-body">
+        <h3 class="svc-title">Milling &amp; More</h3>
+        <p class="svc-desc">On-site bandsaw and circular milling, custom cut lumber, cabinetry, and specialty builds. Some of what a luxury log home requires can't be purchased. It has to be made.</p>
+        <span class="svc-arrow">Learn more →</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+<!-- ════ WHY CHASE ════ -->
+<section id="why" aria-labelledby="why-heading">
+  <img src="graphic-elements-other-images/wood-log-sliced-section-bg.png" class="why-log-slab" alt="" aria-hidden="true">
+  <img src="graphic-elements-other-images/wood-ring-1.svg" class="why-ring" id="why-ring" alt="" aria-hidden="true">
+  <div class="why-inner">
+    <div class="why-header">
+      <span class="eyebrow eyebrow-light reveal">Why Clients Choose Chase</span>
+      <h2 id="why-heading" class="section-title section-title-light reveal d1">Built different.<br>By design.</h2>
+    </div>
+    <div class="why-cols">
+      <div class="why-col reveal d1">
+        <span class="why-col-num">One</span>
+        <h3 class="why-col-title">One Specialist</h3>
+        <p class="why-col-body">Log construction is a discipline. Not every builder has mastered it. We've spent decades doing almost nothing else — and it shows in how a Chase home fits together.</p>
+      </div>
+      <div class="why-col reveal d2">
+        <span class="why-col-num">Two</span>
+        <h3 class="why-col-title">One Point of Contact</h3>
+        <p class="why-col-body">Mike leads every project personally. You won't be handed off to a project manager you've never met. You'll hear from the person doing the work.</p>
+      </div>
+      <div class="why-col reveal d3">
+        <span class="why-col-num">Three</span>
+        <h3 class="why-col-title">Built for Clients Who Aren't Here</h3>
+        <p class="why-col-body">Most of our clients live in California, Texas, or the Pacific Northwest. They build remotely. We've made that seamless — because we've done it this way for years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ PORTFOLIO ════ -->
+<section id="portfolio" aria-labelledby="port-heading">
+  <div class="port-hd">
+    <div>
+      <span class="eyebrow reveal">Recent Builds</span>
+      <h2 id="port-heading" class="section-title reveal d1">Built Across the Wood River Valley</h2>
+    </div>
+    <a href="#contact" class="port-link reveal d2">Inquire About Your Build →</a>
+  </div>
+  <div class="port-grid">
+    <div class="port-item reveal d1"><img src="company-photos/JHYC2195.JPG" alt="Chase Construction project" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="ai-generated-images/openart-image_mzFapF5L_1775231371608_raw.jpg" alt="Log cabin in the Idaho mountains" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d1"><img src="company-photos/JKLM0820.JPG" alt="Log home construction" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d3"><img src="company-photos/timber trusses.jpg" alt="Custom timber trusses" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="company-photos/POOW9968.JPG" alt="Custom log home exterior" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d1"><img src="ai-generated-images/openart-image_f2AAy3om_1775231674945_raw.jpg" alt="Idaho mountain landscape" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d3"><img src="company-photos/NCAB3966.JPG" alt="Log home detail" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="company-photos/JNXX8169.JPG" alt="Chase Construction build" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d1"><img src="company-photos/LLMC6909.JPG" alt="Chase Construction completed home" loading="lazy"><div class="port-ov"></div></div>
+  </div>
+</section>
+
+
+<!-- ════ PROCESS ════ -->
+<section id="process" aria-labelledby="proc-heading">
+  <div class="process-wrap">
+    <div class="process-hd">
+      <span class="eyebrow reveal">How It Works</span>
+      <h2 id="proc-heading" class="section-title reveal d1">Your role: decisions.<br>Our role: everything else.</h2>
+      <div class="h-rule reveal d2" style="margin-top: 24px;"></div>
+    </div>
+
+    <div class="proc-timeline">
+      <div class="proc-track"></div>
+      <div class="proc-fill" id="proc-fill"></div>
+
+      <div class="proc-step reveal">
+        <div class="proc-marker">
+          <img src="graphic-elements-other-images/wood-ring-1.svg" class="proc-ring" alt="" aria-hidden="true">
+          <span class="proc-num">01</span>
+        </div>
+        <h3 class="proc-title">First Conversation</h3>
+        <p class="proc-desc">We learn about your vision, your land, and your goals. No obligation, no pitch. Just an honest conversation about whether we're the right fit for each other.</p>
+      </div>
+
+      <div class="proc-step reveal d1">
+        <div class="proc-marker">
+          <img src="graphic-elements-other-images/wood-ring-2.svg" class="proc-ring" alt="" aria-hidden="true">
+          <span class="proc-num">02</span>
+        </div>
+        <h3 class="proc-title">Site &amp; Scope</h3>
+        <p class="proc-desc">We assess the site and develop a structured breakdown of what the build requires — what it will cost, and what a realistic timeline looks like. We ask the hard questions early, so nothing surprises you later.</p>
+      </div>
+
+      <div class="proc-step reveal d2">
+        <div class="proc-marker">
+          <img src="graphic-elements-other-images/wood-ring-3.svg" class="proc-ring" alt="" aria-hidden="true">
+          <span class="proc-num">03</span>
+        </div>
+        <h3 class="proc-title">Design Coordination</h3>
+        <p class="proc-desc">We work alongside your architect or design team to make sure what's designed can be built — on this land, in this climate, with these materials. Our input at this phase saves time and money in the build.</p>
+      </div>
+
+      <div class="proc-step reveal d3">
+        <div class="proc-marker">
+          <img src="graphic-elements-other-images/wood-ring-4.svg" class="proc-ring" alt="" aria-hidden="true">
+          <span class="proc-num">04</span>
+        </div>
+        <h3 class="proc-title">We Build</h3>
+        <p class="proc-desc">We manage all trades and vendors. We run the job site. You receive regular updates — photos, written notes, calls at the cadence that works for you. When a decision needs your input, we give you context and options. When it doesn't, we handle it.</p>
+      </div>
+
+      <div class="proc-step reveal d4">
+        <div class="proc-marker">
+          <img src="graphic-elements-other-images/wood-ring-1.svg" class="proc-ring" alt="" aria-hidden="true">
+          <span class="proc-num">05</span>
+        </div>
+        <h3 class="proc-title">Walkthrough &amp; Handoff</h3>
+        <p class="proc-desc">Your first visit to the finished home should feel like arrival — not like a punch list. We hand you the keys to something built exactly as we planned it.</p>
+      </div>
+    </div>
+
+    <div class="proc-cta reveal">
+      <p>Ready to talk about your project?</p>
+      <a href="#contact" class="btn-p">Start the Conversation</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ ABOUT MIKE ════ -->
+<section id="about" aria-labelledby="about-heading">
+  <div class="about-grid">
+    <div class="about-img reveal">
+      <img src="company-photos/LLMC6909.JPG" alt="Mike Chase — Chase Construction LLC" loading="lazy">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow eyebrow-light reveal">Meet the Builder</span>
+      <h2 id="about-heading" class="section-title reveal d1">The builder behind<br><span class="about-name-line">Chase Construction</span></h2>
+      <div class="h-rule h-rule-light reveal d2" style="margin: 24px 0;"></div>
+      <div class="about-body reveal d2">
+        <p>Mike Chase has been building in the Sun Valley area for over 30 years. In that time, he has led the majority of significant log home projects in this region — a fact that reflects not marketing, but how specialized this work is and how few builders have the depth to do it well.</p>
+        <p>He started in the field, not behind a desk. He knows what a log home requires because he has built them — every phase, every trade, every problem that comes from building large structures in a mountain climate with clients who expect the best.</p>
+        <p>When you hire Chase Construction, you are hiring Mike.</p>
+      </div>
+      <div class="about-sig reveal d3">— Mike Chase, Founder</div>
+      <div class="reveal d4" style="margin-top: 36px;">
+        <a href="#contact" class="btn-g">Talk to Mike</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ TESTIMONIALS ════ -->
+<section id="testimonials" aria-labelledby="test-heading">
+  <div class="test-hd">
+    <span class="eyebrow reveal">Client Stories</span>
+    <h2 id="test-heading" class="section-title reveal d1">What our clients say</h2>
+  </div>
+  <div class="test-grid wrap">
+    <div class="test-card reveal d1">
+      <span class="test-mark">"</span>
+      <p class="test-quote">Building remotely from California felt impossible — until we found Chase Construction. Mike kept us informed every step of the way. We showed up to a home that exceeded everything we imagined.</p>
+      <div class="test-attr">— Client, Los Angeles, CA</div>
+    </div>
+    <div class="test-card reveal d2">
+      <span class="test-mark">"</span>
+      <p class="test-quote">The craftsmanship is extraordinary. We've built homes before and nothing compares to the level of detail and care Mike and his team put into every single log. This is generational work.</p>
+      <div class="test-attr">— Client, Austin, TX</div>
+    </div>
+    <div class="test-card reveal d3">
+      <span class="test-mark">"</span>
+      <p class="test-quote">We didn't have to worry about a single thing. They managed the entire project, kept us updated with photos and calls, and delivered exactly what we dreamed about. On time, no surprises.</p>
+      <div class="test-attr">— Client, Seattle, WA</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════ FAQ ════ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="faq-inner">
+    <div class="faq-hd">
+      <span class="eyebrow reveal">Common Questions</span>
+      <h2 id="faq-heading" class="section-title reveal d1">What clients ask<br>before they reach out</h2>
+    </div>
+
+    <details class="faq-item reveal">
+      <summary class="faq-q">
+        Do you work with clients who are still early in planning?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Yes. Many clients come to us before they have an architect or finalized plans. Getting us involved early often prevents costly design decisions that don't translate well to log construction. The first conversation is free and carries no obligation.</p>
+    </details>
+
+    <details class="faq-item reveal d1">
+      <summary class="faq-q">
+        How many projects does Chase take on each year?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">We limit our project load deliberately. This is not a high-volume company. When you hire Chase, you get Mike's full attention — and that requires keeping the number of active projects manageable. We recommend reaching out early if you have a target timeline.</p>
+    </details>
+
+    <details class="faq-item reveal d2">
+      <summary class="faq-q">
+        Can I be involved in design decisions if I'm not in Idaho?
+        <span class="faq-icon">+</span>
+      </summary>
+      <p class="faq-a">Yes — and most of our clients aren't. We use video calls, shared documentation, and regular photo updates to bring you into every decision that matters. You won't feel absent from your own build. Managing remote clients is not an accommodation for us — it's the standard.</p>
+    </details>
+  </div>
+</section>
+
+
+<!-- ════ CONTACT ════ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="contact-inner">
+
+    <div class="contact-left">
+      <span class="eyebrow eyebrow-light reveal">Get In Touch</span>
+      <h2 id="contact-heading" class="section-title section-title-light reveal d1">Your Idaho cabin<br>starts with one<br>conversation.</h2>
+      <p class="contact-body reveal d2">We take on a limited number of projects each year. If you have land in the Sun Valley area and a vision for what belongs on it, this is where that begins.</p>
+      <a href="tel:2088978100" class="contact-phone reveal d3">208-897-8100</a>
+      <div class="contact-divider reveal d3">
+        <hr><span>or send a message</span><hr>
+      </div>
+      <div class="contact-info reveal d4">
+        Bellevue, Idaho<br>
+        Serving Sun Valley, Ketchum &amp; Hailey<br>
+        Mon–Fri, 7 AM – 5 PM MT
+      </div>
+    </div>
+
+    <div class="reveal d2">
+      <form class="c-form" onsubmit="return false;" aria-label="Contact form">
+        <div class="f-row">
+          <div class="f-field">
+            <label class="f-label" for="f-name">Your Name</label>
+            <input class="f-input" type="text" id="f-name" name="name" placeholder="John Smith" autocomplete="name">
+          </div>
+          <div class="f-field">
+            <label class="f-label" for="f-loc">Your Location</label>
+            <input class="f-input" type="text" id="f-loc" name="location" placeholder="San Francisco, CA">
+          </div>
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="f-phone">Phone Number</label>
+          <input class="f-input" type="tel" id="f-phone" name="phone" placeholder="(555) 000-0000" autocomplete="tel">
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="f-proj">Tell Us About Your Project</label>
+          <textarea class="f-ta" id="f-proj" name="project" placeholder="Share your vision — lot location, home size, timeline, any questions..."></textarea>
+        </div>
+        <div class="f-field">
+          <label class="f-label" for="f-ref">How Did You Hear About Us?</label>
+          <input class="f-input" type="text" id="f-ref" name="referral" placeholder="Referral, Realtor, Google…">
+        </div>
+        <button type="submit" class="f-sub">Send Your Message</button>
+        <p style="font-size:11px;color:rgba(195,180,157,.35);margin-top:12px;line-height:1.6;">All inquiries are kept strictly private. We do not share client information.</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════ FOOTER ════ -->
+<footer>
+  <div class="foot-inner">
+    <img src="brand-logo/logo-white.svg" alt="Chase Construction LLC" class="foot-logo">
+    <div class="foot-info">
+      Bellevue, Idaho &nbsp;·&nbsp; Serving Sun Valley, Ketchum &amp; Hailey<br>
+      <a href="tel:2088978100">208-897-8100</a>
+    </div>
+    <div class="foot-copy">&copy; 2025 Chase Construction LLC</div>
+  </div>
+</footer>
+
+
+<!-- ════ JAVASCRIPT ════ -->
+<script>
+(function() {
+  'use strict';
+
+  var ease = 'cubic-bezier(0.16,1,0.3,1)';
+
+
+
+  /* ─── NAV — dropdown & hamburger ─── */
+  var servicesBtn = document.getElementById('services-btn');
+  var servicesDrop = servicesBtn ? servicesBtn.closest('.nav-dropdown') : null;
+  if (servicesBtn && servicesDrop) {
+    servicesBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = servicesDrop.classList.toggle('open');
+      servicesBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function() {
+      servicesDrop.classList.remove('open');
+      servicesBtn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  var hamburger  = document.getElementById('nav-hamburger');
+  var mobileMenu = document.getElementById('nav-mobile');
+  var mobileClose = document.getElementById('nav-mobile-close');
+  if (hamburger && mobileMenu) {
+    hamburger.addEventListener('click', function() {
+      mobileMenu.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  if (mobileClose && mobileMenu) {
+    mobileClose.addEventListener('click', function() {
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  }
+
+  /* ─── NAV — swap logo on scroll ─── */
+  var nav     = document.getElementById('nav');
+  var navLogo = document.getElementById('nav-logo');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 80) {
+      nav.classList.add('scrolled');
+      if (navLogo) navLogo.src = 'brand-logo/logo-main.svg';
+    } else {
+      nav.classList.remove('scrolled');
+      if (navLogo) navLogo.src = 'brand-logo/logo-white.svg';
+    }
+  }, { passive: true });
+
+
+  /* ─── HERO SEQUENCE ───────────────────────────────────────────────────
+     Phase 1: Video plays (full screen, no text, clean cinematic experience)
+     Phase 2: Video ends → holds on last frame (Chase logo visible on left)
+     Phase 3: Right-side overlay fades in (dark gradient for text readability)
+     Phase 4: Hero text panel slides in from right
+     Phase 5: Scroll indicator appears
+  ─────────────────────────────────────────────────────────────────────── */
+  var heroVid     = document.getElementById('hero-video');
+  var heroOverlay = document.getElementById('hero-overlay');
+  var heroEl      = document.getElementById('hero');
+  var si          = document.getElementById('scroll-ind');
+  var revealed    = false;
+
+  function runHeroReveal() {
+    if (revealed) return;
+    revealed = true;
+    // 1. Overlay fades in (gradient dark on right — logo stays visible left)
+    if (heroOverlay) heroOverlay.classList.add('overlay-in');
+    // 2. Text slides in after overlay begins
+    setTimeout(function() {
+      if (heroEl) heroEl.classList.add('bp-go');
+    }, 500);
+    // 3. Scroll indicator
+    setTimeout(function() {
+      if (si) si.classList.add('show');
+    }, 1500);
+  }
+
+  if (heroVid) {
+    // Fade video in as soon as it can play
+    heroVid.addEventListener('canplay', function() {
+      heroVid.classList.add('loaded');
+    });
+    if (heroVid.readyState >= 3) heroVid.classList.add('loaded');
+
+    // On end: seek to last frame so the video always freezes on the logo
+    heroVid.addEventListener('ended', function() {
+      heroVid.currentTime = heroVid.duration - 0.001;
+      heroVid.pause();
+      runHeroReveal();
+    });
+
+    // Fallback: if video is very long or slow, reveal after 7s max
+    setTimeout(function() {
+      if (!revealed) {
+        if (heroVid) { heroVid.classList.add('loaded'); heroVid.pause(); }
+        runHeroReveal();
+      }
+    }, 7000);
+  } else {
+    runHeroReveal();
+  }
+
+
+  /* ─── SCROLL REVEAL ─── */
+  var revObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        revObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(function(el) { revObs.observe(el); });
+
+  /* H-rules need the 'in' class to animate width */
+  var ruleObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); ruleObs.unobserve(e.target); }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.h-rule').forEach(function(el) { ruleObs.observe(el); });
+
+
+  /* ─── STATS COUNTER ─── */
+  function animateCounter(el) {
+    var target  = parseInt(el.dataset.target, 10);
+    var suffix  = el.dataset.suffix  || '';
+    var prefix  = el.dataset.prefix  || '';
+    var duration = 1600;
+    var start   = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = prefix + Math.floor(eased * target) + suffix;
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = prefix + target + suffix;
+    }
+    requestAnimationFrame(step);
+  }
+  var statObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        animateCounter(e.target);
+        statObs.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-target]').forEach(function(el) {
+    statObs.observe(el);
+  });
+
+
+  /* ─── WOOD RING ROTATION on scroll (Why section) ─── */
+  var whyRing = document.getElementById('why-ring');
+  if (whyRing) {
+    var rot = 0; var lastY = window.scrollY;
+    window.addEventListener('scroll', function() {
+      var dy = window.scrollY - lastY;
+      rot += dy * 0.06;
+      whyRing.style.transform = 'translateY(-50%) rotate(' + rot + 'deg)';
+      lastY = window.scrollY;
+    }, { passive: true });
+  }
+
+
+  /* ─── PROCESS TIMELINE FILL ─── */
+  var procFill = document.getElementById('proc-fill');
+  var procSteps = document.querySelectorAll('.proc-step');
+  var stepObs = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) e.target.classList.add('in');
+    });
+  }, { threshold: 0.4 });
+  procSteps.forEach(function(s) { stepObs.observe(s); });
+
+  if (procFill) {
+    window.addEventListener('scroll', function() {
+      var track = procFill.parentElement;
+      var rect  = track.getBoundingClientRect();
+      var pct   = Math.max(0, Math.min(1, (window.innerHeight - rect.top) / rect.height));
+      procFill.style.height = (pct * rect.height) + 'px';
+    }, { passive: true });
+  }
+
+
+  /* ─── FAQ icon toggle ─── */
+  document.querySelectorAll('.faq-item').forEach(function(det) {
+    det.addEventListener('toggle', function() {
+      var icon = det.querySelector('.faq-icon');
+      if (icon) icon.textContent = det.open ? '−' : '+';
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
