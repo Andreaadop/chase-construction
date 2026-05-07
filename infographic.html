@@ -127,11 +127,12 @@
     .left-panel {
       width: 38%;
       background: var(--green);
-      padding: 24px 26px;
+      padding: 18px 22px;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 14px;
       flex-shrink: 0;
+      border-right: 1px solid var(--beige);
     }
 
     .right-panel {
@@ -420,6 +421,7 @@
 
     .phase-badge-active  { background: var(--green); color: #fff; }
     .phase-badge-upnext  { background: var(--blue);  color: #fff; }
+    .phase-badge-planned { background: rgba(30,63,113,.22); color: var(--blue); }
     .phase-badge-pending { background: var(--beige); color: var(--brown-d); }
     .phase-badge-future  { background: rgba(26,22,20,.08); color: var(--text-muted); }
 
@@ -438,10 +440,6 @@
       background-repeat: no-repeat;
     }
 
-    /* Thin beige line between left and right panels */
-    .left-panel {
-      border-right: 1px solid var(--beige);
-    }
 
   </style>
 </head>
@@ -583,7 +581,7 @@
               <li>Free 100-point inspection offer</li>
             </ul>
             <div class="phase-card-footer">
-              <span class="phase-badge phase-badge-upnext">Up Next</span>
+              <span class="phase-badge phase-badge-planned">Planned</span>
             </div>
           </div>
 
