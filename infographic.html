@@ -113,6 +113,31 @@
       line-height: 1.6;
       white-space: nowrap;
     }
+
+    /* ── BODY LAYOUT ── */
+    .body {
+      display: flex;
+      flex: 1;
+      min-height: 0;
+    }
+
+    .left-panel {
+      width: 38%;
+      background: var(--green);
+      padding: 24px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
+    .right-panel {
+      width: 62%;
+      background: var(--snow);
+      padding: 20px 24px;
+      display: flex;
+      flex-direction: column;
+    }
   </style>
 </head>
 <body>
@@ -128,6 +153,14 @@
         May 2026
       </div>
     </header>
+    <div class="body">
+      <section class="left-panel">
+        <!-- left panel content -->
+      </section>
+      <section class="right-panel">
+        <!-- right panel content -->
+      </section>
+    </div>
   </div>
 </body>
 </html>
