@@ -65,11 +65,69 @@
       body { margin: 0; }
       .page { width: 297mm; height: 210mm; overflow: hidden; page-break-after: avoid; break-after: avoid; }
     }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 28px;
+      background: var(--snow);
+      border-bottom: 1px solid var(--beige);
+      flex-shrink: 0;
+    }
+
+    .header-logo {
+      height: 36px;
+      width: auto;
+    }
+
+    .header-title {
+      text-align: center;
+      flex: 1;
+      padding: 0 24px;
+    }
+
+    .header-title h1 {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 17px;
+      color: var(--ink);
+      letter-spacing: 0.01em;
+      line-height: 1.2;
+    }
+
+    .header-title .subtitle {
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-top: 3px;
+    }
+
+    .header-meta {
+      text-align: right;
+      font-size: 9px;
+      font-weight: 400;
+      color: var(--text-muted);
+      line-height: 1.6;
+      white-space: nowrap;
+    }
   </style>
 </head>
 <body>
   <div class="page">
-    <!-- content goes here -->
+    <header class="header">
+      <img src="brand-logo/logo-main.svg" alt="Chase Construction LLC" class="header-logo">
+      <div class="header-title">
+        <h1>Digital Marketing &amp; Lead Generation Roadmap</h1>
+        <div class="subtitle">Chace Construction LLC</div>
+      </div>
+      <div class="header-meta">
+        Prepared by Andrea De Oliveira<br>
+        May 2026
+      </div>
+    </header>
   </div>
 </body>
 </html>
