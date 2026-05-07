@@ -419,6 +419,31 @@
     .phase-badge-upnext  { background: var(--blue);  color: #fff; }
     .phase-badge-pending { background: var(--beige); color: var(--brown-d); }
     .phase-badge-future  { background: rgba(26,22,20,.08); color: var(--text-muted); }
+
+    /* ── POLISH ── */
+
+    /* Subtle grain texture on page (matches website aesthetic) */
+    .page::after {
+      content: '';
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      opacity: 0.018;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    }
+
+    /* Thin beige line between left and right panels */
+    .left-panel {
+      border-right: 1px solid var(--beige);
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+      .page { width: 297mm; height: 210mm; overflow: hidden; }
+      .page::after { display: none; }
+    }
   </style>
 </head>
 <body>
