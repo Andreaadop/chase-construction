@@ -287,6 +287,130 @@
     .left-panel-push {
       margin-top: auto;
     }
+
+    /* ── RIGHT PANEL ── */
+    .right-panel-title {
+      font-size: 8.5px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+    }
+
+    .phases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 10px;
+      flex: 1;
+    }
+
+    .phase-card {
+      background: var(--linen);
+      border: 1px solid var(--beige);
+      border-radius: 7px;
+      padding: 13px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      position: relative;
+      box-shadow: 0 1px 4px rgba(26,22,20,.06);
+    }
+
+    .phase-card.active {
+      border-left: 4px solid var(--green);
+    }
+
+    .phase-card-header {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+
+    .phase-number {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .phase-card.future .phase-number {
+      background: var(--text-muted);
+    }
+
+    .phase-card.upnext .phase-number {
+      background: var(--blue);
+    }
+
+    .phase-card-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 12px;
+      color: var(--ink);
+      line-height: 1.25;
+    }
+
+    .phase-card-goal {
+      font-size: 8.5px;
+      font-weight: 300;
+      color: var(--text-mid);
+      line-height: 1.45;
+    }
+
+    .phase-tasks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      flex: 1;
+    }
+
+    .phase-tasks li {
+      font-size: 8px;
+      font-weight: 400;
+      color: var(--text-muted);
+      padding-left: 10px;
+      position: relative;
+      line-height: 1.4;
+    }
+
+    .phase-tasks li::before {
+      content: '·';
+      position: absolute;
+      left: 2px;
+      color: var(--beige);
+      font-size: 12px;
+      line-height: 1;
+      top: 1px;
+    }
+
+    .phase-card-footer {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: auto;
+    }
+
+    .phase-badge {
+      font-size: 7px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+    }
+
+    .phase-badge-active  { background: var(--green); color: #fff; }
+    .phase-badge-upnext  { background: var(--blue);  color: #fff; }
+    .phase-badge-pending { background: var(--beige); color: var(--brown-d); }
+    .phase-badge-future  { background: rgba(26,22,20,.08); color: var(--text-muted); }
   </style>
 </head>
 <body>
@@ -375,7 +499,117 @@
         </div>
       </section>
       <section class="right-panel">
-        <!-- right panel content -->
+        <div class="right-panel-title">The Roadmap — 6 Phases</div>
+        <div class="phases-grid">
+
+          <!-- Phase 1 -->
+          <div class="phase-card active">
+            <div class="phase-card-header">
+              <div class="phase-number">1</div>
+              <div class="phase-card-title">Finish the Website Foundation</div>
+            </div>
+            <div class="phase-card-goal">Launch a complete, professional website worth driving traffic to.</div>
+            <ul class="phase-tasks">
+              <li>Copy review with Mike &amp; Robbie</li>
+              <li>Build Locations &amp; Projects pages</li>
+              <li>Connect domain &amp; social accounts</li>
+              <li>Final QA on desktop &amp; mobile</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-active">Active</span>
+            </div>
+          </div>
+
+          <!-- Phase 2 -->
+          <div class="phase-card upnext">
+            <div class="phase-card-header">
+              <div class="phase-number">2</div>
+              <div class="phase-card-title">GoHighLevel + Lead Capture</div>
+            </div>
+            <div class="phase-card-goal">Every visitor who shows interest is captured in a CRM with automated follow-up.</div>
+            <ul class="phase-tasks">
+              <li>Set up GHL sub-account &amp; branded email</li>
+              <li>Embed GHL contact form on website</li>
+              <li>Build sales pipeline &amp; lead tags</li>
+              <li>Instant SMS/email confirmation automation</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-upnext">Up Next</span>
+            </div>
+          </div>
+
+          <!-- Phase 3 -->
+          <div class="phase-card upnext">
+            <div class="phase-card-header">
+              <div class="phase-number">3</div>
+              <div class="phase-card-title">Lead Capture Tools</div>
+            </div>
+            <div class="phase-card-goal">Give visitors real reasons to share their email beyond a contact form.</div>
+            <ul class="phase-tasks">
+              <li>PDF guide download (luxury log home tips)</li>
+              <li>Self-assessment quiz (log home condition)</li>
+              <li>Free 100-point inspection offer</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-upnext">Up Next</span>
+            </div>
+          </div>
+
+          <!-- Phase 4 -->
+          <div class="phase-card">
+            <div class="phase-card-header">
+              <div class="phase-number">4</div>
+              <div class="phase-card-title">Drive Traffic</div>
+            </div>
+            <div class="phase-card-goal">Build channels that send qualified prospects to the site.</div>
+            <ul class="phase-tasks">
+              <li>Google Business Profile (Idaho)</li>
+              <li>On-page SEO &amp; local keywords</li>
+              <li>Backlinks &amp; industry directories</li>
+              <li>Social media launch + Houzz profile</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-pending">Pending</span>
+            </div>
+          </div>
+
+          <!-- Phase 5 -->
+          <div class="phase-card future">
+            <div class="phase-card-header">
+              <div class="phase-number">5</div>
+              <div class="phase-card-title">Nurture &amp; Retention</div>
+            </div>
+            <div class="phase-card-goal">Stay top of mind through the 6–18 month luxury buyer research cycle.</div>
+            <ul class="phase-tasks">
+              <li>Monthly newsletter to full contact list</li>
+              <li>Automated nurture sequences per lead source</li>
+              <li>Re-engagement campaigns for cold leads</li>
+              <li>Annual past-client follow-ups &amp; referrals</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-future">Future</span>
+            </div>
+          </div>
+
+          <!-- Phase 6 -->
+          <div class="phase-card future">
+            <div class="phase-card-header">
+              <div class="phase-number">6</div>
+              <div class="phase-card-title">Future Growth</div>
+            </div>
+            <div class="phase-card-goal">Once the core system is proven, expand into new revenue streams.</div>
+            <ul class="phase-tasks">
+              <li>Sell log home floor plans digitally</li>
+              <li>Paid ads (Google + Meta)</li>
+              <li>Video walkthroughs &amp; drone footage</li>
+              <li>Referral program for past clients</li>
+            </ul>
+            <div class="phase-card-footer">
+              <span class="phase-badge phase-badge-future">Future</span>
+            </div>
+          </div>
+
+        </div>
       </section>
     </div>
   </div>
