@@ -137,6 +137,7 @@
       padding: 20px 24px;
       display: flex;
       flex-direction: column;
+      min-height: 0;
     }
 
     /* ── LEFT PANEL ── */
@@ -304,6 +305,7 @@
       grid-template-rows: repeat(2, 1fr);
       gap: 10px;
       flex: 1;
+      min-height: 0;
     }
 
     .phase-card {
@@ -320,6 +322,7 @@
 
     .phase-card.active {
       border-left: 4px solid var(--green);
+      padding-left: 11px;
     }
 
     .phase-card-header {
@@ -349,6 +352,11 @@
 
     .phase-card.upnext .phase-number {
       background: var(--blue);
+    }
+
+    .phase-card.pending .phase-number {
+      background: var(--beige);
+      color: var(--brown-d);
     }
 
     .phase-card-title {
@@ -556,7 +564,7 @@
           </div>
 
           <!-- Phase 4 -->
-          <div class="phase-card">
+          <div class="phase-card pending">
             <div class="phase-card-header">
               <div class="phase-number">4</div>
               <div class="phase-card-title">Drive Traffic</div>
