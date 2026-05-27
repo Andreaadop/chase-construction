@@ -182,7 +182,7 @@
       <!-- RIGHT: Form -->
       <div class="form-section reveal d1">
         <h3 class="form-title">Send a Message</h3>
-        <form class="c-form" onsubmit="return false;" aria-label="Contact form">
+        <form class="c-form" id="contact-form" aria-label="Contact form">
           <div class="f-row">
             <div class="f-field">
               <label class="f-label" for="f-name">Your Name</label>
@@ -218,7 +218,8 @@
               <option value="other">Other</option>
             </select>
           </div>
-          <button type="submit" class="f-sub">Send Your Message</button>
+          <button type="submit" class="f-sub" id="contact-submit">Send Your Message</button>
+          <div id="contact-status" role="status" aria-live="polite" style="display:none;margin-top:18px;padding:16px 20px;border-radius:6px;font-family:Montserrat,sans-serif;font-size:14px;line-height:1.5;"></div>
           <p class="form-note">All inquiries are kept strictly private. We do not share client information.</p>
         </form>
       </div>
@@ -291,6 +292,69 @@
     mobileClose.addEventListener('click', function() {
       mobileMenu.classList.remove('open');
       document.body.style.overflow = '';
+    });
+  }
+
+  // --- Contact form submission (GHL integration mockup) ---
+  var form = document.getElementById('contact-form');
+  var status = document.getElementById('contact-status');
+  var submitBtn = document.getElementById('contact-submit');
+
+  function showStatus(message, kind) {
+    if (!status) return;
+    var palette = kind === 'success'
+      ? { bg: '#e8efe7', border: '#2c573d', color: '#1c3028' }
+      : kind === 'error'
+        ? { bg: '#f5e4e0', border: '#a4342f', color: '#5a1c19' }
+        : { bg: '#f0ece4', border: '#a07d67', color: '#342319' };
+    status.style.display = 'block';
+    status.style.background = palette.bg;
+    status.style.borderLeft = '3px solid ' + palette.border;
+    status.style.color = palette.color;
+    status.textContent = message;
+  }
+
+  if (form && submitBtn) {
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      submitBtn.disabled = true;
+      var originalText = submitBtn.textContent;
+      submitBtn.textContent = 'Sending…';
+      showStatus('Sending your message…', 'info');
+
+      var data = {
+        name: form.querySelector('#f-name').value.trim(),
+        email: form.querySelector('#f-email').value.trim(),
+        phone: form.querySelector('#f-phone').value.trim(),
+        location: form.querySelector('#f-loc').value.trim(),
+        project: form.querySelector('#f-proj').value.trim(),
+        referral: form.querySelector('#f-ref').value,
+      };
+
+      if (!data.name || !data.email) {
+        showStatus('Please fill in your name and email.', 'error');
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        return;
+      }
+
+      try {
+        var res = await fetch('/api/contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        var body = await res.json().catch(function() { return {}; });
+        if (!res.ok) throw new Error(body.error || ('Request failed: ' + res.status));
+        showStatus("Thanks — your message is in. We'll be in touch within 24–48 hours. Check your inbox for a confirmation.", 'success');
+        form.reset();
+        submitBtn.textContent = 'Sent ✓';
+      } catch (err) {
+        console.error('Form submission error:', err);
+        showStatus("Sorry — something went wrong sending your message. Please call us directly at 208-897-8100 or try again in a moment.", 'error');
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
     });
   }
 })();

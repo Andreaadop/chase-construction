@@ -1,0 +1,5 @@
+.env
+gemini-api-key.txt
+GHL-private-integration.txt
+node_modules/
+temporary screenshots/
