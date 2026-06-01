@@ -454,7 +454,7 @@
       }
       .hero-overlay {
         background:
-          linear-gradient(to top, rgba(8,16,12,.85) 0%, rgba(8,16,12,.4) 100%);
+          linear-gradient(to top, rgba(8,16,12,.9) 0%, rgba(8,16,12,.55) 100%);
       }
       .hero-sub { max-width: 100%; }
       .hero-ctas { justify-content: center; }
@@ -1128,6 +1128,7 @@
         <a href="milling-and-more.html">Milling &amp; More</a>
       </div>
     </div>
+    <a href="projects.html" class="nav-link">Projects</a>
     <a href="process.html" class="nav-link">Process</a>
     <a href="about.html" class="nav-link">About</a>
   </div>
@@ -1165,7 +1166,7 @@
 
   <div class="hero-atm"></div>
 
-  <video id="hero-video" autoplay muted playsinline preload="auto" poster="ai-generated-images/hero-poster.jpg">
+  <video id="hero-video" autoplay muted playsinline preload="none" poster="ai-generated-images/hero-poster.jpg">
     <source src="ai-generated-images/hero-section-video-chase-construction-logo-on-the-left.mp4" type="video/mp4">
   </video>
 
@@ -1689,7 +1690,24 @@
     }, 1500);
   }
 
-  if (heroVid) {
+  var isMobile = window.innerWidth <= 900;
+
+  if (heroVid && isMobile) {
+    // On mobile: skip video entirely — use poster as static background
+    heroVid.querySelectorAll('source').forEach(function(s) { s.remove(); });
+    heroVid.load();
+    heroVid.style.display = 'none';
+    var heroAtm = document.querySelector('.hero-atm');
+    if (heroAtm) {
+      heroAtm.style.backgroundImage = 'url(ai-generated-images/hero-poster.jpg)';
+      heroAtm.style.backgroundSize = 'cover';
+      heroAtm.style.backgroundPosition = 'center';
+    }
+    setTimeout(runHeroReveal, 200);
+  } else if (heroVid) {
+    // Desktop: load and play video
+    heroVid.load();
+
     // Fade video in as soon as it can play
     heroVid.addEventListener('canplay', function() {
       heroVid.classList.add('loaded');
