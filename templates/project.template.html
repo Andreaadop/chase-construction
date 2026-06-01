@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{NAME}} — Chase Construction LLC | Project in {{LOCATION}}</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta property="og:title" content="{{NAME}} — Chase Construction LLC">
+  <meta property="og:image" content="https://chaseconstruction.org/{{OG_IMAGE}}">
+  <link rel="canonical" href="https://chaseconstruction.org/projects/{{SLUG}}.html">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Hoefler Text';
+      src: url('../brand-fonts/hoefler-text.ttf') format('truetype');
+      font-weight: normal; font-style: normal; font-display: swap;
+    }
+    :root {
+      --green:#2c573d; --green-d:#1c3028;
+      --beige:#c3b49d; --brown:#a07d67;
+      --linen:#f0ece4; --snow:#faf8f5; --ink:#1a1614;
+      --text-dark:#1a1614; --text-mid:#4a3f38; --text-muted:#7a6e66;
+      --line-d:rgba(26,22,20,.12);
+      --ease:cubic-bezier(0.16,1,0.3,1);
+    }
+    *,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+    html { scroll-behavior:smooth; }
+    body {
+      background:var(--snow); color:var(--text-dark);
+      font-family:'Montserrat',sans-serif; font-weight:300;
+      -webkit-font-smoothing:antialiased; overflow-x:hidden;
+    }
+    h1,h2,h3,h4 { font-family:'Hoefler Text',Georgia,serif; font-weight:normal; }
+    img { display:block; max-width:100%; }
+    a { text-decoration:none; color:inherit; }
+    body::after {
+      content:''; position:fixed; inset:0; pointer-events:none; z-index:9999; opacity:.025;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E");
+    }
+
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity 1.1s var(--ease), transform 1.1s var(--ease); }
+    .reveal.in { opacity:1; transform:none; }
+    .reveal.d1 { transition-delay:.12s; } .reveal.d2 { transition-delay:.24s; }
+
+    /* Nav */
+    nav {
+      position:fixed; top:0; left:0; right:0; z-index:100;
+      display:flex; align-items:center; justify-content:space-between;
+      padding:24px 48px; transition:all .5s var(--ease); background:transparent;
+    }
+    nav.scrolled { background:rgba(250,248,245,.96); backdrop-filter:blur(12px); padding:16px 48px; border-bottom:1px solid var(--line-d); }
+    .nav-logo { height:42px; transition:all .4s var(--ease); }
+    nav.scrolled .nav-logo { height:34px; }
+    .nav-links { display:flex; gap:36px; }
+    .nav-link { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#fff; transition:color .3s var(--ease); }
+    nav.scrolled .nav-link { color:var(--text-dark); }
+    .nav-right { display:flex; align-items:center; gap:24px; }
+    .nav-phone { font-size:11px; letter-spacing:.18em; text-transform:uppercase; color:#fff; }
+    nav.scrolled .nav-phone { color:var(--text-dark); }
+    .nav-cta { padding:11px 22px; border:1px solid rgba(255,255,255,.45); font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#fff; transition:all .3s var(--ease); }
+    nav.scrolled .nav-cta { border-color:var(--green); color:var(--green); }
+    .nav-cta:hover { background:var(--beige); border-color:var(--beige); color:var(--ink); }
+    nav.scrolled .nav-cta:hover { background:var(--green); color:#fff; }
+
+    /* Hero */
+    .detail-hero {
+      position:relative; height:88vh; min-height:560px;
+      display:flex; align-items:flex-end; padding:0 8vw 8vh; color:#fff;
+    }
+    .detail-hero-bg {
+      position:absolute; inset:0; background-size:cover; background-position:center; z-index:0;
+    }
+    .detail-hero-bg::after {
+      content:''; position:absolute; inset:0;
+      background:linear-gradient(180deg, rgba(0,0,0,.15) 0%, rgba(0,0,0,.65) 100%);
+    }
+    .detail-hero-inner { position:relative; z-index:2; max-width:900px; }
+    .detail-eyebrow {
+      font-size:10px; letter-spacing:.34em; text-transform:uppercase;
+      color:var(--beige); font-weight:500; margin-bottom:22px; display:block;
+    }
+    .detail-h1 {
+      font-size:clamp(44px, 6.5vw, 96px); line-height:.98; font-style:italic;
+      letter-spacing:-.01em; margin-bottom:26px;
+    }
+    .detail-meta-row {
+      display:flex; gap:32px; font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+      color:rgba(240,236,228,.86); margin-top:18px;
+    }
+    .detail-meta-row strong { color:#fff; font-weight:500; }
+
+    /* Back link */
+    .back-bar {
+      max-width:1400px; margin:0 auto;
+      padding:32px 8vw 0;
+    }
+    .back-link {
+      display:inline-flex; align-items:center; gap:10px;
+      font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+      color:var(--text-muted); transition:color .3s var(--ease);
+    }
+    .back-link:hover { color:var(--green); }
+
+    /* Story */
+    .story-wrap {
+      max-width:1400px; margin:0 auto; padding:64px 8vw;
+      display:grid; grid-template-columns:240px 1fr; gap:80px;
+    }
+    .story-side {
+      position:sticky; top:120px; align-self:start;
+      font-size:11px; letter-spacing:.24em; text-transform:uppercase;
+      color:var(--text-muted);
+    }
+    .story-side-block { padding-bottom:24px; margin-bottom:24px; border-bottom:1px solid var(--line-d); }
+    .story-side-block:last-child { border:none; margin:0; padding:0; }
+    .story-side strong { color:var(--ink); font-family:'Hoefler Text',serif; font-size:20px; font-weight:normal; letter-spacing:0; text-transform:none; display:block; margin-bottom:4px; font-style:italic; }
+
+    .story-body p {
+      font-size:18px; line-height:1.85; color:var(--text-mid); margin-bottom:28px;
+      font-weight:300;
+    }
+    .story-body p:first-child::first-letter {
+      font-family:'Hoefler Text',serif; font-size:72px; line-height:.8;
+      float:left; padding:8px 14px 0 0; color:var(--green); font-style:italic;
+    }
+
+    /* Photo grid */
+    .photo-grid {
+      max-width:1500px; margin:0 auto; padding:32px 8vw 96px;
+      display:grid; grid-template-columns:repeat(6, 1fr); grid-auto-rows:240px;
+      gap:24px;
+    }
+    .photo-grid figure { overflow:hidden; }
+    .photo-grid figure img { width:100%; height:100%; object-fit:cover; transition:transform 1.4s var(--ease); }
+    .photo-grid figure:hover img { transform:scale(1.04); }
+    .photo-grid figure:nth-child(1) { grid-column:span 4; grid-row:span 2; }
+    .photo-grid figure:nth-child(2) { grid-column:span 2; grid-row:span 1; }
+    .photo-grid figure:nth-child(3) { grid-column:span 2; grid-row:span 1; }
+
+    /* Inline CTA */
+    .inline-cta {
+      background:var(--linen); padding:80px 8vw; text-align:center;
+    }
+    .inline-cta-inner { max-width:660px; margin:0 auto; }
+    .inline-cta h3 {
+      font-size:clamp(28px, 3.4vw, 44px); line-height:1.1; color:var(--ink);
+      margin-bottom:18px; font-style:italic;
+    }
+    .inline-cta p {
+      font-size:15px; line-height:1.7; color:var(--text-mid); margin-bottom:32px;
+    }
+    .btn-inline {
+      display:inline-block; padding:16px 32px; background:var(--green); color:#fff;
+      font-size:11px; letter-spacing:.26em; text-transform:uppercase; font-weight:500;
+      transition:all .35s var(--ease);
+    }
+    .btn-inline:hover { background:var(--green-d); }
+
+    /* Closing CTA */
+    .closing {
+      position:relative; padding:140px 6vw; color:#fff; text-align:center;
+      background-image:linear-gradient(180deg, rgba(28,48,40,.7), rgba(28,48,40,.85)), url('../ai-generated-images/openart-image_f2AAy3om_1775231674945_raw.jpg');
+      background-size:cover; background-position:center;
+    }
+    .closing-inner { max-width:780px; margin:0 auto; }
+    .closing-eyebrow { font-size:10px; letter-spacing:.34em; text-transform:uppercase; color:var(--beige); font-weight:500; margin-bottom:28px; display:block; }
+    .closing h2 { font-size:clamp(40px, 5vw, 72px); line-height:1.05; font-style:italic; margin-bottom:30px; }
+    .closing p { font-size:17px; line-height:1.7; color:rgba(240,236,228,.86); max-width:580px; margin:0 auto 40px; }
+    .closing-ctas { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+    .btn-closing-p { padding:18px 38px; background:var(--beige); color:var(--ink); font-size:11px; letter-spacing:.28em; text-transform:uppercase; font-weight:500; transition:all .35s var(--ease); }
+    .btn-closing-p:hover { background:#fff; }
+    .btn-closing-g { padding:18px 38px; border:1px solid rgba(255,255,255,.4); color:#fff; font-size:11px; letter-spacing:.28em; text-transform:uppercase; font-weight:500; transition:all .35s var(--ease); }
+    .btn-closing-g:hover { border-color:var(--beige); color:var(--beige); }
+
+    /* Footer */
+    footer { background:var(--ink); color:rgba(195,180,157,.6); padding:56px 48px; }
+    .foot-inner { max-width:1400px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; gap:32px; }
+    .foot-logo { height:36px; opacity:.85; }
+    .foot-info { font-size:12px; line-height:1.8; }
+    .foot-info a { color:var(--beige); }
+    .foot-copy { font-size:10px; color:rgba(195,180,157,.25); letter-spacing:.1em; }
+
+    @media (max-width: 900px) {
+      nav { padding:18px 24px; }
+      .nav-links, .nav-phone { display:none; }
+      .detail-hero { padding:0 6vw 8vh; min-height:480px; }
+      .story-wrap { grid-template-columns:1fr; gap:40px; padding:48px 6vw; }
+      .story-side { position:static; }
+      .photo-grid { grid-template-columns:repeat(2,1fr); grid-auto-rows:200px; padding:24px 6vw 64px; }
+      .photo-grid figure:nth-child(1), .photo-grid figure:nth-child(2), .photo-grid figure:nth-child(3) { grid-column:span 2; grid-row:span 1; }
+      .foot-inner { flex-direction:column; text-align:center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="../index.html"><img src="../brand-logo/logo-white.svg" alt="Chase Construction LLC" class="nav-logo" id="nav-logo"></a>
+  <div class="nav-links">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="../projects.html" class="nav-link" style="color:var(--beige);">Projects</a>
+    <a href="../process.html" class="nav-link">Process</a>
+    <a href="../about.html" class="nav-link">About</a>
+  </div>
+  <div class="nav-right">
+    <a href="tel:2088978100" class="nav-phone">208-897-8100</a>
+    <a href="../contact.html" class="nav-cta">Start Your Build</a>
+  </div>
+</nav>
+
+<header class="detail-hero">
+  <div class="detail-hero-bg" style="background-image:url('../{{HERO}}')"></div>
+  <div class="detail-hero-inner reveal">
+    <span class="detail-eyebrow">{{SERVICE}}</span>
+    <h1 class="detail-h1">{{NAME}}</h1>
+    <div class="detail-meta-row">
+      <div><strong>{{LOCATION}}</strong></div>
+      <div><strong>{{YEAR}}</strong></div>
+    </div>
+  </div>
+</header>
+
+<div class="back-bar">
+  <a href="../projects.html" class="back-link">← Back to All Projects</a>
+</div>
+
+<section class="story-wrap">
+  <aside class="story-side reveal">
+    <div class="story-side-block"><strong>{{LOCATION}}</strong>Location</div>
+    <div class="story-side-block"><strong>{{YEAR}}</strong>Year Completed</div>
+    <div class="story-side-block"><strong>{{SERVICE}}</strong>Service</div>
+  </aside>
+  <div class="story-body reveal d1">{{STORY_HTML}}</div>
+</section>
+
+<section class="photo-grid">{{PHOTOS_HTML}}</section>
+
+<section class="inline-cta">
+  <div class="inline-cta-inner reveal">
+    <h3>Interested in a build like this?</h3>
+    <p>Every conversation is honest, no obligation. Reach out and we'll start with where you are.</p>
+    <a href="../contact.html" class="btn-inline">Start Your Build</a>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="closing-inner reveal">
+    <span class="closing-eyebrow">Your Build Belongs Here</span>
+    <h2>Every project starts with a single conversation.</h2>
+    <p>No pitch, no obligation — just an honest exchange about your land, your vision, and what's possible.</p>
+    <div class="closing-ctas">
+      <a href="../contact.html" class="btn-closing-p">Start Your Build</a>
+      <a href="tel:2088978100" class="btn-closing-g">208-897-8100</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <img src="../brand-logo/logo-white.svg" alt="Chase Construction LLC" class="foot-logo">
+    <div class="foot-info">Bellevue, Idaho &nbsp;·&nbsp; Serving Sun Valley, Ketchum &amp; Hailey<br><a href="tel:2088978100">208-897-8100</a></div>
+    <div class="foot-copy">&copy; 2025 Chase Construction LLC</div>
+  </div>
+</footer>
+
+<script>
+(function() {
+  'use strict';
+
+  // Nav scroll
+  var nav = document.getElementById('nav');
+  var navLogo = document.getElementById('nav-logo');
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 80) {
+      nav.classList.add('scrolled');
+      if (navLogo) navLogo.src = '../brand-logo/logo-main.svg';
+    } else {
+      nav.classList.remove('scrolled');
+      if (navLogo) navLogo.src = '../brand-logo/logo-white.svg';
+    }
+  }, { passive: true });
+
+  // Reveal
+  var io = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+
+  document.querySelectorAll('.reveal').forEach(function(el) { io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
