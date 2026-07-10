@@ -3,3 +3,8 @@ gemini-api-key.txt
 GHL-private-integration.txt
 node_modules/
 temporary screenshots/
+
+# API keys / secrets
+google-apikey.txt
+*apikey*.txt
+*api-key*.txt

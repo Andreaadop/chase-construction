@@ -275,6 +275,7 @@ body::after {
 .pg-hero {
   position: relative;
   min-height: 78vh;
+  min-height: 78svh;
   display: flex; align-items: flex-end;
   padding-bottom: 88px;
   overflow: hidden;
@@ -312,7 +313,7 @@ body::after {
   max-width: 600px;
 }
 @media (max-width: 768px) {
-  .pg-hero { min-height: 60vh; padding-bottom: 56px; }
+  .pg-hero { min-height: 60vh; min-height: 60svh; padding-bottom: 56px; }
   .pg-hero-inner { padding: 0 24px; }
   .pg-hero-h1 { font-size: clamp(30px, 8vw, 48px); }
 }
