@@ -105,6 +105,9 @@ for (const p of projects) {
 }
 
 // ── Sitemap
+// Projects are hidden for now (noindex in both templates) — flip to false
+// when they go public to re-add them here.
+const HIDE_PROJECTS = true;
 const today = new Date().toISOString().slice(0, 10);
 const base = 'https://chaseconstruction.org';
 const otherPages = [
@@ -115,8 +118,10 @@ const otherPages = [
 ];
 const urls = [
   ...otherPages.map(p => ({ loc: base + p, priority: '0.8' })),
-  { loc: base + '/projects.html', priority: '0.9' },
-  ...projects.map(p => ({ loc: `${base}/projects/${p.slug}.html`, priority: '0.7' }))
+  ...(HIDE_PROJECTS ? [] : [
+    { loc: base + '/projects.html', priority: '0.9' },
+    ...projects.map(p => ({ loc: `${base}/projects/${p.slug}.html`, priority: '0.7' }))
+  ])
 ];
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
