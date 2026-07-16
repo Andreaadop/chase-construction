@@ -8,3 +8,7 @@ temporary screenshots/
 google-apikey.txt
 *apikey*.txt
 *api-key*.txt
+# Google Cloud service account keys
+*.iam.gserviceaccount.json
+n8n-2026-*.json
+*service-account*.json
