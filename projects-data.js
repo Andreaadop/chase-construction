@@ -33,94 +33,50 @@
 
 const CHASE_PROJECTS = [
   {
-    slug: "bellevue-lakeside-lodge",
-    name: "Bellevue Lakeside Lodge",
-    location: "Bellevue, ID",
-    year: 2024,
-    service: "Log Home",
-    blurb: "A 5,200 sq ft custom log home overlooking the Big Wood River — hand-selected Douglas fir, full-scribe corners, and a great room built around the view.",
-    hero: "project-photos/bellevue-lakeside-lodge/hero.jpg",
-    photos: [
-      "project-photos/bellevue-lakeside-lodge/01.jpg",
-      "project-photos/bellevue-lakeside-lodge/02.jpg",
-      "project-photos/bellevue-lakeside-lodge/03.jpg"
-    ],
-    story: "The Bellevue Lakeside Lodge began as a sketch on a napkin: a great room that opened entirely to the river. Eighteen months later, full-scribe Douglas fir walls anchor a 5,200 sq ft retreat designed for three generations.\n\nEvery log was hand-selected and dry-stacked on site. The owner — a retired architect from the Bay Area — managed the project from California, with weekly video walk-throughs and a single trusted point of contact on the ground."
-  },
-  {
-    slug: "ketchum-ridge-estate",
-    name: "Ketchum Ridge Estate",
-    location: "Ketchum, ID",
-    year: 2023,
-    service: "Big Timber",
-    blurb: "Hand-hewn timber framing for a multi-generational mountain retreat. Forty-two structural members, every joint cut by hand.",
-    hero: "project-photos/ketchum-ridge-estate/hero.jpg",
-    photos: [
-      "project-photos/ketchum-ridge-estate/01.jpg",
-      "project-photos/ketchum-ridge-estate/02.jpg",
-      "project-photos/ketchum-ridge-estate/03.jpg"
-    ],
-    story: "Ketchum Ridge is a celebration of joinery. Forty-two structural timbers — Douglas fir, hand-hewn — are joined with traditional mortise-and-tenon connections held by oak pegs. No steel. No hidden hardware.\n\nThe great room ceiling rises to 28 feet, framed by a king-post truss that took three weeks to fit. From the lot's eastern edge you can see Bald Mountain on a clear day."
-  },
-  {
-    slug: "sun-valley-mountain-house",
-    name: "Sun Valley Mountain House",
-    location: "Sun Valley, ID",
-    year: 2023,
-    service: "Log Home",
-    blurb: "A ground-up build featuring reclaimed Douglas fir and locally milled lumber, designed to disappear into the treeline.",
-    hero: "project-photos/sun-valley-mountain-house/hero.jpg",
-    photos: [
-      "project-photos/sun-valley-mountain-house/01.jpg",
-      "project-photos/sun-valley-mountain-house/02.jpg",
-      "project-photos/sun-valley-mountain-house/03.jpg"
-    ],
-    story: "The owners asked for a home that would 'disappear into the treeline.' We delivered a low-slung profile clad in reclaimed Douglas fir, with charred-cedar accents and a roof line that mirrors the ridge behind it.\n\nThe lumber was milled three miles from the build site. Every board can be traced to a specific stand of trees."
-  },
-  {
-    slug: "hailey-heritage-restoration",
-    name: "Hailey Heritage Restoration",
-    location: "Hailey, ID",
-    year: 2022,
+    slug: "mackay-log-home-restoration",
+    name: "Mackay Log Home Restoration",
+    location: "Mackay, ID",
+    year: 2026,
     service: "Restoration",
-    blurb: "Full structural restoration and re-chinking of a 1940s pioneer log home. We replaced 23 logs, restored the original hearth, and brought it back to life for the next generation.",
-    hero: "project-photos/hailey-heritage-restoration/hero.jpg",
+    blurb: "Full restoration of a two-story log home beneath the Lost River Range — new standing-seam metal roof, refinished logs and chinking, new windows, and a gut interior remodel.",
+    hero: "project-photos/mackay-log-home-restoration/hero.jpg",
     photos: [
-      "project-photos/hailey-heritage-restoration/01.jpg",
-      "project-photos/hailey-heritage-restoration/02.jpg",
-      "project-photos/hailey-heritage-restoration/03.jpg"
+      "project-photos/mackay-log-home-restoration/01.jpg",
+      "project-photos/mackay-log-home-restoration/02.jpg",
+      "project-photos/mackay-log-home-restoration/03.jpg",
+      "project-photos/mackay-log-home-restoration/04.jpg"
     ],
-    story: "When the family bought the property in 2021, three of the south-facing logs had rotted through. We took the building down to its stone foundation, replaced 23 structural logs with matched Douglas fir, and re-chinked every seam using a flexible, breathable compound that respects the original aesthetic.\n\nThe hearth — the heart of the home since 1947 — was disassembled stone by stone and rebuilt. Same stones. Same place."
+    story: "The home came to us with a weathered cedar-shake roof and decades of sun on its logs. We stripped the shakes to the sheathing and replaced them with charcoal standing-seam metal, brought the log walls back to fresh wood, and renewed the chinking line by line.\n\nInside, the house was taken back to its log shell — new framing, plumbing, and electrical throughout, with new windows fitted into the original log openings."
   },
   {
-    slug: "conrad-family-addition",
-    name: "Conrad Family Addition",
-    location: "Bellevue, ID",
-    year: 2022,
-    service: "Finishes",
-    blurb: "A 1,800 sq ft addition that blends seamlessly with a 25-year-old log structure — matched logs, matched finishes, matched soul.",
-    hero: "project-photos/conrad-family-addition/hero.jpg",
+    slug: "log-deck-balcony-repair",
+    name: "Deck & Balcony Log Repair",
+    location: "Idaho",
+    year: 2026,
+    service: "Restoration",
+    blurb: "Structural log repair on a two-story deck and balcony — new hand-peeled posts, carrying beam, and joists fitted to the original home.",
+    hero: "project-photos/log-deck-balcony-repair/hero.jpg",
     photos: [
-      "project-photos/conrad-family-addition/01.jpg",
-      "project-photos/conrad-family-addition/02.jpg",
-      "project-photos/conrad-family-addition/03.jpg"
+      "project-photos/log-deck-balcony-repair/01.jpg",
+      "project-photos/log-deck-balcony-repair/02.jpg",
+      "project-photos/log-deck-balcony-repair/03.jpg"
     ],
-    story: "The Conrad family had outgrown their 1997 log home, but they didn't want to lose its character. We sourced matching Douglas fir from the same Idaho mill that supplied the original, hand-aged the finish to match weathered patina, and designed the new wing's roofline to read as if it had always been there.\n\nMost visitors can't tell where the original ends and the addition begins. That's the point."
+    story: "Rot had taken the posts and carrying beam under this balcony. We replaced them with new hand-peeled logs — posts, beam, joists, and rail plates — scribed to the original structure. The new wood will be stained to match the home."
   },
   {
-    slug: "wood-river-timber-frame",
-    name: "Wood River Timber Frame",
-    location: "Bellevue, ID",
-    year: 2021,
-    service: "Big Timber",
-    blurb: "Massive Douglas fir trusses anchor this open-concept timber frame. Built for a young family relocating from Austin.",
-    hero: "project-photos/wood-river-timber-frame/hero.jpg",
+    slug: "timber-framed-pump-house",
+    name: "Timber-Framed Pump House",
+    location: "Idaho",
+    year: 2026,
+    service: "Framing",
+    blurb: "A gable roof framed over a well house — hand-cut rafters with clean joinery, built on an existing steel frame.",
+    hero: "project-photos/timber-framed-pump-house/hero.jpg",
     photos: [
-      "project-photos/wood-river-timber-frame/01.jpg",
-      "project-photos/wood-river-timber-frame/02.jpg",
-      "project-photos/wood-river-timber-frame/03.jpg"
+      "project-photos/timber-framed-pump-house/01.jpg",
+      "project-photos/timber-framed-pump-house/02.jpg",
+      "project-photos/timber-framed-pump-house/03.jpg"
     ],
-    story: "A family of five, relocating from Austin, wanted a home that felt like Idaho but lived like a modern open-concept house. We answered with a timber frame: massive Douglas fir trusses that frame a 1,600 sq ft open great room, with the kitchen, living, and dining areas all sharing one ceiling.\n\nThe trusses were raised by crane in a single day. The owners watched on a livestream from Texas."
+    story: "Even a pump house gets the full standard. Each rafter was cut and fitted by hand to land on the existing steel frame — plumb cuts, birdsmouths, and a straight ridge against the sky."
   }
 ];
 
