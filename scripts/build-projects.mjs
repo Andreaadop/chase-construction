@@ -109,7 +109,7 @@ for (const p of projects) {
 // when they go public to re-add them here.
 const HIDE_PROJECTS = true;
 const today = new Date().toISOString().slice(0, 10);
-const base = 'https://chaseconstruction.org';
+const base = 'https://www.chaseconstruction.org';
 const otherPages = [
   '/index.html', '/about.html', '/contact.html', '/process.html',
   '/big-timber-framing.html', '/custom-log-homes.html',
