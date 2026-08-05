@@ -50,7 +50,7 @@ function renderCard(p, idx, total) {
       <div class="ed-meta">
         <span class="ed-eyebrow">${esc(p.service)}</span>
         <h2>${esc(p.name)}</h2>
-        <div class="ed-loc">${esc(p.location)}<span class="dot">·</span>${p.year}</div>
+        <div class="ed-loc">${esc(p.location)}${p.year ? `<span class="dot">·</span>${p.year}` : ''}</div>
         <div class="ed-rule"></div>
         <p class="ed-blurb">${esc(p.blurb)}</p>
         <a href="projects/${p.slug}.html" class="ed-cta">View Project <span class="arr">→</span></a>
@@ -87,13 +87,17 @@ for (const p of projects) {
   const photosHtml = (p.photos || [])
     .map(src => `<figure><img src="../${src}" alt="${esc(p.name)} detail" loading="lazy"></figure>`)
     .join('\n');
-  const metaDesc = `${p.name} — a ${p.service.toLowerCase()} build by Chase Construction LLC in ${p.location} (${p.year}). ${p.blurb}`.slice(0, 300);
+  const yearStr = p.year ? ` (${p.year})` : '';
+  const metaDesc = `${p.name} — a ${p.service.toLowerCase()} build by Chase Construction LLC in ${p.location}${yearStr}. ${p.blurb}`.slice(0, 300);
+  const yearMeta = p.year ? `<div><strong>${p.year}</strong></div>` : '';
+  const yearSide = p.year ? `<div class="story-side-block"><strong>${p.year}</strong>Year Completed</div>` : '';
   const ogImage = p.hero;
   const html = projectTpl
     .replaceAll('{{NAME}}', esc(p.name))
     .replaceAll('{{SERVICE}}', esc(p.service))
     .replaceAll('{{LOCATION}}', esc(p.location))
-    .replaceAll('{{YEAR}}', String(p.year))
+    .replaceAll('{{YEAR_META}}', yearMeta)
+    .replaceAll('{{YEAR_SIDE}}', yearSide)
     .replaceAll('{{HERO}}', p.hero)
     .replaceAll('{{STORY_HTML}}', storyHtml)
     .replaceAll('{{PHOTOS_HTML}}', photosHtml)
@@ -107,7 +111,7 @@ for (const p of projects) {
 // ── Sitemap
 // Projects are hidden for now (noindex in both templates) — flip to false
 // when they go public to re-add them here.
-const HIDE_PROJECTS = true;
+const HIDE_PROJECTS = false;
 const today = new Date().toISOString().slice(0, 10);
 const base = 'https://www.chaseconstruction.org';
 const otherPages = [

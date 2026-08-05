@@ -77,6 +77,22 @@ const CHASE_PROJECTS = [
       "project-photos/timber-framed-pump-house/03.jpg"
     ],
     story: "Even a pump house gets the full standard. Each rafter was cut and fitted by hand to land on the existing steel frame — plumb cuts, birdsmouths, and a straight ridge against the sky."
+  },
+  {
+    slug: "sun-valley-custom-log-home",
+    name: "Sun Valley Custom Log Home",
+    location: "Sun Valley, ID",
+    year: null, // Older build — exact year not on record; intentionally omitted rather than guessed.
+    service: "Log Home",
+    blurb: "A custom log home built from the ground up in a Sun Valley aspen grove — full-scribe log walls, a steep snow-country gable, and a covered balcony with a hand-built lattice log railing over a two-bay garage.",
+    hero: "project-photos/sun-valley-custom-log-home/hero.jpg",
+    photos: [
+      "project-photos/sun-valley-custom-log-home/01.jpg",
+      "project-photos/sun-valley-custom-log-home/02.jpg",
+      "project-photos/sun-valley-custom-log-home/03.jpg",
+      "project-photos/sun-valley-custom-log-home/04.jpg"
+    ],
+    story: "Chase built this log home from the ground up in an aspen grove. The walls are full log — scribed, stacked, and pinned by hand — carrying a steep gable roof sized for Sun Valley winters. Over the two-bay garage, a covered balcony steps out beneath the eave, its railing built from smaller logs notched into a lattice by hand.\n\nThe construction photos show the home before its finish: freshly peeled logs still pale, the balcony and railing going up while the aspens stood bare. Every post, beam, and baluster was cut and fitted on site.\n\nFinished and stained, the home settled into its setting — geranium boxes on the balcony rail, warm log walls, and the round-cut log ends that mark true handcrafted log work."
   }
 ];
 
