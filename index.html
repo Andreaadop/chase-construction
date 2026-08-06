@@ -877,14 +877,14 @@
     .port-link:hover { color: var(--ink); border-color: var(--ink); }
     .port-grid {
       max-width: 1200px; margin: 0 auto;
-      columns: 3; column-gap: 12px;
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
     }
     .port-item {
-      break-inside: avoid; margin-bottom: 12px;
+      flex: 0 1 calc(33.333% - 8px); aspect-ratio: 4 / 3;
       position: relative; overflow: hidden;
     }
     .port-item img {
-      width: 100%; display: block;
+      width: 100%; height: 100%; object-fit: cover; display: block;
       filter: brightness(.9) saturate(.9);
       transition: transform .7s var(--ease), filter .5s;
     }
@@ -895,8 +895,8 @@
       opacity: 0; transition: opacity .4s;
     }
     .port-item:hover .port-ov { opacity: 1; }
-    @media (max-width: 1024px) { .port-grid { columns: 2; } }
-    @media (max-width: 768px) { #portfolio { padding: 80px 24px; } .port-grid { columns: 1; } }
+    @media (max-width: 1024px) { .port-item { flex: 0 1 calc(50% - 6px); } }
+    @media (max-width: 768px) { #portfolio { padding: 80px 24px; } .port-item { flex: 0 1 100%; } }
 
 
     /* ══════════════════════════════════════════════
