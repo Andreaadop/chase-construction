@@ -85,8 +85,9 @@ const CHASE_PROJECTS = [
     year: null, // Older build — exact year not on record; intentionally omitted rather than guessed.
     service: "Log Home",
     blurb: "A custom log home built from the ground up in a Sun Valley aspen grove — full-scribe log walls, a steep snow-country gable, and a covered balcony with a hand-built lattice log railing over a two-bay garage.",
-    hero: "project-photos/sun-valley-custom-log-home/hero.jpg",
+    hero: "project-photos/sun-valley-custom-log-home/cover.jpg",
     photos: [
+      "project-photos/sun-valley-custom-log-home/front.jpg",
       "project-photos/sun-valley-custom-log-home/01.jpg",
       "project-photos/sun-valley-custom-log-home/02.jpg",
       "project-photos/sun-valley-custom-log-home/03.jpg",
