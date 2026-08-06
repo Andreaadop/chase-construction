@@ -33,6 +33,37 @@
 
 const CHASE_PROJECTS = [
   {
+    slug: "grand-entry-log-home",
+    name: "Grand Entry Log Home",
+    location: "Idaho",
+    year: 1989,
+    service: "Log Home",
+    blurb: "A handcrafted log home built in 1989 — a triple-gable front, massive log trusses over a stone-walled entry, and chinked log walls that have carried Idaho winters for more than three decades.",
+    hero: "project-photos/grand-entry-log-home/cover.jpg",
+    photos: [
+      "project-photos/grand-entry-log-home/01.jpg",
+      "project-photos/grand-entry-log-home/02.jpg"
+    ],
+    story: "This home was built in 1989, and it is still standing square. Three gables face the drive, the center one carried on full-round log trusses over an entry walled in native stone. The log walls are chinked by hand, line after line, under a cedar-shake roof.\n\nOn the back side, stacked log decks step down the hillside on hand-peeled posts and rails — the kind of outdoor structure that only lasts decades when the joinery under it is right.\n\nMore than thirty Idaho winters later, the logs have deepened to honey and the home wears its age the way good log work should: visibly, and without apology."
+  },
+  {
+    slug: "sun-valley-custom-log-home",
+    name: "Sun Valley Custom Log Home",
+    location: "Sun Valley, ID",
+    year: null, // Older build — exact year not on record; intentionally omitted rather than guessed.
+    service: "Log Home",
+    blurb: "A custom log home built from the ground up in a Sun Valley aspen grove — full-scribe log walls, a steep snow-country gable, and a covered balcony with a hand-built lattice log railing over a two-bay garage.",
+    hero: "project-photos/sun-valley-custom-log-home/cover.jpg",
+    photos: [
+      "project-photos/sun-valley-custom-log-home/front.jpg",
+      "project-photos/sun-valley-custom-log-home/01.jpg",
+      "project-photos/sun-valley-custom-log-home/02.jpg",
+      "project-photos/sun-valley-custom-log-home/03.jpg",
+      "project-photos/sun-valley-custom-log-home/04.jpg"
+    ],
+    story: "Chase built this log home from the ground up in an aspen grove. The walls are full log — scribed, stacked, and pinned by hand — carrying a steep gable roof sized for Sun Valley winters. Over the two-bay garage, a covered balcony steps out beneath the eave, its railing built from smaller logs notched into a lattice by hand.\n\nThe construction photos show the home before its finish: freshly peeled logs still pale, the balcony and railing going up while the aspens stood bare. Every post, beam, and baluster was cut and fitted on site.\n\nFinished and stained, the home settled into its setting — geranium boxes on the balcony rail, warm log walls, and the round-cut log ends that mark true handcrafted log work."
+  },
+  {
     slug: "mackay-log-home-restoration",
     name: "Mackay Log Home Restoration",
     location: "Mackay, ID",
@@ -77,23 +108,6 @@ const CHASE_PROJECTS = [
       "project-photos/timber-framed-pump-house/03.jpg"
     ],
     story: "Even a pump house gets the full standard. Each rafter was cut and fitted by hand to land on the existing steel frame — plumb cuts, birdsmouths, and a straight ridge against the sky."
-  },
-  {
-    slug: "sun-valley-custom-log-home",
-    name: "Sun Valley Custom Log Home",
-    location: "Sun Valley, ID",
-    year: null, // Older build — exact year not on record; intentionally omitted rather than guessed.
-    service: "Log Home",
-    blurb: "A custom log home built from the ground up in a Sun Valley aspen grove — full-scribe log walls, a steep snow-country gable, and a covered balcony with a hand-built lattice log railing over a two-bay garage.",
-    hero: "project-photos/sun-valley-custom-log-home/cover.jpg",
-    photos: [
-      "project-photos/sun-valley-custom-log-home/front.jpg",
-      "project-photos/sun-valley-custom-log-home/01.jpg",
-      "project-photos/sun-valley-custom-log-home/02.jpg",
-      "project-photos/sun-valley-custom-log-home/03.jpg",
-      "project-photos/sun-valley-custom-log-home/04.jpg"
-    ],
-    story: "Chase built this log home from the ground up in an aspen grove. The walls are full log — scribed, stacked, and pinned by hand — carrying a steep gable roof sized for Sun Valley winters. Over the two-bay garage, a covered balcony steps out beneath the eave, its railing built from smaller logs notched into a lattice by hand.\n\nThe construction photos show the home before its finish: freshly peeled logs still pale, the balcony and railing going up while the aspens stood bare. Every post, beam, and baluster was cut and fitted on site.\n\nFinished and stained, the home settled into its setting — geranium boxes on the balcony rail, warm log walls, and the round-cut log ends that mark true handcrafted log work."
   }
 ];
 
