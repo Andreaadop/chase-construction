@@ -758,6 +758,114 @@
 
 
     /* ══════════════════════════════════════════════
+       CHINKING SPOTLIGHT — the section IS a log wall:
+       dark log band held between two pale chink lines
+    ══════════════════════════════════════════════ */
+    #chinking {
+      position: relative;
+      margin-top: clamp(56px, 7vw, 96px);
+      background: linear-gradient(140deg, #23372c 0%, var(--green-d) 55%, #17251e 100%);
+      color: var(--text-light);
+      overflow: hidden;
+    }
+    #chinking::before {               /* wood grain ghosted into the log band */
+      content: ''; position: absolute; inset: 0; z-index: 0;
+      background-image: url('graphic-elements-other-images/wood-log-texture-horizontal.jpg');
+      background-size: cover; background-position: center;
+      opacity: .07; mix-blend-mode: overlay;
+    }
+    /* The two chink lines that hold the band — beveled like real mortar */
+    .chink-line {
+      position: relative; z-index: 2; height: 18px;
+      background: linear-gradient(180deg, #d8cdb9 0%, var(--linen) 45%, #b5a68c 100%);
+    }
+    .chink-line--top    { box-shadow: 0 6px 14px -6px rgba(23,37,30,.8); }
+    .chink-line--bottom { box-shadow: 0 -6px 14px -6px rgba(23,37,30,.8); }
+    .chink-inner {
+      position: relative; z-index: 1;
+      max-width: 1260px; margin: 0 auto;
+      padding: clamp(64px, 7vw, 104px) 52px;
+      display: grid; grid-template-columns: 1.25fr 1fr;
+      gap: clamp(48px, 6vw, 96px); align-items: center;
+    }
+    .chink-copy .eyebrow-light { display: block; margin-bottom: 18px; }
+    .chink-h2 {
+      font-family: 'Hoefler Text', Georgia, serif; font-style: italic;
+      font-size: clamp(30px, 3.6vw, 50px); line-height: 1.08;
+      color: var(--text-light); margin-bottom: 24px; letter-spacing: -.01em;
+    }
+    .chink-body {
+      font-size: 15px; line-height: 1.85; font-weight: 300;
+      color: rgba(240,236,228,.82); max-width: 560px; margin-bottom: 30px;
+    }
+    .chink-body a {
+      color: var(--beige); text-decoration: none;
+      border-bottom: 1px solid rgba(195,180,157,.45);
+      transition: color .3s var(--ease), border-color .3s var(--ease);
+    }
+    .chink-body a:hover, .chink-body a:focus-visible { color: #fff; border-color: #fff; }
+    .chink-body a:focus-visible { outline: 1px solid var(--beige); outline-offset: 3px; }
+    /* Warning signs — set like joint marks, not a bullet list */
+    .chink-signs {
+      display: flex; flex-wrap: wrap; gap: 10px 28px;
+      margin-bottom: 36px; padding: 0; list-style: none;
+    }
+    .chink-signs li {
+      position: relative; padding-left: 22px;
+      font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
+      font-weight: 400; color: rgba(240,236,228,.75); line-height: 2;
+    }
+    .chink-signs li::before {          /* short chink-line tick */
+      content: ''; position: absolute; left: 0; top: 50%;
+      width: 13px; height: 3px; transform: translateY(-50%);
+      background: var(--beige); border-radius: 1px;
+    }
+    .chink-ctas { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+    .chink-cta-p {
+      display: inline-block; padding: 16px 30px;
+      background: var(--beige); color: var(--ink);
+      font-size: 11px; letter-spacing: .24em; text-transform: uppercase; font-weight: 500;
+      transition: background .35s var(--ease), transform .35s var(--ease);
+    }
+    .chink-cta-p:hover { background: #fff; }
+    .chink-cta-p:focus-visible { outline: 2px solid var(--beige); outline-offset: 3px; }
+    .chink-cta-p:active { transform: translateY(1px); }
+    .chink-cta-tel {
+      font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
+      color: rgba(240,236,228,.7); transition: color .3s var(--ease);
+    }
+    .chink-cta-tel:hover, .chink-cta-tel:focus-visible { color: var(--beige); }
+    .chink-cta-tel:focus-visible { outline: 1px solid var(--beige); outline-offset: 3px; }
+    /* Photo: fresh chink lines, floating off the band on layered tinted shadow */
+    .chink-media { position: relative; }
+    .chink-media img {
+      width: 100%; max-width: 440px; display: block; margin-left: auto;
+      border: 1px solid rgba(240,236,228,.12);
+      box-shadow:
+        0 40px 80px -32px rgba(10,18,14,.75),
+        0 18px 36px -18px rgba(23,37,30,.6),
+        0 4px 12px rgba(10,18,14,.35);
+      transform: rotate(1.2deg);
+      transition: transform .6s var(--ease);
+    }
+    .chink-media:hover img { transform: rotate(0deg) translateY(-4px); }
+    .chink-media figcaption {
+      margin-top: 16px; text-align: right;
+      font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
+      color: rgba(240,236,228,.45);
+    }
+    @media (max-width: 900px) {
+      .chink-inner { grid-template-columns: 1fr; gap: 40px; padding: 64px 24px 72px; }
+      .chink-media img { margin: 0 auto; max-width: 380px; transform: none; }
+      .chink-media figcaption { text-align: center; }
+      .chink-body { max-width: none; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .chink-media img, .chink-media:hover img { transform: none; }
+    }
+
+
+    /* ══════════════════════════════════════════════
        WHY CHASE — full log slab floating on snow
     ══════════════════════════════════════════════ */
     #why {
@@ -1458,6 +1566,33 @@
     </a>
 
   </div>
+</section>
+
+
+<!-- ════ CHINKING & STAINING SPOTLIGHT ════ -->
+<section id="chinking" aria-labelledby="chinking-heading">
+  <div class="chink-line chink-line--top" aria-hidden="true"></div>
+  <div class="chink-inner">
+    <div class="chink-copy">
+      <span class="eyebrow eyebrow-light reveal">Before the Snow Flies</span>
+      <h2 id="chinking-heading" class="chink-h2 reveal d1">Cracked chinking won't<br>survive an Idaho winter.</h2>
+      <p class="chink-body reveal d2">The pale lines between your logs are the only thing keeping snowmelt out of the wood. When chinking cracks or pulls away — or the stain goes gray and chalky — water gets behind it, and freeze-thaw does the rest. We <a href="log-home-chinking-staining.html">re-chink and re-stain log homes</a> across Sun Valley, Ketchum, and Hailey, and late summer is the right time to get on the schedule.</p>
+      <ul class="chink-signs reveal d2">
+        <li>Cracks along the log line</li>
+        <li>Chinking pulling away</li>
+        <li>Stain gone gray or chalky</li>
+      </ul>
+      <div class="chink-ctas reveal d3">
+        <a href="log-home-chinking-staining.html" class="chink-cta-p">Log Home Chinking &amp; Staining</a>
+        <a href="tel:2088978100" class="chink-cta-tel">Free assessment · 208-897-8100</a>
+      </div>
+    </div>
+    <figure class="chink-media reveal d2">
+      <img src="company-photos/chinking-log-corner.jpg" alt="Fresh hand-applied chinking lines between stacked logs on a log home corner in Idaho" loading="lazy" width="1000" height="1250">
+      <figcaption>Fresh chink lines · Wood River Valley</figcaption>
+    </figure>
+  </div>
+  <div class="chink-line chink-line--bottom" aria-hidden="true"></div>
 </section>
 
 
