@@ -500,7 +500,7 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .f-field { display: flex; flex-direction: column; gap: 8px; }
 .f-label {
   font-size: 10px; letter-spacing: .18em; text-transform: uppercase;
-  color: rgba(195,180,157,.6); font-weight: 500;
+  color: rgba(195,180,157,.85); font-weight: 500;
 }
 .f-input, .f-ta {
   background: rgba(255,255,255,.09);
@@ -527,7 +527,7 @@ details[open] .faq-icon { transform: rotate(45deg); }
 .f-select {
   background: rgba(255,255,255,.09);
   border: 1px solid rgba(195,180,157,.3);
-  color: rgba(195,180,157,.7); padding: 14px 16px;
+  color: rgba(195,180,157,.96); padding: 14px 16px;
   font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 300;
   outline: none; width: 100%; cursor: pointer;
   transition: border-color .3s;
@@ -552,11 +552,11 @@ footer {
 .foot-logo { height: 32px; opacity: .75; }
 .foot-info {
   font-size: 12px; font-weight: 300;
-  color: rgba(195,180,157,.45); line-height: 1.8; text-align: center;
+  color: rgba(195,180,157,.72); line-height: 1.8; text-align: center;
 }
-.foot-info a { color: rgba(195,180,157,.55); transition: color .3s; }
+.foot-info a { color: rgba(195,180,157,.78); transition: color .3s; }
 .foot-info a:hover { color: var(--beige); }
-.foot-copy { font-size: 10px; color: rgba(195,180,157,.25); letter-spacing: .1em; }
+.foot-copy { font-size: 10px; color: rgba(195,180,157,.7); letter-spacing: .1em; }
 @media (max-width: 768px) {
   footer { padding: 40px 24px; }
   .foot-inner { flex-direction: column; align-items: center; text-align: center; }
@@ -586,7 +586,7 @@ footer {
 .pg-stat-label {
   font-family: 'Montserrat', sans-serif;
   font-size: 9px; letter-spacing: .22em; text-transform: uppercase;
-  color: rgba(195,180,157,.45); font-weight: 500; line-height: 1.6;
+  color: rgba(195,180,157,.78); font-weight: 500; line-height: 1.6;
 }
 @media (max-width: 768px) {
   .pg-stat-bar { grid-template-columns: repeat(2, 1fr); }
