@@ -1,61 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NXVXLDKW');</script>
-  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <meta name="description" content="Chase Construction LLC — Custom log home builders in Sun Valley, Ketchum, and Hailey, Idaho. Luxury log home construction, restoration, and timber framing. Built to last generations.">
-  <title>Log Home Builders in Sun Valley, Idaho | Chase Construction</title>
-  <link rel="canonical" href="https://www.chaseconstruction.org/">
+  <title>Log Cabin Builders in Sun Valley, Idaho | Chase Construction</title>
   <link rel="icon" type="image/png" href="/favicon.png">
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "GeneralContractor",
-    "@id": "https://www.chaseconstruction.org/#business",
-    "name": "Chase Construction LLC",
-    "description": "Custom log home builders, big timber framing, and log home restoration serving Sun Valley, Ketchum, Hailey, and Bellevue, Idaho.",
-    "url": "https://www.chaseconstruction.org/",
-    "telephone": "+1-208-897-8100",
-    "image": "https://www.chaseconstruction.org/brand-logo/logo-main.svg",
-    "logo": "https://www.chaseconstruction.org/brand-logo/logo-main.svg",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Bellevue",
-      "addressRegion": "ID",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      { "@type": "City", "name": "Sun Valley, Idaho" },
-      { "@type": "City", "name": "Ketchum, Idaho" },
-      { "@type": "City", "name": "Hailey, Idaho" },
-      { "@type": "City", "name": "Bellevue, Idaho" }
-    ],
-    "knowsAbout": [
-      "Custom log homes",
-      "Big timber framing",
-      "Log home restoration",
-      "Log home chinking and staining"
-    ],
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Services",
-      "itemListElement": [
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Log Homes", "url": "https://www.chaseconstruction.org/custom-log-homes.html" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Big Timber Framing", "url": "https://www.chaseconstruction.org/big-timber-framing.html" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Log Home Restoration", "url": "https://www.chaseconstruction.org/log-home-restorations.html" } },
-        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Log Home Chinking & Staining", "url": "https://www.chaseconstruction.org/log-home-chinking-staining.html" } }
-      ]
-    }
-  }
-  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -507,7 +457,7 @@
       }
       .hero-sub { max-width: 100%; }
       .hero-ctas { justify-content: center; }
-      /* Two-line headline on mobile: "Sun Valley's / Log Home Builders" */
+      /* Two-line headline on mobile: "Sun Valley's / Log Cabin Builders" */
       .br-desktop { display: none; }
       .hero-h1 { font-size: clamp(28px, 9vw, 44px); }
       .hero-vert { display: none; }
@@ -642,226 +592,79 @@
 
 
     /* ══════════════════════════════════════════════
-       SERVICES — "The Collection"
-       Handcrafted miniatures floating in a warm studio.
-       Each specimen lifts off its shadow on hover.
+       SERVICES — deep forest green, numbered grid
     ══════════════════════════════════════════════ */
     #services {
-      padding: clamp(88px,10vw,150px) 52px clamp(80px,9vw,130px);
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--green-d);
       position: relative; overflow: hidden;
-      background: radial-gradient(125% 85% at 50% -8%, #ffffff 0%, var(--snow) 32%, var(--linen) 100%);
     }
-    .services-hd {
-      max-width: 720px; margin: 0 auto 76px;
-      text-align: center; position: relative; z-index: 1;
-    }
-    .services-hd .section-title { color: var(--ink); margin-top: 14px; }
-    .services-sub {
-      margin: 20px auto 0; max-width: 540px;
-      font-size: 15px; line-height: 1.85; font-weight: 300; color: var(--text-muted);
-    }
-    .services-grid {
-      max-width: 1260px; margin: 0 auto;
-      display: grid; grid-template-columns: repeat(3,1fr);
-      gap: clamp(18px,2.2vw,32px);
-      position: relative; z-index: 1;
-    }
-
-    /* Each service = a specimen resting on the studio surface */
-    .svc-card {
-      position: relative; isolation: isolate;
-      display: flex; flex-direction: column;
-      padding: 26px 30px 32px;
-      border-radius: 5px; color: inherit;
-      transition: transform .5s var(--ease);
-    }
-    .svc-card::before {                 /* barely-there surface, fades up on hover */
-      content: ''; position: absolute; inset: 0; z-index: -2; border-radius: 5px;
-      background: linear-gradient(180deg, rgba(255,255,255,.85), rgba(255,255,255,.35));
-      border: 1px solid rgba(26,22,20,.06);
-      box-shadow: 0 18px 40px -22px rgba(26,22,20,.28);
-      opacity: 0; transition: opacity .5s var(--ease);
-    }
-    .svc-card:hover::before,
-    .svc-card:focus-visible::before { opacity: 1; }
-    .svc-card:focus-visible { outline: none; }
-    .svc-card:focus-visible::before { border-color: var(--green); }
-
-    /* Ghost catalog numeral */
-    .svc-num {
-      position: absolute; top: 6px; right: 20px; z-index: -1;
-      font-family: 'Hoefler Text', Georgia, serif; font-style: italic;
-      font-size: clamp(58px, 6vw, 96px); line-height: 1;
-      color: rgba(44,87,61,.09); pointer-events: none; user-select: none;
-    }
-
-    /* Stage: studio spotlight + model + contact shadow */
-    .svc-stage {
-      position: relative; height: 236px; margin-bottom: 20px;
-      display: flex; align-items: flex-end; justify-content: center;
-    }
-    .svc-stage::before {                /* soft studio glow behind the model */
-      content: ''; position: absolute; inset: 0; z-index: 0;
-      background: radial-gradient(58% 54% at 50% 40%, rgba(255,255,255,.95), rgba(255,255,255,0) 72%);
-    }
-    .svc-shadow {                       /* soft contact ellipse under the model */
-      position: absolute; bottom: 12px; left: 50%; z-index: 1;
-      width: 64%; height: 24px; transform: translateX(-50%);
-      background: radial-gradient(ellipse at center, rgba(26,22,20,.30), rgba(26,22,20,0) 70%);
-      filter: blur(4px);
-      transition: width .55s var(--ease), opacity .55s var(--ease), filter .55s var(--ease);
-    }
-    .svc-model {
-      position: relative; z-index: 2;
-      max-height: 218px; max-width: 94%; width: auto; object-fit: contain;
-      filter: drop-shadow(0 12px 16px rgba(26,22,20,.14));
-      transform-origin: 50% 92%;
-      transition: transform .55s var(--ease);
-    }
-    /* Signature: the model lifts, tips, and grows; its shadow spreads */
-    .svc-card:hover .svc-model,
-    .svc-card:focus-visible .svc-model { transform: translateY(-16px) rotate(-1.3deg) scale(1.035); }
-    .svc-card:hover .svc-shadow,
-    .svc-card:focus-visible .svc-shadow { width: 78%; opacity: .78; filter: blur(6px); }
-
-    .svc-body { position: relative; z-index: 2; }
-    .svc-title {
-      font-family: 'Hoefler Text', Georgia, serif;
-      font-size: clamp(21px,1.6vw,25px); color: var(--ink);
-      margin-bottom: 12px; line-height: 1.14;
-    }
-    .svc-desc {
-      font-size: 13.5px; line-height: 1.8; color: var(--text-muted); font-weight: 300;
-    }
-    .svc-arrow {
-      display: inline-flex; align-items: center; gap: 8px; margin-top: 20px;
-      font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
-      color: var(--green); font-weight: 500;
-      transition: gap .3s var(--ease);
-    }
-    .svc-arrow i { font-style: normal; transition: transform .3s var(--ease); }
-    .svc-card:hover .svc-arrow, .svc-card:focus-visible .svc-arrow { gap: 13px; }
-    .svc-card:hover .svc-arrow i, .svc-card:focus-visible .svc-arrow i { transform: translateX(3px); }
-
-    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2,1fr); } }
-    @media (max-width: 640px) {
-      #services { padding: 74px 20px 64px; }
-      .services-hd { margin-bottom: 44px; }
-      .services-grid { grid-template-columns: 1fr; gap: 12px; }
-      .svc-card { padding: 20px 24px 26px; }
-      .svc-stage { height: 224px; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .svc-card:hover .svc-model, .svc-card:focus-visible .svc-model { transform: none; }
-      .svc-card:hover .svc-shadow, .svc-card:focus-visible .svc-shadow { width: 64%; opacity: 1; filter: blur(4px); }
-    }
-
-
-    /* ══════════════════════════════════════════════
-       CHINKING SPOTLIGHT — the section IS a log wall:
-       dark log band held between two pale chink lines
-    ══════════════════════════════════════════════ */
-    #chinking {
-      position: relative;
-      margin-top: clamp(56px, 7vw, 96px);
-      background: linear-gradient(140deg, #23372c 0%, var(--green-d) 55%, #17251e 100%);
-      color: var(--text-light);
-      overflow: hidden;
-    }
-    #chinking::before {               /* wood grain ghosted into the log band */
+    /* Subtle wood texture overlay */
+    #services::before {
       content: ''; position: absolute; inset: 0; z-index: 0;
       background-image: url('graphic-elements-other-images/wood-log-texture-horizontal.jpg');
       background-size: cover; background-position: center;
-      opacity: .07; mix-blend-mode: overlay;
+      opacity: 0.04; mix-blend-mode: overlay;
     }
-    /* The two chink lines that hold the band — beveled like real mortar */
-    .chink-line {
-      position: relative; z-index: 2; height: 18px;
-      background: linear-gradient(180deg, #d8cdb9 0%, var(--linen) 45%, #b5a68c 100%);
-    }
-    .chink-line--top    { box-shadow: 0 6px 14px -6px rgba(23,37,30,.8); }
-    .chink-line--bottom { box-shadow: 0 -6px 14px -6px rgba(23,37,30,.8); }
-    .chink-inner {
+    .services-hd {
+      max-width: 1200px; margin: 0 auto 68px;
       position: relative; z-index: 1;
-      max-width: 1260px; margin: 0 auto;
-      padding: clamp(64px, 7vw, 104px) 52px;
-      display: grid; grid-template-columns: 1.25fr 1fr;
-      gap: clamp(48px, 6vw, 96px); align-items: center;
     }
-    .chink-copy .eyebrow-light { display: block; margin-bottom: 18px; }
-    .chink-h2 {
-      font-family: 'Hoefler Text', Georgia, serif; font-style: italic;
-      font-size: clamp(30px, 3.6vw, 50px); line-height: 1.08;
-      color: var(--text-light); margin-bottom: 24px; letter-spacing: -.01em;
+    .services-hd .section-title { color: var(--text-light); margin-top: 16px; }
+    .services-grid {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 1px; background: rgba(195,180,157,.1);
+      border: 1px solid rgba(195,180,157,.1);
+      position: relative; z-index: 1;
     }
-    .chink-body {
-      font-size: 15px; line-height: 1.85; font-weight: 300;
-      color: rgba(240,236,228,.82); max-width: 560px; margin-bottom: 30px;
+    .svc-card {
+      background: var(--green-d);
+      padding: 0; overflow: hidden;
+      transition: background .35s;
+      position: relative;
     }
-    .chink-body a {
-      color: var(--beige); text-decoration: none;
-      border-bottom: 1px solid rgba(195,180,157,.45);
-      transition: color .3s var(--ease), border-color .3s var(--ease);
+    .svc-card:hover { background: rgba(44,87,61,.18); }
+    .svc-img {
+      height: 200px; overflow: hidden; position: relative;
     }
-    .chink-body a:hover, .chink-body a:focus-visible { color: #fff; border-color: #fff; }
-    .chink-body a:focus-visible { outline: 1px solid var(--beige); outline-offset: 3px; }
-    /* Warning signs — set like joint marks, not a bullet list */
-    .chink-signs {
-      display: flex; flex-wrap: wrap; gap: 10px 28px;
-      margin-bottom: 36px; padding: 0; list-style: none;
+    .svc-img img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: brightness(.65) saturate(.85);
+      transition: transform .7s var(--ease), filter .5s;
     }
-    .chink-signs li {
-      position: relative; padding-left: 22px;
-      font-size: 12px; letter-spacing: .14em; text-transform: uppercase;
-      font-weight: 400; color: rgba(240,236,228,.75); line-height: 2;
+    .svc-card:hover .svc-img img { transform: scale(1.07); filter: brightness(.75) saturate(1); }
+    /* Green tint overlay on image */
+    .svc-img::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(to top, var(--green-d) 0%, rgba(28,48,40,.5) 50%, rgba(28,48,40,.1) 100%);
     }
-    .chink-signs li::before {          /* short chink-line tick */
-      content: ''; position: absolute; left: 0; top: 50%;
-      width: 13px; height: 3px; transform: translateY(-50%);
-      background: var(--beige); border-radius: 1px;
+    .svc-num {
+      position: absolute; top: 16px; right: 18px;
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 13px; font-style: italic;
+      color: rgba(195,180,157,.5); z-index: 1; letter-spacing: .05em;
     }
-    .chink-ctas { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
-    .chink-cta-p {
-      display: inline-block; padding: 16px 30px;
-      background: var(--beige); color: var(--ink);
-      font-size: 11px; letter-spacing: .24em; text-transform: uppercase; font-weight: 500;
-      transition: background .35s var(--ease), transform .35s var(--ease);
+    .svc-body { padding: 26px 26px 32px; }
+    .svc-title {
+      font-family: 'Hoefler Text', Georgia, serif;
+      font-size: 20px; color: var(--text-light); margin-bottom: 10px;
     }
-    .chink-cta-p:hover { background: #fff; }
-    .chink-cta-p:focus-visible { outline: 2px solid var(--beige); outline-offset: 3px; }
-    .chink-cta-p:active { transform: translateY(1px); }
-    .chink-cta-tel {
-      font-size: 11px; letter-spacing: .2em; text-transform: uppercase;
-      color: rgba(240,236,228,.7); transition: color .3s var(--ease);
+    .svc-desc {
+      font-size: 13px; line-height: 1.8; color: rgba(195,180,157,.6); font-weight: 300;
     }
-    .chink-cta-tel:hover, .chink-cta-tel:focus-visible { color: var(--beige); }
-    .chink-cta-tel:focus-visible { outline: 1px solid var(--beige); outline-offset: 3px; }
-    /* Photo: fresh chink lines, floating off the band on layered tinted shadow */
-    .chink-media { position: relative; }
-    .chink-media img {
-      width: 100%; max-width: 440px; display: block; margin-left: auto;
-      border: 1px solid rgba(240,236,228,.12);
-      box-shadow:
-        0 40px 80px -32px rgba(10,18,14,.75),
-        0 18px 36px -18px rgba(23,37,30,.6),
-        0 4px 12px rgba(10,18,14,.35);
-      transform: rotate(1.2deg);
-      transition: transform .6s var(--ease);
+    .svc-arrow {
+      display: inline-block; margin-top: 16px;
+      font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+      color: rgba(195,180,157,.45); font-weight: 400;
+      transition: color .3s, letter-spacing .3s;
     }
-    .chink-media:hover img { transform: rotate(0deg) translateY(-4px); }
-    .chink-media figcaption {
-      margin-top: 16px; text-align: right;
-      font-size: 10px; letter-spacing: .22em; text-transform: uppercase;
-      color: rgba(240,236,228,.45);
-    }
-    @media (max-width: 900px) {
-      .chink-inner { grid-template-columns: 1fr; gap: 40px; padding: 64px 24px 72px; }
-      .chink-media img { margin: 0 auto; max-width: 380px; transform: none; }
-      .chink-media figcaption { text-align: center; }
-      .chink-body { max-width: none; }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .chink-media img, .chink-media:hover img { transform: none; }
+    .svc-card:hover .svc-arrow { color: var(--beige); letter-spacing: .28em; }
+    @media (max-width: 1024px) { .services-grid { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 640px) {
+      #services { padding: 80px 0; }
+      .services-hd { padding: 0 24px; margin-bottom: 48px; }
+      .services-grid { grid-template-columns: 1fr; }
     }
 
 
@@ -985,14 +788,14 @@
     .port-link:hover { color: var(--ink); border-color: var(--ink); }
     .port-grid {
       max-width: 1200px; margin: 0 auto;
-      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+      columns: 3; column-gap: 12px;
     }
     .port-item {
-      flex: 0 1 calc(33.333% - 8px); aspect-ratio: 4 / 3;
+      break-inside: avoid; margin-bottom: 12px;
       position: relative; overflow: hidden;
     }
     .port-item img {
-      width: 100%; height: 100%; object-fit: cover; display: block;
+      width: 100%; display: block;
       filter: brightness(.9) saturate(.9);
       transition: transform .7s var(--ease), filter .5s;
     }
@@ -1003,8 +806,8 @@
       opacity: 0; transition: opacity .4s;
     }
     .port-item:hover .port-ov { opacity: 1; }
-    @media (max-width: 1024px) { .port-item { flex: 0 1 calc(50% - 6px); } }
-    @media (max-width: 768px) { #portfolio { padding: 80px 24px; } .port-item { flex: 0 1 100%; } }
+    @media (max-width: 1024px) { .port-grid { columns: 2; } }
+    @media (max-width: 768px) { #portfolio { padding: 80px 24px; } .port-grid { columns: 1; } }
 
 
     /* ══════════════════════════════════════════════
@@ -1309,12 +1112,12 @@
     .foot-logo { height: 32px; opacity: .75; }
     .foot-info {
       font-size: 12px; font-weight: 300;
-      color: rgba(195,180,157,.72); line-height: 1.8; text-align: center;
+      color: rgba(195,180,157,.45); line-height: 1.8; text-align: center;
     }
-    .foot-info a { color: rgba(195,180,157,.78); transition: color .3s; }
+    .foot-info a { color: rgba(195,180,157,.55); transition: color .3s; }
     .foot-info a:hover { color: var(--beige); }
     .foot-copy {
-      font-size: 10px; color: rgba(195,180,157,.7); letter-spacing: .1em;
+      font-size: 10px; color: rgba(195,180,157,.25); letter-spacing: .1em;
     }
     @media (max-width: 768px) {
       footer { padding: 40px 24px; }
@@ -1323,10 +1126,6 @@
   </style>
 </head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NXVXLDKW"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
 
 <!-- ════ NAV ════ -->
@@ -1347,12 +1146,10 @@
         <a href="log-home-chinking-staining.html">Chinking &amp; Staining</a>
         <a href="custom-log-finishes-siding.html">Custom Log Finishes &amp; Siding</a>
         <a href="milling-and-more.html">Milling &amp; More</a>
-        <a href="building-from-out-of-state.html">Out-of-State Clients</a>
       </div>
     </div>
     <a href="projects.html" class="nav-link">Projects</a>
     <a href="process.html" class="nav-link">Process</a>
-    <a href="blog/" class="nav-link">Blog</a>
     <a href="about.html" class="nav-link">About</a>
   </div>
   <div class="nav-right">
@@ -1378,10 +1175,8 @@
     <a href="log-home-chinking-staining.html" class="nav-mobile-sub">Chinking &amp; Staining</a>
     <a href="custom-log-finishes-siding.html" class="nav-mobile-sub">Custom Log Finishes &amp; Siding</a>
     <a href="milling-and-more.html" class="nav-mobile-sub">Milling &amp; More</a>
-    <a href="building-from-out-of-state.html" class="nav-mobile-sub">Out-of-State Clients</a>
     <a href="projects.html">Projects</a>
     <a href="process.html">Process</a>
-    <a href="blog/">Blog</a>
     <a href="about.html">About</a>
     <a href="contact.html" class="nav-mobile-cta">Start Your Build →</a>
   </nav>
@@ -1403,7 +1198,7 @@
   <!-- Right-side content panel -->
   <div class="hero-content" id="hero-content">
     <span class="hero-eyebrow">Chase Construction LLC &nbsp;/&nbsp; Sun Valley, Idaho</span>
-    <h1 class="hero-h1">Sun Valley's<br>Log Home<br class="br-desktop"> Builders</h1>
+    <h1 class="hero-h1">Sun Valley's<br>Log Cabin<br class="br-desktop"> Builders</h1>
     <div class="hero-rule" id="hero-rule"></div>
     <p class="hero-sub">Some homes are designed to impress. A Chase home is built to endure — the land, the seasons, and every generation that follows.</p>
     <div class="hero-ctas">
@@ -1444,7 +1239,7 @@
       <div class="h-rule reveal d2" style="margin: 24px 0;"></div>
       <div class="problem-body reveal d2">
         <p>Most of our clients live in California, Texas, or the Pacific Northwest. They fell in love with Sun Valley — the skiing, the landscape, the lifestyle — and decided it was time to build.</p>
-        <p>What they quickly discovered is that <a href="building-from-out-of-state.html">managing a construction project from out of state</a>, across time zones, with a team they've never met, is one of the most stressful things they've ever done.</p>
+        <p>What they quickly discovered is that managing a construction project remotely, across time zones, with a team they've never met, is one of the most stressful things they've ever done.</p>
         <p><strong>That's exactly why Chase Construction exists.</strong> We are your eyes, your voice, and your advocate on the ground — from the first log to the final walkthrough. You decide. We execute.</p>
       </div>
       <div class="problem-cta reveal d3">
@@ -1452,10 +1247,10 @@
       </div>
     </div>
 
-    <!-- The window image: looking through a log home window at Idaho mountains -->
+    <!-- The window image: looking through a log cabin window at Idaho mountains -->
     <div class="problem-img reveal d3">
       <img src="ai-generated-images/openart-image_CXw71ZFV_1775134074971_raw.jpg"
-           alt="Looking through a log home window at the Idaho mountains — the Chase Construction experience"
+           alt="Looking through a log cabin window at the Idaho mountains — the Chase Construction experience"
            loading="lazy">
     </div>
 
@@ -1485,118 +1280,84 @@
 <!-- ════ SERVICES ════ -->
 <section id="services" aria-labelledby="svc-heading">
   <div class="services-hd">
-    <span class="eyebrow reveal">What We Build</span>
+    <span class="eyebrow eyebrow-light reveal">What We Build</span>
     <h2 id="svc-heading" class="section-title reveal d1">Built for the Mountain Lifestyle</h2>
-    <p class="services-sub reveal d2">Six disciplines under one roof — each a craft of its own, shown here as handcrafted models of the work itself.</p>
   </div>
   <div class="services-grid">
 
-    <a class="svc-card reveal d1" href="custom-log-homes.html" aria-label="Custom Log Homes — explore this service">
-      <span class="svc-num" aria-hidden="true">01</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-custom-log-homes-1.png" alt="Handcrafted miniature model of a custom log home" loading="lazy">
+    <article class="svc-card reveal d1">
+      <div class="svc-img">
+        <img src="company-photos/JNXX8169.JPG" alt="Custom log home construction" loading="lazy">
+        <span class="svc-num">01</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Custom Log Homes</h3>
         <p class="svc-desc">Full-service luxury log home construction from first design conversation to final walkthrough. Built for the mountain lifestyle, made to last generations.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
-    <a class="svc-card reveal d2" href="big-timber-framing.html" aria-label="Big Timber Framing — explore this service">
-      <span class="svc-num" aria-hidden="true">02</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-big-timber-framing.png" alt="Handcrafted miniature model of an exposed timber-frame truss structure" loading="lazy">
+    <article class="svc-card reveal d2">
+      <div class="svc-img">
+        <img src="company-photos/timber trusses.jpg" alt="Big timber framing" loading="lazy">
+        <span class="svc-num">02</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Big Timber Framing</h3>
         <p class="svc-desc">Structural timber framing that gives a home its bones — and its character. The work that takes genuine expertise at the scale luxury builds demand.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
-    <a class="svc-card reveal d3" href="traditional-framing.html" aria-label="Traditional Framing — explore this service">
-      <span class="svc-num" aria-hidden="true">03</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-traditional-framing.png" alt="Handcrafted miniature model of a stick-framed house under construction" loading="lazy">
+    <article class="svc-card reveal d3">
+      <div class="svc-img">
+        <img src="company-photos/trusses.jpg" alt="Traditional framing" loading="lazy">
+        <span class="svc-num">03</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Traditional Framing</h3>
         <p class="svc-desc">High-quality residential framing for complex builds that require structural integrity and architectural precision. Serving the Sun Valley corridor toward Boise.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
-    <a class="svc-card reveal d4" href="log-home-restorations.html" aria-label="Log Home Restorations — explore this service">
-      <span class="svc-num" aria-hidden="true">04</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-log-home-restorations.png" alt="Handcrafted miniature model of a log home mid-restoration" loading="lazy">
+    <article class="svc-card reveal d4">
+      <div class="svc-img">
+        <img src="company-photos/JKLM0820.JPG" alt="Log home restoration" loading="lazy">
+        <span class="svc-num">04</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Log Home Restorations</h3>
-        <p class="svc-desc">Structural repairs and full restorations of existing log homes. We treat every historic home with the same discipline we bring to new construction.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <p class="svc-desc">Structural repairs and full restorations of existing log cabins. We treat every historic home with the same discipline we bring to new construction.</p>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
-    <a class="svc-card reveal d5" href="custom-log-finishes-siding.html" aria-label="Custom Log Finishes and Siding — explore this service">
-      <span class="svc-num" aria-hidden="true">05</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-custom-log-finishes-siding.png" alt="Handcrafted miniature model of a log wall corner showing chinking and finishes" loading="lazy">
+    <article class="svc-card reveal d5">
+      <div class="svc-img">
+        <img src="company-photos/JHYC2195.JPG" alt="Custom log finishes and siding" loading="lazy">
+        <span class="svc-num">05</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Custom Log Finishes &amp; Siding</h3>
         <p class="svc-desc">Log siding, chinking, staining, and finish work. The exterior of a log home is its first statement and its most important protection. We treat it as both.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
-    <a class="svc-card reveal d6" href="milling-and-more.html" aria-label="Milling and More — explore this service">
-      <span class="svc-num" aria-hidden="true">06</span>
-      <div class="svc-stage">
-        <span class="svc-shadow" aria-hidden="true"></span>
-        <img class="svc-model" src="social-media-images/2026-07-10/miniature-milling-and-more.png" alt="Handcrafted miniature model of a timber sawmill with stacked lumber" loading="lazy">
+    <article class="svc-card reveal d6">
+      <div class="svc-img">
+        <img src="company-photos/XBAJ2304.JPG" alt="Milling and custom lumber" loading="lazy">
+        <span class="svc-num">06</span>
       </div>
       <div class="svc-body">
         <h3 class="svc-title">Milling &amp; More</h3>
         <p class="svc-desc">On-site bandsaw and circular milling, custom cut lumber, cabinetry, and specialty builds. Some of what a luxury log home requires can't be purchased. It has to be made.</p>
-        <span class="svc-arrow">Explore <i>&rarr;</i></span>
+        <span class="svc-arrow">Learn more →</span>
       </div>
-    </a>
+    </article>
 
   </div>
-</section>
-
-
-<!-- ════ CHINKING & STAINING SPOTLIGHT ════ -->
-<section id="chinking" aria-labelledby="chinking-heading">
-  <div class="chink-line chink-line--top" aria-hidden="true"></div>
-  <div class="chink-inner">
-    <div class="chink-copy">
-      <span class="eyebrow eyebrow-light reveal">Before the Snow Flies</span>
-      <h2 id="chinking-heading" class="chink-h2 reveal d1">Cracked chinking won't<br>survive an Idaho winter.</h2>
-      <p class="chink-body reveal d2">The pale lines between your logs are the only thing keeping snowmelt out of the wood. When chinking cracks or pulls away — or the stain goes gray and chalky — water gets behind it, and freeze-thaw does the rest. We <a href="log-home-chinking-staining.html">re-chink and re-stain log homes</a> across Sun Valley, Ketchum, and Hailey, and late summer is the right time to get on the schedule.</p>
-      <ul class="chink-signs reveal d2">
-        <li>Cracks along the log line</li>
-        <li>Chinking pulling away</li>
-        <li>Stain gone gray or chalky</li>
-      </ul>
-      <div class="chink-ctas reveal d3">
-        <a href="log-home-chinking-staining.html" class="chink-cta-p">Log Home Chinking &amp; Staining</a>
-        <a href="tel:2088978100" class="chink-cta-tel">Free assessment · 208-897-8100</a>
-      </div>
-    </div>
-    <figure class="chink-media reveal d2">
-      <img src="company-photos/chinking-log-corner.jpg" alt="Fresh hand-applied chinking lines between stacked logs on a log home corner in Idaho" loading="lazy" width="1000" height="1250">
-      <figcaption>Fresh chink lines · Wood River Valley</figcaption>
-    </figure>
-  </div>
-  <div class="chink-line chink-line--bottom" aria-hidden="true"></div>
 </section>
 
 
@@ -1620,7 +1381,7 @@
       </div>
       <div class="why-col reveal d2">
         <span class="why-col-num">Two</span>
-        <h3 class="why-col-title">One Team, One Standard</h3>
+        <h3 class="why-col-title">One Point of Contact</h3>
         <p class="why-col-body">You won't be handed between strangers. The same team carries your build from first conversation to final walkthrough — every one of them trained to the same standard.</p>
       </div>
       <div class="why-col reveal d3">
@@ -1643,14 +1404,14 @@
     <a href="#contact" class="port-link reveal d2">Inquire About Your Build →</a>
   </div>
   <div class="port-grid">
-    <div class="port-item reveal d1"><img src="company-photos/trusses-entry-window-wall.jpg" alt="Massive log entry trusses over a two-story window wall on a luxury log home" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d2"><img src="company-photos/mackay-log-corner-red-doors.jpg" alt="Refinished log corner and french doors on a restored Idaho log home" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d1"><img src="company-photos/JHYC2195.JPG" alt="Chase Construction project" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="ai-generated-images/openart-image_mzFapF5L_1775231371608_raw.jpg" alt="Log cabin in the Idaho mountains" loading="lazy"><div class="port-ov"></div></div>
     <div class="port-item reveal d1"><img src="company-photos/JKLM0820.JPG" alt="Log home construction" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d3"><img src="company-photos/trusses-chandelier.jpg" alt="Hand-hewn timber trusses over a great room with an iron chandelier and stone fireplace" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d2"><img src="ai-generated-images/sun-valley-log-home.jpg" alt="Custom log home in a Sun Valley aspen grove — steep gable, balcony, and two-bay garage" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d1"><img src="company-photos/deck-balcony-log-posts.jpg" alt="Rebuilt log balcony with hand-peeled posts and beam" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d3"><img src="company-photos/conrad addition.jpg" alt="Restored log home with new standing-seam metal roof in the Idaho pines" loading="lazy"><div class="port-ov"></div></div>
-    <div class="port-item reveal d2"><img src="project-photos/grand-entry-log-home/01.jpg" alt="Triple-gable log home entry with full-round log trusses and stone entry wall" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d3"><img src="company-photos/timber trusses.jpg" alt="Custom timber trusses" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="company-photos/POOW9968.JPG" alt="Custom log home exterior" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d1"><img src="ai-generated-images/openart-image_f2AAy3om_1775231674945_raw.jpg" alt="Idaho mountain landscape" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d3"><img src="company-photos/NCAB3966.JPG" alt="Log home detail" loading="lazy"><div class="port-ov"></div></div>
+    <div class="port-item reveal d2"><img src="company-photos/JNXX8169.JPG" alt="Chase Construction build" loading="lazy"><div class="port-ov"></div></div>
     <div class="port-item reveal d1"><img src="company-photos/LLMC6909.JPG" alt="Chase Construction completed home" loading="lazy"><div class="port-ov"></div></div>
   </div>
 </section>
@@ -1814,7 +1575,7 @@
 
     <div class="contact-left">
       <span class="eyebrow eyebrow-light reveal">Get In Touch</span>
-      <h2 id="contact-heading" class="section-title section-title-light reveal d1">Your Sun Valley, Idaho<br>log home starts with<br>one conversation.</h2>
+      <h2 id="contact-heading" class="section-title section-title-light reveal d1">Your Idaho cabin<br>starts with one<br>conversation.</h2>
       <p class="contact-body reveal d2">We take on a limited number of projects each year. If you have land in the Sun Valley area and a vision for what belongs on it, this is where that begins.</p>
       <a href="tel:2088978100" class="contact-phone reveal d3">208-897-8100</a>
       <div class="contact-divider reveal d3">
@@ -2088,6 +1849,63 @@
     });
   });
 
+})();
+</script>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     MOTION DEMO — Lenis smooth scroll + GSAP parallax (throwaway)
+     Progressive enhancement: skipped entirely under prefers-reduced-motion.
+     Nothing here touches index.html — this is hero-motion-demo.html only.
+════════════════════════════════════════════════════════════════════ -->
+<!-- Suppress the inspection popup so it doesn't interrupt the scroll demo -->
+<script>try{localStorage.setItem('chase_inspection_popup_dismissed_at',String(Date.now()));}catch(e){}</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !window.gsap || !window.Lenis) return;  // stay native + accessible
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  /* ── Lenis: buttery inertia scroll (the "feels expensive" layer) ── */
+  var lenis = new Lenis({ lerp: 0.09, smoothWheel: true, wheelMultiplier: 0.9 });
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add(function (time) { lenis.raf(time * 1000); });
+  gsap.ticker.lagSmoothing(0);
+
+  /* ── Hero parallax: background drifts slow + scales, content lifts faster.
+        The gap between the two layers is what reads as depth. ── */
+  var bg = document.querySelector('#hero-video') || document.querySelector('.hero-atm');
+  if (bg) {
+    gsap.to(bg, {
+      yPercent: 12, scale: 1.08, ease: 'none',
+      scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
+    });
+  }
+  gsap.to('.hero-content', {
+    yPercent: -14, ease: 'none',
+    scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
+  });
+
+  /* ── Wood-slab section: the slab drifts gently against its text ── */
+  var slab = document.querySelector('.why-log-slab');
+  if (slab) {
+    gsap.fromTo(slab, { yPercent: -7 }, {
+      yPercent: 7, ease: 'none',
+      scrollTrigger: { trigger: '#why', start: 'top bottom', end: 'bottom top', scrub: true }
+    });
+  }
+
+  /* ── Portfolio images: a whisper of parallax + settle on enter ── */
+  gsap.utils.toArray('.port-img img, .svc-img img').forEach(function (img) {
+    gsap.fromTo(img, { yPercent: -5 }, {
+      yPercent: 5, ease: 'none',
+      scrollTrigger: { trigger: img, start: 'top bottom', end: 'bottom top', scrub: true }
+    });
+  });
 })();
 </script>
 

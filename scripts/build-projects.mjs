@@ -118,10 +118,15 @@ const otherPages = [
   '/index.html', '/about.html', '/contact.html', '/process.html',
   '/big-timber-framing.html', '/custom-log-homes.html',
   '/custom-log-finishes-siding.html', '/log-home-restorations.html',
+  '/log-home-chinking-staining.html', '/building-from-out-of-state.html',
   '/milling-and-more.html', '/traditional-framing.html'
+];
+const blogPages = [
+  '/blog/', '/blog/log-home-chinking-cost-idaho.html'
 ];
 const urls = [
   ...otherPages.map(p => ({ loc: base + p, priority: '0.8' })),
+  ...blogPages.map(p => ({ loc: base + p, priority: '0.7' })),
   ...(HIDE_PROJECTS ? [] : [
     { loc: base + '/projects.html', priority: '0.9' },
     ...projects.map(p => ({ loc: `${base}/projects/${p.slug}.html`, priority: '0.7' }))
