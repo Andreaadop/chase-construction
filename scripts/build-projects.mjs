@@ -6,7 +6,7 @@
 //
 // No npm dependencies — Node stdlib only.
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { createRequire } from 'node:module';
 import path from 'node:path';
@@ -121,8 +121,13 @@ const otherPages = [
   '/log-home-chinking-staining.html', '/building-from-out-of-state.html',
   '/milling-and-more.html', '/traditional-framing.html'
 ];
+// Auto-discover published blog posts so the sitemap never drops one.
+const blogDir = path.join(root, 'blog');
 const blogPages = [
-  '/blog/', '/blog/log-home-chinking-cost-idaho.html'
+  '/blog/',
+  ...(existsSync(blogDir)
+    ? readdirSync(blogDir).filter(f => f.endsWith('.html') && f !== 'index.html').sort().map(f => '/blog/' + f)
+    : [])
 ];
 const urls = [
   ...otherPages.map(p => ({ loc: base + p, priority: '0.8' })),

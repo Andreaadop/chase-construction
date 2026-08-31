@@ -1,0 +1,35 @@
+name: Publish scheduled blog posts
+
+on:
+  schedule:
+    # Daily at 15:10 UTC (~9:10am Mountain) — publishes any post whose date has arrived
+    - cron: '10 15 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Publish due posts
+        run: node scripts/publish-scheduled.mjs
+
+      - name: Commit and push if anything was published
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "blog: auto-publish scheduled post(s) $(date -u +%F)"
+            git push
+          else
+            echo "Nothing to publish today."
+          fi
