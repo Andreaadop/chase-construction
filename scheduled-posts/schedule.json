@@ -1,14 +1,5 @@
 [
   {
-    "file": "log-home-restaining-signs-idaho.html",
-    "publishDate": "2026-09-07",
-    "title": "How to Tell When Your Log Home Needs Re-Staining",
-    "tag": "Maintenance",
-    "excerpt": "Graying, chalking, blotchy color, water soaking in flat — the four signs your stain is done protecting the wood, and which walls fail first.",
-    "image": "log-walls-prepped-for-stain-idaho.jpg",
-    "imageAlt": "Log walls stripped back and prepped for new stain on an Idaho log home"
-  },
-  {
     "file": "log-home-winter-preparation-checklist.html",
     "publishDate": "2026-09-21",
     "title": "Preparing Your Log Home for an Idaho Winter: A Fall Checklist",
@@ -18,8 +9,26 @@
     "imageAlt": "Well-maintained custom log home in Sun Valley, Idaho ready for winter"
   },
   {
-    "file": "timber-frame-vs-log-home.html",
+    "file": "what-is-chinking.html",
+    "publishDate": "2026-09-28",
+    "title": "What Is Chinking? A Log Home Builder Explains",
+    "tag": "Log Home Basics",
+    "excerpt": "The flexible seal between the logs of a cabin — what it's made of, how it differs from caulk and mortar, and how to tell when yours is failing.",
+    "image": "chinking-line-log-wall.jpg",
+    "imageAlt": "Chinking lines running between stained logs on an Idaho log home wall"
+  },
+  {
+    "file": "log-home-maintenance-guide.html",
     "publishDate": "2026-10-05",
+    "title": "Log Home Maintenance: A Builder's Complete Guide",
+    "tag": "Maintenance",
+    "excerpt": "The four systems that keep a log home sound — stain, chinking, water management, and wood health — on a schedule that works in Idaho.",
+    "image": "mackay-log-corner-red-doors.jpg",
+    "imageAlt": "Corner of an Idaho log home showing stacked log ends and weathered walls before maintenance"
+  },
+  {
+    "file": "timber-frame-vs-log-home.html",
+    "publishDate": "2026-10-12",
     "title": "Timber Frame vs. Log Home: What’s the Difference?",
     "tag": "Building Guide",
     "excerpt": "One is a skeleton of heavy beams, the other is solid wood walls. A builder of both explains how they differ in structure, look, and maintenance.",
@@ -27,8 +36,17 @@
     "imageAlt": "Heavy timber frame trusses inside a luxury home in Idaho built by Chase Construction"
   },
   {
-    "file": "how-long-to-build-custom-log-home-sun-valley.html",
+    "file": "log-cabin-chinking-materials.html",
     "publishDate": "2026-10-19",
+    "title": "Chinking Materials for Log Cabins: What We Use and Why",
+    "tag": "Materials Guide",
+    "excerpt": "Synthetic vs. mortar, the major brands, backer rod, and why prep decides the lifespan — from a crew that chinks log homes for a living.",
+    "image": "chinking-detail-log-corner.jpg",
+    "imageAlt": "Chinking material sealing the joints around stacked log ends at a log cabin corner"
+  },
+  {
+    "file": "how-long-to-build-custom-log-home-sun-valley.html",
+    "publishDate": "2026-10-26",
     "title": "How Long Does It Take to Build a Custom Log Home in Sun Valley?",
     "tag": "Planning",
     "excerpt": "Design, Blaine County permitting, a short mountain building season, and the log work itself — where the time really goes on a custom build.",
@@ -37,7 +55,7 @@
   },
   {
     "file": "sun-valley-climate-log-homes.html",
-    "publishDate": "2026-10-31",
+    "publishDate": "2026-11-02",
     "title": "What Sun Valley’s Climate Does to Log Homes (and How to Protect Yours)",
     "tag": "Maintenance",
     "excerpt": "High-altitude UV, freeze-thaw, bone-dry summers, and snowload — the four forces working on your logs, and the system that keeps them sound.",

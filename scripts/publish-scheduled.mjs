@@ -84,8 +84,10 @@ for (const p of due) {
     let llms = readFileSync(llmsPath, 'utf8');
     const line = `- [${p.title}](https://www.chaseconstruction.org/blog/${p.file}): ${p.excerpt}`;
     if (!llms.includes(`/blog/${p.file}`)) {
-      if (llms.includes('\n\n## Company')) {
-        llms = llms.replace('\n\n## Company', `\n${line}\n\n## Company`);
+      const anchor = llms.match(/(\r?\n)(\r?\n)## Company/);
+      if (anchor) {
+        const nl = anchor[1];
+        llms = llms.replace(anchor[0], `${nl}${line}${anchor[0]}`);
         writeFileSync(llmsPath, llms);
       } else {
         console.error('Could not find "## Company" anchor in llms.txt — line not added for ' + p.file);
