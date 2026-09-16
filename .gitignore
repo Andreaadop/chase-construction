@@ -12,3 +12,8 @@ google-apikey.txt
 *.iam.gserviceaccount.json
 n8n-2026-*.json
 *service-account*.json
+
+# SEO playbook secrets (site/account-specific)
+seo-playbook/seo_config.json
+seo-playbook/google_token.json
+seo-playbook/client_secret_*.json

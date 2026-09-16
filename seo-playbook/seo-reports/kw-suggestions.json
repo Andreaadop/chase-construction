@@ -1,0 +1,1812 @@
+{
+ "log home": [
+  {
+   "kw": "home depot credit card: log in",
+   "vol": 301000,
+   "cpc": 0.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log in home depot credit card",
+   "vol": 301000,
+   "cpc": 0.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home depot credit card log in",
+   "vol": 301000,
+   "cpc": 0.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "credit card log in home depot",
+   "vol": 301000,
+   "cpc": 0.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home depot log in",
+   "vol": 60500,
+   "cpc": 0.13,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log in home depot",
+   "vol": 60500,
+   "cpc": 0.13,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home cabin kit",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home cabin kits",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home kits",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home kit",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "planet home lending log in",
+   "vol": 27100,
+   "cpc": 0.13,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home chef log in",
+   "vol": 22200,
+   "cpc": 9.42,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log in home chef",
+   "vol": 22200,
+   "cpc": 6.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log in to home depot credit card",
+   "vol": 14800,
+   "cpc": 0.18,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home depot card log in",
+   "vol": 14800,
+   "cpc": 0.18,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home",
+   "vol": 12100,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "google home log in",
+   "vol": 9900,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "t mobile home internet log in",
+   "vol": 9900,
+   "cpc": 0.82,
+   "comp": "LOW"
+  },
+  {
+   "kw": "wells fargo home mortgage log in",
+   "vol": 8100,
+   "cpc": 3.08,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home log cabin kits",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "the home depot credit card log in",
+   "vol": 6600,
+   "cpc": 0.21,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log kit home",
+   "vol": 6600,
+   "cpc": 1.04,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "kit log home",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home building kits",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "nyu home log in",
+   "vol": 6600,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home kits",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log in to home depot",
+   "vol": 6600,
+   "cpc": 0.27,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home kit",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home building kit",
+   "vol": 6600,
+   "cpc": 1.04,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home depot log in credit card",
+   "vol": 5400,
+   "cpc": 0.24,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin home",
+   "vol": 5400,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin as a home",
+   "vol": 5400,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home log cabins",
+   "vol": 5400,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home depot credit card payment log in",
+   "vol": 5400,
+   "cpc": 0.27,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabins home",
+   "vol": 5400,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home again log in",
+   "vol": 5400,
+   "cpc": 8.2,
+   "comp": "LOW"
+  },
+  {
+   "kw": "home campus log in",
+   "vol": 5400,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "progressive home insurance log in",
+   "vol": 5400,
+   "cpc": 1.22,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home plans",
+   "vol": 4400,
+   "cpc": 0.6,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "golden eagle log home",
+   "vol": 4400,
+   "cpc": 0.16,
+   "comp": "LOW"
+  },
+  {
+   "kw": "discover home loans log in",
+   "vol": 4400,
+   "cpc": 34.73,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home plan",
+   "vol": 4400,
+   "cpc": 0.6,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log in home depot careers",
+   "vol": 4400,
+   "cpc": 1.72,
+   "comp": "LOW"
+  },
+  {
+   "kw": "plans for a log home",
+   "vol": 4400,
+   "cpc": 0.6,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "small log cabin home kits",
+   "vol": 4400,
+   "cpc": 0.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "plans for log home",
+   "vol": 4400,
+   "cpc": 0.6,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "eagle log home",
+   "vol": 4400,
+   "cpc": 0.16,
+   "comp": "LOW"
+  },
+  {
+   "kw": "chinking a log home",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home plans",
+   "vol": 3600,
+   "cpc": 0.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home plan",
+   "vol": 3600,
+   "cpc": 0.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home siding",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "small log home kits",
+   "vol": 3600,
+   "cpc": 0.43,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "at home credit card log in",
+   "vol": 3600,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabins home plans",
+   "vol": 3600,
+   "cpc": 0.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home cabin plans",
+   "vol": 3600,
+   "cpc": 0.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home kit prices",
+   "vol": 2900,
+   "cpc": 0.88,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home kits and prices",
+   "vol": 2900,
+   "cpc": 0.88,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home kits with prices",
+   "vol": 2900,
+   "cpc": 0.88,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log splitter at home depot",
+   "vol": 2900,
+   "cpc": 0.39,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home kits with pricing",
+   "vol": 2900,
+   "cpc": 0.88,
+   "comp": "HIGH"
+  }
+ ],
+ "log cabin": [
+  {
+   "kw": "log for cabin",
+   "vol": 60500,
+   "cpc": 0.94,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "log cabin",
+   "vol": 60500,
+   "cpc": 1.19,
+   "comp": "LOW"
+  },
+  {
+   "kw": "cabin log",
+   "vol": 60500,
+   "cpc": 1.19,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin house kit",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin house kits",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home cabin kit",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin homes kit",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home cabin kits",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "kit log cabin homes",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin kit houses",
+   "vol": 33100,
+   "cpc": 0.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin packages",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin kits",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin package",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin kit log",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin homes kits",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "kit log cabin",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home kits",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin log kits",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin home kit",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin log kit",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin kit",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin kit house",
+   "vol": 27100,
+   "cpc": 0.84,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin pancake house",
+   "vol": 14800,
+   "cpc": 1.05,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin inn pennsylvania",
+   "vol": 14800,
+   "cpc": 2.34,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin inn pa",
+   "vol": 14800,
+   "cpc": 2.34,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin restaurants",
+   "vol": 14800,
+   "cpc": 1.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin restaurant",
+   "vol": 14800,
+   "cpc": 1.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin inn",
+   "vol": 14800,
+   "cpc": 2.34,
+   "comp": "LOW"
+  },
+  {
+   "kw": "gatlinburg tennessee log cabin rentals",
+   "vol": 14800,
+   "cpc": 2.87,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "log cabin inn restaurant",
+   "vol": 14800,
+   "cpc": 2.34,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin restaurant lancaster",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin restaurant",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin restaurant lancaster pa",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin lancaster",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin restaurant pa",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin lancaster pa",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "the log cabin pa",
+   "vol": 12100,
+   "cpc": 0.52,
+   "comp": "LOW"
+  },
+  {
+   "kw": "quilting pattern for log cabin",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin quilts patterns",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilting log cabin pattern",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin quilting patterns",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin quilt pattern",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilting log cabin patterns",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "pattern for log cabin quilt",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin pattern quilt",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin quilt patterns",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "the log cabin",
+   "vol": 8100,
+   "cpc": 1.22,
+   "comp": "LOW"
+  },
+  {
+   "kw": "quilts log cabin pattern",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin quilting pattern",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "patterns for log cabin quilts",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin design quilt",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilt pattern log cabin",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilt patterns log cabin",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilting patterns log cabin",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin pattern quilts",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "quilt log cabin pattern",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin patterns for quilts",
+   "vol": 8100,
+   "cpc": 0.24,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home log cabin kits",
+   "vol": 6600,
+   "cpc": 1.09,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin in minecraft",
+   "vol": 6600,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin for sale near me",
+   "vol": 6600,
+   "cpc": 0.84,
+   "comp": "MEDIUM"
+  }
+ ],
+ "chinking": [
+  {
+   "kw": "log cabin chinking",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin with chinking",
+   "vol": 3600,
+   "cpc": 3.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking a log home",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking for log cabins",
+   "vol": 3600,
+   "cpc": 3.59,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking log cabin",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin chinking",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabins with chinking",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking log cabins",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking for log cabin",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking a log cabin",
+   "vol": 3600,
+   "cpc": 3.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking",
+   "vol": 2900,
+   "cpc": 3.11,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log house chinking",
+   "vol": 1000,
+   "cpc": 4.34,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking log homes",
+   "vol": 1000,
+   "cpc": 3.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log jam chinking",
+   "vol": 1000,
+   "cpc": 4.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log homes with chinking",
+   "vol": 1000,
+   "cpc": 3.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home with chinking",
+   "vol": 1000,
+   "cpc": 3.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking log home",
+   "vol": 1000,
+   "cpc": 4.34,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking a log house",
+   "vol": 1000,
+   "cpc": 4.34,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking for log homes",
+   "vol": 1000,
+   "cpc": 3.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "what is chinking",
+   "vol": 1000,
+   "cpc": 4.97,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log home chinking",
+   "vol": 1000,
+   "cpc": 4.34,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log chinking",
+   "vol": 880,
+   "cpc": 3.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking logs",
+   "vol": 880,
+   "cpc": 3.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking log",
+   "vol": 880,
+   "cpc": 3.93,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log and chinking",
+   "vol": 880,
+   "cpc": 3.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking for logs",
+   "vol": 880,
+   "cpc": 3.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking meaning",
+   "vol": 720,
+   "cpc": 0.06,
+   "comp": "LOW"
+  },
+  {
+   "kw": "sashco log jam chinking",
+   "vol": 480,
+   "cpc": 4.99,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "chinking material for log cabins",
+   "vol": 390,
+   "cpc": 3.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin chinking material",
+   "vol": 390,
+   "cpc": 3.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking material for log homes",
+   "vol": 390,
+   "cpc": 3.1,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin chinking materials",
+   "vol": 390,
+   "cpc": 3.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin chinking material",
+   "vol": 390,
+   "cpc": 3.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking material",
+   "vol": 320,
+   "cpc": 2.06,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking materials",
+   "vol": 320,
+   "cpc": 2.06,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "definition of chinking",
+   "vol": 260,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "define chinking",
+   "vol": 260,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "chinking definition",
+   "vol": 260,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "perma chink chinking",
+   "vol": 210,
+   "cpc": 0.99,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "perma-chink chinking",
+   "vol": 210,
+   "cpc": 0.99,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log house chinking materials",
+   "vol": 170,
+   "cpc": 1.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking gun",
+   "vol": 170,
+   "cpc": 1.04,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home chinking materials",
+   "vol": 170,
+   "cpc": 1.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home chinking material",
+   "vol": 170,
+   "cpc": 1.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "what is chinking in log cabins",
+   "vol": 140,
+   "cpc": 3.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "what is chinking on a log cabin",
+   "vol": 140,
+   "cpc": 3.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "what is chinking made of",
+   "vol": 140,
+   "cpc": null,
+   "comp": "LOW"
+  },
+  {
+   "kw": "chinking caulk",
+   "vol": 140,
+   "cpc": 1.97,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "what is log cabin chinking",
+   "vol": 140,
+   "cpc": 3.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "what is chinking log cabin",
+   "vol": 140,
+   "cpc": 3.47,
+   "comp": "LOW"
+  },
+  {
+   "kw": "what is chinking a log cabin",
+   "vol": 140,
+   "cpc": 4.13,
+   "comp": "LOW"
+  },
+  {
+   "kw": "traditional log cabin chinking",
+   "vol": 110,
+   "cpc": 0.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log chinking material",
+   "vol": 90,
+   "cpc": 2.66,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking tools",
+   "vol": 90,
+   "cpc": 1.73,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "where to buy chinking for log cabins",
+   "vol": 90,
+   "cpc": 1.92,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "chinking tool",
+   "vol": 90,
+   "cpc": 1.73,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log chinking caulk",
+   "vol": 90,
+   "cpc": 3.32,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "wood chinking",
+   "vol": 70,
+   "cpc": 1.03,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "perma chink log chinking",
+   "vol": 70,
+   "cpc": 0.69,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "log siding with chinking",
+   "vol": 70,
+   "cpc": 2.02,
+   "comp": "HIGH"
+  }
+ ],
+ "timber frame": [
+  {
+   "kw": "timber frame a frame house",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber a frame house",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "house timber frame",
+   "vol": 6600,
+   "cpc": 1.67,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame house",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame a-frame house",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame houses",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame homes",
+   "vol": 6600,
+   "cpc": 1.67,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber house frame",
+   "vol": 6600,
+   "cpc": 1.55,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame home",
+   "vol": 6600,
+   "cpc": 1.67,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame housing",
+   "vol": 6600,
+   "cpc": 1.67,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame timbers",
+   "vol": 5400,
+   "cpc": 1.65,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame",
+   "vol": 5400,
+   "cpc": 1.65,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame framing",
+   "vol": 5400,
+   "cpc": 1.38,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber for frame",
+   "vol": 5400,
+   "cpc": 1.65,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame home plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame homes designs",
+   "vol": 1600,
+   "cpc": 0.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house plan",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home plan",
+   "vol": 1600,
+   "cpc": 0.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house design",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home design",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house plans designs",
+   "vol": 1600,
+   "cpc": 0.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house blueprints",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber a frame house plans",
+   "vol": 1600,
+   "cpc": 0.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home design plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame houses designs",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "plans for timber frame homes",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "house plans timber frame",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home designs",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame houses plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "house plans timber frame construction",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame farmhouse plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "plans for timber frame house",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house designs",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame cottage plans",
+   "vol": 1600,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame homes plans",
+   "vol": 1600,
+   "cpc": 0.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "kit timber frame homes",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame home kit",
+   "vol": 1300,
+   "cpc": 1.29,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house kit",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame tools",
+   "vol": 1300,
+   "cpc": 1.04,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kit home",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame housing kits",
+   "vol": 1300,
+   "cpc": 1.29,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kits",
+   "vol": 1300,
+   "cpc": 1.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kit house",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kit homes",
+   "vol": 1300,
+   "cpc": 1.29,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber house frame kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kit houses",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame kit",
+   "vol": 1300,
+   "cpc": 1.9,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "house timber frame kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame homes kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame houses kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame tool",
+   "vol": 1300,
+   "cpc": 0.97,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame house kits",
+   "vol": 1300,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame pavilion",
+   "vol": 1000,
+   "cpc": 1.95,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "timber frame pavilions",
+   "vol": 1000,
+   "cpc": 2.05,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "construction timber frame",
+   "vol": 1000,
+   "cpc": 1.42,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame building construction",
+   "vol": 1000,
+   "cpc": 2.01,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "timber frame construction",
+   "vol": 1000,
+   "cpc": 2.01,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "western-timber-frame",
+   "vol": 880,
+   "cpc": 4.33,
+   "comp": "MEDIUM"
+  }
+ ],
+ "log siding": [
+  {
+   "kw": "log siding",
+   "vol": 3600,
+   "cpc": 1.12,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home siding",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cabin log siding",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding cabins",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin siding",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding cabin",
+   "vol": 3600,
+   "cpc": 1.47,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "siding for log homes",
+   "vol": 2900,
+   "cpc": 1.42,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log house siding",
+   "vol": 2900,
+   "cpc": 1.42,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin log siding",
+   "vol": 2900,
+   "cpc": 1.42,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log vinyl siding",
+   "vol": 1300,
+   "cpc": 2.13,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding vinyl",
+   "vol": 1300,
+   "cpc": 1.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "vinyl log siding",
+   "vol": 1300,
+   "cpc": 1.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding for a house",
+   "vol": 1000,
+   "cpc": 1.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "home log siding",
+   "vol": 1000,
+   "cpc": 1.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "homes with log siding",
+   "vol": 1000,
+   "cpc": 1.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding for houses",
+   "vol": 1000,
+   "cpc": 1.81,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "houses with log siding",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log home vinyl siding",
+   "vol": 880,
+   "cpc": 1.8,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin vinyl siding",
+   "vol": 880,
+   "cpc": 1.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding home",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding for house",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "vinyl log home siding",
+   "vol": 880,
+   "cpc": 1.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "house with log siding",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin siding vinyl",
+   "vol": 880,
+   "cpc": 1.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding house",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding for homes",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "vinyl siding log cabin",
+   "vol": 880,
+   "cpc": 1.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "vinyl log cabin siding",
+   "vol": 880,
+   "cpc": 1.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding homes",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "house log siding",
+   "vol": 880,
+   "cpc": 1.71,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "artificial log cabin siding",
+   "vol": 720,
+   "cpc": 0.91,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "imitation log cabin siding",
+   "vol": 720,
+   "cpc": 0.91,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "fake log cabin siding",
+   "vol": 720,
+   "cpc": 1.27,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "half log siding",
+   "vol": 590,
+   "cpc": 1.16,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "concrete log siding",
+   "vol": 480,
+   "cpc": 2.43,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "trulog steel log siding",
+   "vol": 480,
+   "cpc": 2.08,
+   "comp": "LOW"
+  },
+  {
+   "kw": "log cabin style siding",
+   "vol": 480,
+   "cpc": 2.01,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cement log siding",
+   "vol": 480,
+   "cpc": 2.16,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "d log siding",
+   "vol": 480,
+   "cpc": 0.99,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin looking siding",
+   "vol": 480,
+   "cpc": 2.01,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "d-log siding",
+   "vol": 480,
+   "cpc": 0.99,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log cabin look siding",
+   "vol": 480,
+   "cpc": 2.01,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding panels",
+   "vol": 390,
+   "cpc": 0.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "metal log siding",
+   "vol": 390,
+   "cpc": 2.37,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "faux log siding",
+   "vol": 390,
+   "cpc": 1.46,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "steel log siding",
+   "vol": 390,
+   "cpc": 2.28,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log steel siding",
+   "vol": 390,
+   "cpc": 2.37,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "imitation log siding",
+   "vol": 390,
+   "cpc": 1.32,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding paneling",
+   "vol": 390,
+   "cpc": 0.89,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "wooden log siding",
+   "vol": 320,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "everlog concrete log siding",
+   "vol": 320,
+   "cpc": 2.73,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "clear creek log siding",
+   "vol": 320,
+   "cpc": 1.32,
+   "comp": "MEDIUM"
+  },
+  {
+   "kw": "fake log siding",
+   "vol": 320,
+   "cpc": 0.96,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "cedar log siding",
+   "vol": 320,
+   "cpc": 1.38,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "artificial log siding",
+   "vol": 320,
+   "cpc": 1.14,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "wood log siding",
+   "vol": 320,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log siding near me",
+   "vol": 320,
+   "cpc": 2.78,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "log wood siding",
+   "vol": 320,
+   "cpc": 1.15,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "mobile home siding log cabin",
+   "vol": 260,
+   "cpc": 2.06,
+   "comp": "HIGH"
+  },
+  {
+   "kw": "mobile homes with log cabin siding",
+   "vol": 260,
+   "cpc": 1.77,
+   "comp": "HIGH"
+  }
+ ]
+}

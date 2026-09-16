@@ -1,0 +1,12 @@
+{
+  "site_url": "https://example.com/",
+  "_comment_site_url": "EXACTLY as it appears in Search Console: 'https://example.com/' (URL-prefix property, trailing slash) or 'sc-domain:example.com' (domain property)",
+  "token_path": "google_token.json",
+  "window_days": 28,
+  "min_impressions": {
+    "striking": 2,
+    "watch": 2,
+    "ctr_fix": 10
+  },
+  "_comment_thresholds": "Tuned for a young site. Raise striking/watch to 10+ and ctr_fix to 50+ once the site gets real traffic."
+}
