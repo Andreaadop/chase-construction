@@ -17,3 +17,5 @@ n8n-2026-*.json
 seo-playbook/seo_config.json
 seo-playbook/google_token.json
 seo-playbook/client_secret_*.json
+seo-playbook/gbp_token.json
+client_secret_*.json
