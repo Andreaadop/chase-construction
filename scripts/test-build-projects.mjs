@@ -6,6 +6,7 @@ import { execSync } from 'node:child_process';
 import { existsSync, readFileSync, rmSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { createRequire } from 'node:module';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, '..');
@@ -30,35 +31,39 @@ if (existsSync(sitemapPath)) rmSync(sitemapPath);
 console.log('Running build script…');
 execSync('node scripts/build-projects.mjs', { cwd: root, stdio: 'inherit' });
 
+// Assertions are driven by projects-data.js so the test tracks the live project list
+const projects = createRequire(import.meta.url)(path.join(root, 'projects-data.js'));
+const first = projects[0];
+const last = projects[projects.length - 1];
+
 console.log('\nGallery checks:');
 assert(existsSync(galleryPath), 'projects.html was generated');
 const gallery = readFileSync(galleryPath, 'utf8');
-assert(gallery.includes('Bellevue Lakeside Lodge'), 'gallery includes first project name');
-assert(gallery.includes('Wood River Timber Frame'), 'gallery includes last project name');
-assert(gallery.includes('project-photos/bellevue-lakeside-lodge/hero.jpg'), 'gallery references hero photo path');
-assert(gallery.includes('href="projects/bellevue-lakeside-lodge.html"'), 'gallery links to detail page');
+assert(gallery.includes(first.name), 'gallery includes first project name');
+assert(gallery.includes(last.name), 'gallery includes last project name');
+assert(gallery.includes(first.hero), 'gallery references hero photo path');
+assert(gallery.includes('href="projects/' + first.slug + '.html"'), 'gallery links to detail page');
 assert(gallery.includes('class="cta-band"'), 'gallery includes mid-page CTA band');
 assert(gallery.includes('class="closing"'), 'gallery includes closing CTA');
 
-console.log('\nDetail page checks (bellevue-lakeside-lodge):');
-const detailPath = path.join(projectsDir, 'bellevue-lakeside-lodge.html');
+console.log('\nDetail page checks (' + first.slug + '):');
+const detailPath = path.join(projectsDir, first.slug + '.html');
 assert(existsSync(detailPath), 'detail page was generated');
 const detail = readFileSync(detailPath, 'utf8');
-assert(detail.includes('<title>Bellevue Lakeside Lodge'), 'detail page title contains project name');
-assert(detail.includes('Bellevue, ID'), 'detail page contains location');
-assert(detail.includes('2024'), 'detail page contains year');
-assert(detail.includes('hand-selected Douglas fir'), 'detail page contains story content');
-assert(detail.includes('project-photos/bellevue-lakeside-lodge/01.jpg'), 'detail page references first additional photo');
+assert(detail.includes('<title>' + first.name), 'detail page title contains project name');
+assert(detail.includes(first.location), 'detail page contains location');
+if (first.year) assert(detail.includes(String(first.year)), 'detail page contains year');
+if (first.photos.length) assert(detail.includes(first.photos[0]), 'detail page references first additional photo');
 assert(detail.includes('<meta name="description"'), 'detail page has meta description');
 assert(detail.includes('property="og:image"'), 'detail page has OpenGraph image');
 
 console.log('\nAll detail pages:');
-const slugs = [
-  'bellevue-lakeside-lodge', 'ketchum-ridge-estate', 'sun-valley-mountain-house',
-  'hailey-heritage-restoration', 'conrad-family-addition', 'wood-river-timber-frame'
-];
-for (const slug of slugs) {
-  assert(existsSync(path.join(projectsDir, slug + '.html')), slug + '.html exists');
+const slugs = projects.map(p => p.slug);
+for (const p of projects) {
+  assert(existsSync(path.join(projectsDir, p.slug + '.html')), p.slug + '.html exists');
+  for (const photo of [p.hero, ...p.photos]) {
+    assert(existsSync(path.join(root, photo)), p.slug + ': ' + photo + ' exists on disk');
+  }
 }
 
 console.log('\nSitemap:');
