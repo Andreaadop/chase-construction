@@ -78,6 +78,33 @@
     }
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "VideoObject",
+        "name": "Sandblasting a log home before restoration — Chase Construction",
+        "description": "Mike Chase walks a log home restoration in the Wood River Valley, Idaho, while the crew sandblasts the old finish so the new logs and the originals match.",
+        "thumbnailUrl": "https://www.chaseconstruction.org/job-site-media/reels/kessler-sandblasting-poster.jpg",
+        "contentUrl": "https://www.chaseconstruction.org/job-site-media/reels/kessler-sandblasting.mp4",
+        "uploadDate": "2026-09-30",
+        "duration": "PT47S",
+        "publisher": { "@id": "https://www.chaseconstruction.org/#business" }
+      },
+      {
+        "@type": "VideoObject",
+        "name": "Freshly stained and chinked log home — Chase Construction",
+        "description": "Mike Chase walks a log home that has just been stained and chinked by Chase Construction, with only the corners left to finish.",
+        "thumbnailUrl": "https://www.chaseconstruction.org/job-site-media/reels/chinking-walkthrough-poster.jpg",
+        "contentUrl": "https://www.chaseconstruction.org/job-site-media/reels/chinking-walkthrough.mp4",
+        "uploadDate": "2026-10-02",
+        "duration": "PT31S",
+        "publisher": { "@id": "https://www.chaseconstruction.org/#business" }
+      }
+    ]
+  }
+  </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1316,6 +1343,126 @@
     }
 
 
+    /* ══ FROM THE JOB SITE (Instagram reels) ══ */
+    #jobsite {
+      padding: clamp(80px,10vw,140px) 52px;
+      background: var(--green-d);
+      position: relative; overflow: hidden;
+    }
+    #jobsite::before {
+      content: ''; position: absolute; inset: 0; z-index: 0;
+      background-image: url('graphic-elements-other-images/vertical-wood-texture.jpg');
+      background-size: cover; background-position: center;
+      opacity: 0.07; mix-blend-mode: overlay;
+    }
+    #jobsite::after {
+      content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse at 72% 50%, rgba(44,87,61,.55) 0%, transparent 58%);
+    }
+    .jobsite-inner {
+      max-width: 1200px; margin: 0 auto;
+      display: grid; grid-template-columns: minmax(280px, 380px) 1fr; gap: 72px; align-items: center;
+      position: relative; z-index: 1;
+    }
+    .jobsite-text .section-title { color: #fff; margin-top: 16px; }
+    .jobsite-body {
+      font-size: 16px; line-height: 1.9;
+      color: rgba(195,180,157,.65); font-weight: 300;
+      margin-top: 24px; max-width: 34ch;
+    }
+    .jobsite-follow {
+      display: inline-flex; align-items: center; gap: 14px;
+      margin-top: 36px; padding: 16px 32px;
+      background: var(--beige); color: var(--green-d);
+      font-family: 'Montserrat', sans-serif; font-size: 11px;
+      letter-spacing: .22em; text-transform: uppercase; font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35), 0 2px 8px rgba(195,180,157,.25);
+      transition: background .3s, transform .3s var(--ease), box-shadow .3s var(--ease);
+    }
+    .jobsite-follow svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .jobsite-follow:hover,
+    .jobsite-follow:focus-visible { background: #fff; transform: translateY(-3px); box-shadow: 0 18px 44px rgba(0,0,0,.45), 0 2px 8px rgba(195,180,157,.25); outline: none; }
+    .jobsite-follow:active { transform: translateY(-1px); }
+    .jobsite-hint {
+      display: block; margin-top: 18px;
+      font-size: 12px; letter-spacing: .06em; color: rgba(195,180,157,.7);
+    }
+
+    .jobsite-reels {
+      display: flex; justify-content: center; align-items: center; gap: 44px;
+      perspective: 1400px; padding: 24px 0;
+    }
+    .reel {
+      position: relative; flex-shrink: 0; cursor: pointer;
+      transition: transform .6s var(--ease);
+    }
+    .reel--a { transform: rotate(-6deg) translateY(28px); z-index: 1; }
+    .reel--b { transform: rotate(5deg) translateY(-12px) scale(1.04); z-index: 2; }
+    .reel:hover,
+    .reel:focus-within { transform: rotate(0deg) translateY(-14px) scale(1.05); z-index: 5; }
+    .reel-glow {
+      position: absolute; inset: -30px -20px; border-radius: 60px; z-index: 0; pointer-events: none;
+      background: radial-gradient(ellipse at center, rgba(195,180,157,.55) 0%, rgba(44,87,61,.5) 55%, transparent 100%);
+      filter: blur(30px); opacity: 0; transition: opacity .5s var(--ease);
+    }
+    .reel:hover .reel-glow, .reel:focus-within .reel-glow { opacity: .55; }
+    .reel-phone {
+      position: relative; width: 236px; height: 420px; border-radius: 40px;
+      background: #0f0f0f; border: 5px solid #262320;
+      box-shadow: inset 0 0 0 1px #3a3531, 0 40px 90px rgba(0,0,0,.7), 0 12px 24px rgba(0,0,0,.4);
+      overflow: hidden; z-index: 1;
+      transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+      transition: transform .1s ease, box-shadow .5s var(--ease);
+    }
+    .reel:hover .reel-phone { box-shadow: inset 0 0 0 1px rgba(195,180,157,.4), 0 52px 110px rgba(0,0,0,.8), 0 12px 24px rgba(0,0,0,.4); }
+    .reel-notch {
+      position: absolute; top: 13px; left: 50%; transform: translateX(-50%);
+      width: 56px; height: 10px; background: #1c1c1c; border-radius: 8px; z-index: 3;
+    }
+    .reel-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; background: #0f0f0f; }
+    .reel-sound {
+      position: absolute; top: 34px; right: 14px; z-index: 4;
+      width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer;
+      background: rgba(26,22,20,.55); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      backdrop-filter: blur(6px);
+      transition: background .3s, transform .3s var(--ease);
+    }
+    .reel-sound svg { width: 16px; height: 16px; }
+    .reel-sound .ic-on { display: none; }
+    .reel.sound-on .reel-sound .ic-on { display: block; }
+    .reel.sound-on .reel-sound .ic-off { display: none; }
+    .reel-sound:hover { background: rgba(44,87,61,.85); }
+    .reel-sound:focus-visible { outline: 2px solid var(--beige); outline-offset: 2px; }
+    .reel-sound:active { transform: scale(.92); }
+    .reel-caption {
+      position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; pointer-events: none;
+      padding: 56px 18px 20px;
+      background: linear-gradient(to top, rgba(26,22,20,.92) 0%, transparent 100%);
+    }
+    .reel-caption strong {
+      display: block; font-family: 'Hoefler Text', Georgia, serif; font-weight: normal;
+      font-size: 17px; line-height: 1.25; color: #fff; letter-spacing: -.01em;
+    }
+    .reel-caption span { display: block; margin-top: 5px; font-size: 11px; letter-spacing: .06em; color: rgba(195,180,157,.75); }
+
+    @media (max-width: 1024px) {
+      .jobsite-inner { grid-template-columns: 1fr; gap: 48px; text-align: center; }
+      .jobsite-body { margin-left: auto; margin-right: auto; }
+      .jobsite-reels { gap: 28px; }
+    }
+    @media (max-width: 768px) {
+      #jobsite { padding: 80px 24px; }
+    }
+    @media (max-width: 600px) {
+      .jobsite-reels { flex-direction: column; gap: 36px; }
+      .reel--a, .reel--b { transform: none; }
+      .reel:hover, .reel:focus-within { transform: translateY(-6px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .reel, .reel-phone, .jobsite-follow { transition: none; }
+    }
+
     /* ══════════════════════════════════════════════
        FOOTER
     ══════════════════════════════════════════════ */
@@ -1882,6 +2029,62 @@
 </section>
 
 
+<!-- ════ FROM THE JOB SITE ════ -->
+<section id="jobsite" aria-labelledby="jobsite-heading">
+  <div class="jobsite-inner">
+    <div class="jobsite-text">
+      <span class="eyebrow eyebrow-light reveal">From the job site</span>
+      <h2 id="jobsite-heading" class="section-title reveal d1">Real work,<br>filmed by Mike.</h2>
+      <div class="h-rule h-rule-light reveal d2" style="margin: 24px 0 0;"></div>
+      <p class="jobsite-body reveal d2">Short walkthroughs from the homes we're restoring, chinking and building across the Wood River Valley. No studio, just the crew and the logs.</p>
+      <a class="jobsite-follow reveal d3" href="https://www.instagram.com/chaseconstructionidaho/" target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        Follow on Instagram
+      </a>
+      <span class="jobsite-hint reveal d4">Tap a video to hear Mike.</span>
+    </div>
+
+    <div class="jobsite-reels reveal d2">
+      <div class="reel reel--a" data-reel>
+        <div class="reel-glow" aria-hidden="true"></div>
+        <div class="reel-phone">
+          <div class="reel-notch" aria-hidden="true"></div>
+          <video class="reel-video" muted loop playsinline preload="none" poster="job-site-media/reels/kessler-sandblasting-poster.jpg" aria-label="Mike Chase walks the Kessler log home restoration while the crew strips the old finish by sandblasting">
+            <source src="job-site-media/reels/kessler-sandblasting.mp4" type="video/mp4">
+          </video>
+          <button class="reel-sound" type="button" aria-label="Turn sound on" aria-pressed="false">
+            <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          </button>
+          <div class="reel-caption">
+            <strong>Sandblasting before the new logs go in</strong>
+            <span>Log home restoration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reel reel--b" data-reel>
+        <div class="reel-glow" aria-hidden="true"></div>
+        <div class="reel-phone">
+          <div class="reel-notch" aria-hidden="true"></div>
+          <video class="reel-video" muted loop playsinline preload="none" poster="job-site-media/reels/chinking-walkthrough-poster.jpg" aria-label="Mike Chase walks a freshly stained and chinked log home, with only the corners left to finish">
+            <source src="job-site-media/reels/chinking-walkthrough.mp4" type="video/mp4">
+          </video>
+          <button class="reel-sound" type="button" aria-label="Turn sound on" aria-pressed="false">
+            <svg class="ic-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+            <svg class="ic-on" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
+          </button>
+          <div class="reel-caption">
+            <strong>Fresh stain, fresh chinking</strong>
+            <span>Chinking &amp; staining</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <!-- ════ FOOTER ════ -->
 <footer>
   <div class="foot-inner">
@@ -2020,6 +2223,53 @@
 
 
   /* ─── SCROLL REVEAL ─── */
+  /* ─── JOB SITE REELS — autoplay muted in view, tap for sound, cursor tilt ─── */
+  var reels = Array.prototype.slice.call(document.querySelectorAll('[data-reel]'));
+  function reelSound(reel, on) {
+    var vid = reel.querySelector('.reel-video');
+    var btn = reel.querySelector('.reel-sound');
+    vid.muted = !on;
+    reel.classList.toggle('sound-on', on);
+    btn.setAttribute('aria-pressed', String(on));
+    btn.setAttribute('aria-label', on ? 'Turn sound off' : 'Turn sound on');
+    if (on) {
+      vid.currentTime = 0;
+      vid.play().catch(function() {});
+      reels.forEach(function(other) { if (other !== reel) reelSound(other, false); });
+    }
+  }
+  reels.forEach(function(reel) {
+    var vid = reel.querySelector('.reel-video');
+    var btn = reel.querySelector('.reel-sound');
+    var phone = reel.querySelector('.reel-phone');
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      reelSound(reel, vid.muted);
+    });
+    phone.addEventListener('click', function() { reelSound(reel, vid.muted); });
+    reel.addEventListener('mousemove', function(e) {
+      var r = phone.getBoundingClientRect();
+      var x = (e.clientX - r.left) / r.width - 0.5;
+      var y = (e.clientY - r.top) / r.height - 0.5;
+      reel.style.setProperty('--tilt-x', (-y * 8).toFixed(1) + 'deg');
+      reel.style.setProperty('--tilt-y', (x * 8).toFixed(1) + 'deg');
+    });
+    reel.addEventListener('mouseleave', function() {
+      reel.style.removeProperty('--tilt-x');
+      reel.style.removeProperty('--tilt-y');
+    });
+  });
+  if (reels.length && 'IntersectionObserver' in window) {
+    var reelObs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(en) {
+        var vid = en.target.querySelector('.reel-video');
+        if (en.isIntersecting) { vid.play().catch(function() {}); }
+        else { vid.pause(); reelSound(en.target, false); }
+      });
+    }, { threshold: 0.35 });
+    reels.forEach(function(reel) { reelObs.observe(reel); });
+  }
+
   var revObs = new IntersectionObserver(function(entries) {
     entries.forEach(function(e) {
       if (e.isIntersecting) {
