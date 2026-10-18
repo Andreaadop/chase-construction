@@ -118,7 +118,8 @@ const otherPages = [
   '/index.html', '/about.html', '/contact.html', '/process.html',
   '/big-timber-framing.html', '/custom-log-homes.html',
   '/custom-log-finishes-siding.html', '/log-home-restorations.html',
-  '/log-home-chinking-staining.html', '/building-from-out-of-state.html',
+  '/log-home-chinking-staining.html', '/log-home-media-blasting.html',
+  '/building-from-out-of-state.html',
   '/milling-and-more.html', '/traditional-framing.html'
 ];
 // Auto-discover published blog posts so the sitemap never drops one.

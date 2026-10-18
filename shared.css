@@ -355,6 +355,24 @@ body::after {
 .pg-body p + p  { margin-top: 20px; }
 .pg-body strong { font-weight: 500; color: var(--ink); }
 
+/* Inline text links: visible as links (light backgrounds = green, dark = beige) */
+.pg-body a:not([class]), .faq-a a:not([class]), .pg-icon-card-body a:not([class]),
+.pg-bullets a:not([class]), .problem-body a:not([class]), .pp-intro a:not([class]),
+.pp-wrap a:not([class]) {
+  color: var(--green); text-decoration: underline; text-decoration-thickness: 1px;
+  text-underline-offset: 3px; transition: color .25s var(--ease, ease);
+}
+.pg-body a:not([class]):hover, .faq-a a:not([class]):hover, .pg-icon-card-body a:not([class]):hover,
+.pg-bullets a:not([class]):hover, .problem-body a:not([class]):hover, .pp-intro a:not([class]):hover,
+.pp-wrap a:not([class]):hover { color: var(--brown); }
+.pg-body--light a:not([class]), .chink-body a:not([class]) { color: var(--beige); }
+.pg-body--light a:not([class]):hover, .chink-body a:not([class]):hover { color: var(--linen); }
+.chink-body a:not([class]) { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; transition: color .25s var(--ease, ease); }
+:is(.pg-body, .faq-a, .pg-icon-card-body, .pg-bullets, .problem-body, .pp-intro, .pp-wrap, .chink-body) a:not([class]):focus-visible {
+  outline: 2px solid currentColor; outline-offset: 2px; border-radius: 2px;
+}
+:is(.pg-body, .faq-a, .pg-icon-card-body, .pg-bullets, .problem-body, .pp-intro, .pp-wrap, .chink-body) a:not([class]):active { opacity: .75; }
+
 .pg-h3 {
   font-family: 'Hoefler Text', Georgia, serif;
   font-size: clamp(19px, 2.2vw, 26px);
